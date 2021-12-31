@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   app:
-    image: bwo0877hpnza/test:0.3
+    image: bwo0877hpnza/mb_app_base:0.1
     expose:
       - port: 8080
         as: 80
