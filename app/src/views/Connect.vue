@@ -1,7 +1,7 @@
 <template>
   <q-page class="main-bg">
   <div class="q-pa-xl">
-    <div class="my-title text-h4 text-white">Connect to MetaBrains</div>
+    <div class="my-title text-h4 text-white">Connect to MetaBrainz</div>
     <div class="q-py-sm"></div>
       <div v-if="isAuthenticated">
         <q-btn color="accent" label="Disconnect" @click="signout"/>

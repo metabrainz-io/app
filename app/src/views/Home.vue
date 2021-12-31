@@ -3,8 +3,8 @@
   <q-page class="main-bg-png">
     <!-- CONTENT: UPDATES -->
     <div class="q-pa-xl">
-      <div class="my-title text-h4 text-white">Welcome to MetaBrains</div>
-      <div class="my-title text-subtitle text-white">The Meta-Brain Interface</div>
+      <div class="my-title text-h4 text-white">Welcome to MetaBrainz</div>
+      <div class="my-title text-subtitle text-white">Interfacing Brainz into the Metaverse</div>
     </div>
 
   <!--

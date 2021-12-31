@@ -2,22 +2,22 @@
 <template>
   <q-page class="main-bg-png">
     <div class="q-pa-xl">
-      <div class="my-title text-h4 text-white">About MetaBrains</div>
+      <div class="my-title text-h4 text-white">About MetaBrainz</div>
 
       <div class="q-pa-xl">
-            <div class="my-title q-py-lg text-h5 text-white">CyberMedix</div>
+            <div class="my-title q-py-lg text-h5 text-white">MetaBrainz</div>
             <img 
               src="../assets/CyberBrain_games_trans2.gif"
               style="width:25rem;"
             />
 
-            <div class="my-title q-py-lg text-h5 text-white">CyberBrainz</div>
+            <div class="my-title q-py-lg text-h5 text-white">MetaBrainz</div>
             <img 
               src="../assets/CyberBrain_sync_transparent_xl.gif"
               style="width:12rem;"
             />
             
-            <div class="my-title q-py-lg text-h5 text-white">CyberGamez</div>
+            <div class="my-title q-py-lg text-h5 text-white">MetaGamez</div>
 
         <div class="row items-start q-gutter-md">
             <!-- DEFAULT RES 

@@ -27,7 +27,7 @@
             @click="$router.push('/')" 
             style="cursor: pointer; font-size: 1.5rem"
           >
-            metabrains.io&nbsp;&nbsp;
+            metabrainz.io&nbsp;&nbsp;
           </div>
           <div 
             @click="$router.push('/')" 
