@@ -1,0 +1,44 @@
+---
+version: "2.0"
+
+services:
+  app:
+    image: bwo0877hpnza/test:0.3
+    expose:
+      - port: 8080
+        as: 80
+        accept:
+          - www.ohreally.io
+        to:
+          - global: true
+      - port: 2222
+        to:
+          - global: true
+
+profiles:
+  compute:
+    app:
+      resources:
+        cpu:
+          units: 2
+        memory:
+          size: 2Gi
+        storage:
+          size: 1Gi
+  placement:
+    dcloud:
+      attributes:
+        host: akash
+      signedBy:
+        anyOf:
+          - "akash1365yvmc4s7awdyj3n2sav7xfx76adc6dnmlx63"
+      pricing:
+        app:
+          denom: uakt
+          amount: 20
+
+deployment:
+  app:
+    dcloud:
+      profile: app
+      count: 1
