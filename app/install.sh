@@ -6,4 +6,5 @@ apt-get -y install python3-dev curl sudo git nano && \
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash - && \
 apt-get install -y nodejs && \
 npm install -g n && n 14.17 && PATH="$PATH" && \
-npm install -g npm@8.1.1 && npm install -g @vue/cli
+npm install -g npm@8.1.1 && npm install -g @vue/cli && \
+npm -i -g yarn
