@@ -14,6 +14,3 @@ kill:
 	docker container kill mb_app
 remove:
 	docker container rm mb_app
-publish:
-	docker tag metabrainz/app_test bwo0877hpnza/test:0.3
-	docker push bwo0877hpnza/test:0.3

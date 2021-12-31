@@ -1,4 +1,4 @@
-# app
+# site
 
 ## Project setup
 ```

@@ -1,101 +1,131 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="glossy">
+  <q-layout 
+    view="hHh Lpr fFf" class="">
+    <!--<q-header bordered class="bg-dark text-white elevate" height-hint="98">-->
+    <q-header class="my-header bg-dark text-white" height-hint="98">
+      <!-- 
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          aria-label="Menu"
-          icon="menu"
-        />
-
         <q-toolbar-title>
-          Quasar App
         </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+        <q-tabs align="left">
+        <div @click="$router.push('/')" style="cursor: pointer;">
+          <img src="./assets/CyberMedix.gif" style="width: 3rem;">
+        </div>
+      </q-tabs>
+      <q-tabs align="right">
+        <q-route-tab to="/about" label="About" />
+        <q-route-tab to="/contact" label="Contact" />
+        <q-route-tab to="/connect" label="Connect" />
+      </q-tabs>
       </q-toolbar>
+      -->
+      <q-toolbar class="text-white shadow-2 rounded-borders">
+
+      <q-tabs shrink stretch>
+          <div
+            class="gt-xs text-h5 text-white" 
+            @click="$router.push('/')" 
+            style="cursor: pointer; font-size: 1.5rem"
+          >
+            metabrains.io&nbsp;&nbsp;
+          </div>
+          <div 
+            @click="$router.push('/')" 
+            style="cursor: pointer; font-size: 1.5rem"
+          >
+          
+            <img src="./assets/CyberBrain_sync_transparent_lg.gif" style="width: 3.5rem;">
+          </div>
+      </q-tabs>
+      <q-space />
+
+      <!--
+        notice shrink property since we are placing it
+        as child of QToolbar
+      -->
+      <q-tabs align="right" >
+        <q-route-tab to="/about" label="About" />
+        <q-route-tab to="/contact" label="Contact" />
+        <q-route-tab to="/connect" label="Connect" />
+      </q-tabs>
+    </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      class="bg-grey-2"
-    >
-      <q-list>
-        <q-item-label header>Essential Links</q-item-label>
-        <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="school" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Docs</q-item-label>
-            <q-item-label caption>quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://github.com/quasarframework/">
-          <q-item-section avatar>
-            <q-icon name="code" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Github</q-item-label>
-            <q-item-label caption>github.com/quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://chat.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="chat" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Discord Chat Channel</q-item-label>
-            <q-item-label caption>chat.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://forum.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="forum" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Forum</q-item-label>
-            <q-item-label caption>forum.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://twitter.com/quasarframework">
-          <q-item-section avatar>
-            <q-icon name="rss_feed" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Twitter</q-item-label>
-            <q-item-label caption>@quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-      </q-list>
-    </q-drawer>
-
+    
     <q-page-container>
-      <HelloWorld />
+      <router-view />
     </q-page-container>
+
+    <q-footer reveal class="my-footer bg-dark text-white">
+      <q-toolbar>
+        <q-toolbar-title>
+          <div>© 2021 cybermedix</div>
+        </q-toolbar-title>
+      </q-toolbar>
+    </q-footer>
   </q-layout>
 </template>
 
 <script>
-import { ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'LayoutDefault',
 
   components: {
-    HelloWorld
   },
 
   setup () {
+
     return {
-      leftDrawerOpen: ref(false)
     }
   }
 }
 </script>
+
+<style>
+
+.main-bg{
+  background-color: #010011;
+  -webkit-background-size: cover; 
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-bg-png{
+  
+  background-color: #010011;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/home.gif");
+  -webkit-background-size: cover; 
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+}
+
+.main-bg-animated{
+  
+  background-color: #010011;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/carrion_fighting-sleep.gif");
+  -webkit-background-size: cover; 
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+}
+
+.my-header{
+    font-family: 'Orbitron';
+}
+
+.my-title{
+  font-family: 'Orbitron';
+}
+.my-footer{
+  font-family: 'Orbitron';
+}
+</style>
