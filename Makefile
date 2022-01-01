@@ -1,5 +1,5 @@
 DIR := ${CURDIR}
-
+default: build publish
 build:
 	docker build -t metabrainz/mb_app_base -f Dockerfile .
 test:
