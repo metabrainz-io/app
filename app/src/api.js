@@ -341,7 +341,7 @@ export async function getUser(commit){
 // NOTE: Initial add, no updates
 export function fetchItems(state){
     console.log("Fetching all items..")
-    fetch('http://192.168.0.103:8000/api/assets/all_assets')
+    fetch('http://cluster.provider-0.prod.ams1.akash.pub:30848/api/assets/all_assets')
     .then((res)=>res.json())
     .then((data)=>{
         data.forEach((item)=>{
@@ -358,7 +358,7 @@ export function fetchItems(state){
 
 export function updateItems(state){
     console.log("Check for updates..")
-    fetch('http://192.168.0.103:8000/api/assets/all_assets')
+    fetch('http://cluster.provider-0.prod.ams1.akash.pub:30848/api/assets/all_assets')
     .then((res)=>res.json())
     .then((data)=>{
 
