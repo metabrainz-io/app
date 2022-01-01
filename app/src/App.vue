@@ -1,24 +1,7 @@
 <template>
   <q-layout 
     view="hHh Lpr fFf" class="">
-    <!--<q-header bordered class="bg-dark text-white elevate" height-hint="98">-->
     <q-header class="my-header bg-dark text-white" height-hint="98">
-      <!-- 
-      <q-toolbar>
-        <q-toolbar-title>
-        </q-toolbar-title>
-        <q-tabs align="left">
-        <div @click="$router.push('/')" style="cursor: pointer;">
-          <img src="./assets/CyberMedix.gif" style="width: 3rem;">
-        </div>
-      </q-tabs>
-      <q-tabs align="right">
-        <q-route-tab to="/about" label="About" />
-        <q-route-tab to="/contact" label="Contact" />
-        <q-route-tab to="/connect" label="Connect" />
-      </q-tabs>
-      </q-toolbar>
-      -->
       <q-toolbar class="text-white shadow-2 rounded-borders">
 
       <q-tabs shrink stretch>
@@ -39,14 +22,9 @@
       </q-tabs>
       <q-space />
 
-      <!--
-        notice shrink property since we are placing it
-        as child of QToolbar
-      -->
       <q-tabs align="right" >
         <q-route-tab to="/about" label="About" />
         <q-route-tab to="/contact" label="Contact" />
-        <q-route-tab to="/connect" label="Connect" />
       </q-tabs>
     </q-toolbar>
     </q-header>
