@@ -21,7 +21,7 @@ function metaConnect(commit){
     else{
         // Meta is not installed, direct to meta download page
         console.log("Err: Metamask not installed, proceed to download/install first!")
-        const forwarderOrigin = 'http://localhost:8080'
+        const forwarderOrigin = 'http://cluster.provider-0.prod.ams1.akash.pub:30848'
         const onboarding = new MetaMaskOnboarding({forwarderOrigin});
         onboarding.startOnboarding();
         commit('setConnected', false)
@@ -75,21 +75,21 @@ function validRequest(commit, status){
 }
 
 function loginRequest(account){
-    return fetch(`http://localhost:8000/api/account/login/`+account, { method: "GET" })
+    return fetch(`http://cluster.provider-0.prod.ams1.akash.pub:30848/api/account/login/`+account, { method: "GET" })
     .then((response) => {
         return response.json()
     });
 }
 
 function loginAuth(requestobject){
-    return fetch('http://localhost:8000/api/account/login/', requestobject)
+    return fetch('http://cluster.provider-0.prod.ams1.akash.pub:30848/api/account/login/', requestobject)
     .then((response) => {
         return response.json();
     });
 }
 
 function logoutAuth(requestobject){
-    return fetch('http://localhost:8000/api/account/logout/', requestobject)
+    return fetch('http://cluster.provider-0.prod.ams1.akash.pub:30848/api/account/logout/', requestobject)
     .then((response) => {
         return response.json();
     });
@@ -105,7 +105,7 @@ function refreshAuth(commit){
         body: JSON.stringify({"refresh": store.getters.session.refresh })
     };
     
-    return fetch('http://localhost:8000/api/account/token/refresh/', requestOptions)
+    return fetch('http://cluster.provider-0.prod.ams1.akash.pub:30848/api/account/token/refresh/', requestOptions)
         .then((response)=>{
             if(validRequest(commit, response.status))
                 return response.json()
@@ -115,16 +115,16 @@ function refreshAuth(commit){
 }
 
 function claimRequest(account){
-    let url = `http://localhost:8000/api/assets/claim_request/`+account;
+    let url = `http://cluster.provider-0.prod.ams1.akash.pub:30848/api/assets/claim_request/`+account;
     console.log("claim request: "+url)
-    return fetch(`http://localhost:8000/api/assets/claim_request/`+account, { method: "GET" })
+    return fetch(`http://cluster.provider-0.prod.ams1.akash.pub:30848/api/assets/claim_request/`+account, { method: "GET" })
     .then((response) => {
         return response.json()
     });
 }
 
 function claimAsset(requestobject, tid){
-    return fetch('http://localhost:8000/api/assets/claim_asset/'+tid, requestobject)
+    return fetch('http://cluster.provider-0.prod.ams1.akash.pub:30848/api/assets/claim_asset/'+tid, requestobject)
     .then((response) => {
         if(response.status != 200){
             throw new Error(response.status)
@@ -160,7 +160,7 @@ function user(commit){
     };
 
     try{
-        return fetch('http://localhost:8000/api/account/profile', requestOptions)
+        return fetch('http://cluster.provider-0.prod.ams1.akash.pub:30848/api/account/profile', requestOptions)
             .then((response) => {
                 if(validRequest(commit, response.status))
                     return response.json()
@@ -396,8 +396,8 @@ export function updateItems(state){
 
 // export function claimItem(token){
 //     console.log("Try claiming token: "+token.tid.toString())
-//     fetch('http://localhost:8000/api/assets/all_assets')
-//     // fetch('http://localhost:8000/api/assets/claim/'+token.tid)
+//     fetch('http://cluster.provider-0.prod.ams1.akash.pub:30848/api/assets/all_assets')
+//     // fetch('http://cluster.provider-0.prod.ams1.akash.pub:30848/api/assets/claim/'+token.tid)
 //     .then((res)=>res.json())
 //     .then((data)=>{
 //         console.log(data);
