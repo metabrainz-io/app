@@ -59,7 +59,7 @@
     <q-footer reveal class="my-footer bg-dark text-white">
       <q-toolbar>
         <q-toolbar-title>
-          <div>© 2021 cybermedix</div>
+          <div>© 2022 metabrainz</div>
         </q-toolbar-title>
       </q-toolbar>
     </q-footer>
