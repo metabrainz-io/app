@@ -1,67 +1,157 @@
 <template>
-  <q-layout 
-    view="hHh Lpr fFf" class="">
-    <q-header class="my-header bg-dark text-white" height-hint="98">
-      <q-toolbar class="text-white shadow-2 rounded-borders">
+  <div class="main-bg-png">
+    <q-layout view="hHh lpR lff">
+      <q-header class="my-header bg-transparent text-white">
 
-      <q-tabs shrink stretch>
-          <div
-            class="gt-xs text-h5 text-white" 
-            @click="$router.push('/')" 
-            style="cursor: pointer; font-size: 1.5rem"
-          >
-            metabrainz.io&nbsp;&nbsp;
+
+          <!-- MOBILE RES -->
+          <div class="lt-sm">
+            <q-toolbar>
+              <q-btn dens flat round icon="menu" @click="toggleLeftDrawer"/>
+              <q-space />
+              <div 
+                @click="$router.push('/')" 
+                style="cursor: pointer; font-size: 1.5rem"
+              >
+                <img src="./assets/CyberBrain_sync_transparent_lg.gif" style="width: 3.5rem;">
+              </div>
+            </q-toolbar>
+
+            <q-drawer
+              class="my-drawer"
+              transparent
+              show-if-above 
+              v-model="drawerOpen" 
+              side="left"
+            >
+              <q-scroll-area class="fit">
+                <q-list>
+
+                  <div class="q-py-xs"></div>
+                  <!-- Close btn -->
+                  <div 
+                    class="float-right"
+                    style="cursor: pointer; font-size: 1.5rem;"
+                    @click="toggleLeftDrawer"
+                  >
+                    {{btn_close_char}}&nbsp;&nbsp;
+                  </div>
+
+                  <!-- spacing after close btn -->
+                  <div class="q-py-md"></div>
+
+                  <!-- menu items -->
+                  <template v-for="(menuItem, index) in menuList" :key="index">
+                    <q-item clickable :active="menuItem.label === 'Outbox'" v-ripple>
+                      <q-item-section avatar>
+                        <q-icon :name="menuItem.icon" />
+                      </q-item-section>
+                      <q-item-section>
+                        {{ menuItem.label }}
+                      </q-item-section>
+                    </q-item>
+                    <q-separator :key="'sep' + index"  v-if="menuItem.separator" />
+                  </template>
+
+                </q-list>
+              </q-scroll-area>
+            </q-drawer>
+
           </div>
-          <div 
-            @click="$router.push('/')" 
-            style="cursor: pointer; font-size: 1.5rem"
-          >
           
-            <img src="./assets/CyberBrain_sync_transparent_lg.gif" style="width: 3.5rem;">
+          <!-- DEFAULT RES -->
+          <div class="gt-xs">
+            <q-toolbar>
+              <q-tabs shrink stretch>
+                <div
+                  class="gt-xs text-h5 text-white" 
+                  @click="$router.push('/')" 
+                  style="cursor: pointer; font-size: 1.5rem"
+                >
+                </div>
+                <div 
+                  @click="$router.push('/')" 
+                  style="cursor: pointer; font-size: 1.5rem"
+                >
+                  <img src="./assets/CyberBrain_sync_transparent_lg.gif" style="width: 3.5rem;">
+                </div>
+              </q-tabs>
+              <q-space />
+              <q-tabs>
+                <q-route-tab to="/metabrain" label="MetaBrain" />
+                <q-route-tab to="/metagear" label="MetaGear" />
+                <q-route-tab to="/about" label="About" />
+                <q-route-tab to="/contact" label="Contact" />
+                <q-route-tab to="/connect" label="Connect" />
+              </q-tabs>
+            </q-toolbar>
           </div>
-      </q-tabs>
-      <q-space />
+      </q-header>
 
-      <q-tabs align="right" >
-        <q-route-tab to="/about" label="About" />
-        <q-route-tab to="/contact" label="Contact" />
-      </q-tabs>
-    </q-toolbar>
-    </q-header>
+      <!-- header spacing -->
+      <div class="q-pa-lg"/>
 
-    
-    <q-page-container>
-      <router-view />
-    </q-page-container>
+      <q-page-container>
+        <router-view />
+      </q-page-container>
 
-    <q-footer reveal class="my-footer bg-dark text-white">
-      <q-toolbar>
-        <q-toolbar-title>
-          <div>© 2022 metabrainz</div>
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-footer>
-  </q-layout>
+      <q-footer reveal class="my-footer bg-transparent text-white">
+        <q-toolbar>
+          <q-toolbar-title>
+            <div>© 2022 metabrainz</div>
+          </q-toolbar-title>
+        </q-toolbar>
+      </q-footer>
+    </q-layout>
+  </div>
 </template>
 
 <script>
 
+import { ref } from 'vue'
+
+const menuList = [
+  {
+    label: 'MetaBrain',
+    separator: true
+  },
+  {
+    label: 'MetaGear',
+    separator: false
+  },
+  {
+    label: 'About',
+    separator: false
+  },
+  {
+    label: 'Contact',
+    separator: true
+  },
+  {
+    label: 'Connect',
+    separator: false
+  },
+]
+
 export default {
   name: 'LayoutDefault',
-
   components: {
   },
-
   setup () {
-
+    const drawerOpen = ref(false);
     return {
+      btn_close_char: "<",
+      menuList,
+      drawerOpen,
+        toggleLeftDrawer: ()=>{
+          drawerOpen.value = !drawerOpen.value;
+        }
     }
   }
 }
 </script>
 
 <style>
-
 .main-bg{
   background-color: #010011;
   -webkit-background-size: cover; 
@@ -75,7 +165,7 @@ export default {
 .main-bg-png{
   
   background-color: #010011;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/home.gif");
+  background-image: url("assets/main.png");
   -webkit-background-size: cover; 
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -100,6 +190,16 @@ export default {
     font-family: 'Orbitron';
 }
 
+.my-drawer{
+  background-color: #010011;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("assets/main.png");
+  -webkit-background-size: cover; 
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
 .my-title{
   font-family: 'Orbitron';
 }
