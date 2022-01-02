@@ -6,6 +6,7 @@
 
           <!-- MOBILE RES -->
           <div class="lt-sm">
+          
             <q-toolbar>
               <q-btn dens flat round icon="menu" @click="toggleLeftDrawer"/>
               <q-space />
@@ -20,8 +21,9 @@
             <q-drawer
               class="my-drawer"
               transparent
-              show-if-above 
               v-model="drawerOpen" 
+              behavior=“desktop”
+              :show-if-above="false"
               side="left"
             >
               <q-scroll-area class="fit">
@@ -42,13 +44,18 @@
 
                   <!-- menu items -->
                   <template v-for="(menuItem, index) in menuList" :key="index">
-                    <q-item clickable :active="menuItem.label === 'Outbox'" v-ripple>
+                    <q-item clickable :active="menuItem.label === '*'" v-ripple>
+                      <!-- avatars
                       <q-item-section avatar>
                         <q-icon :name="menuItem.icon" />
                       </q-item-section>
-                      <q-item-section>
+                      -->
+                      
+                      <!-- menu items -->
+                      <q-item-section @click="$router.push(menuItem.route)">
                         {{ menuItem.label }}
                       </q-item-section>
+
                     </q-item>
                     <q-separator :key="'sep' + index"  v-if="menuItem.separator" />
                   </template>
@@ -112,22 +119,32 @@ import { ref } from 'vue'
 
 const menuList = [
   {
-    label: 'MetaBrain',
+    route: '/',
+    label: 'Home',
     separator: true
   },
   {
+    route: '/metabrain',
+    label: 'MetaBrain',
+    separator: false
+  },
+  {
+    route: '/metagear',
     label: 'MetaGear',
     separator: false
   },
   {
+    route: '/about',
     label: 'About',
     separator: false
   },
   {
+    route: '/contact',
     label: 'Contact',
-    separator: true
+    separator: false
   },
   {
+    route: '/connect',
     label: 'Connect',
     separator: false
   },
