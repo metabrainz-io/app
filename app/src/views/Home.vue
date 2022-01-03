@@ -57,17 +57,17 @@
                         <div>
                             <img 
                                 src="../assets/MGCaps_256.gif"
-                                style="width:5rem;"
+                                style="width:3.75rem;"
                             />
                             &nbsp;&nbsp;
                             <img 
                                 src="../assets/MGVaxx_256.gif"
-                                style="width:5rem;"
+                                style="width:3.75rem;"
                             />
                             &nbsp;&nbsp;
                             <img 
                                 src="../assets/MGCaps_256.gif"
-                                style="width:5rem;"
+                                style="width:3.75rem;"
                             />
                             
                             <q-space></q-space>
