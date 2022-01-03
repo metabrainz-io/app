@@ -16,7 +16,7 @@
       <div class="q-py-md"/>
 
       <div class="my-title text-h5 text-white">
-        <q-item clickable tag="a" target="_blank" href="https://twitter.com/metabrainz_io">
+        <q-item clickable tag="a" target="_blank" href="https://github.com/metabrainz-io">
           <q-item-section>
             <q-item-label>
             Checkout our Github&nbsp;&nbsp;
