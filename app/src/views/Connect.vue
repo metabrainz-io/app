@@ -1,12 +1,15 @@
 <template>
-  <q-page class="main-bg-png q-py-xl">
-    <div class="q-pa-xl">
-      <div class="my-title text-h4 text-white">Connect to MetaBrainz</div>
+  <q-page class="q-pa-lg">
+
+    <div class="my-title text-h3 text-white">Connect to MetaBrainz</div>
       <div class="q-py-xl"/>
-      <div class="my-title text-subtitle text-white">
-        comming soon...
+      <div class="my-title text-h5 text-white">
+        We're almost there.. (don't blink)<br/>
       </div>
-    </div>
+      <div class="q-py-xs"/>
+      <div class="my-title text-subtitle2 text-white">
+        Follow us on twitter to stay updated!
+      </div>
     
   </q-page>
 </template>

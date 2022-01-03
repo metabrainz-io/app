@@ -1,29 +1,16 @@
 <template>
-  <q-page class="main-bg-png q-py-xl">
+  <q-page class="q-pa-lg">
 
-    <div class="q-pa-xl">
-        <div class="my-title text-h4 text-white">{{msg_title}}</div>
+    <div class="my-title text-h3 text-white">MetaGears</div>
         <div class="q-py-sm"/>
-        <div class="my-title text-subtitle text-white">{{msg_title_sub}}</div>
-        <div class="q-py-md"/>
-        <div class="my-title text-subtitle text-white">
-            A MetaGear is a digital fix (or bio-hackable-software) that can be integrated into your
-            <router-link to="/metabrain">MetaBrain</router-link>
-            to fix or enhance your MetaBrain'z performance.        
-        </div>
-        <img 
-            src="../assets/CyberBrain_games_trans2.gif"
-            style="width:25rem;"
-        />
-    </div>
-
-    <!-- CONTENT: AIRDROP -->
+        <div class="my-title text-subtitle1 text-white">Get all the Integratable Gears your MetaBrain will ever need ;)</div>
+        <div class="q-py-xl"/>
 
     <!-- CONTENT: ITEMS -->
     <div class="home flex flex-center">
       <div class="">
-        <div class="q-py-md row text-h4 text-white">
-            MetaGears
+        <div class="my-text q-py-md row text-h4 text-white">
+            All MetaGears
         </div>
         <div class="row justify-start">
             <ContentItems/>
@@ -44,9 +31,6 @@ export default {
     setup(){
 
         return{
-            msg_title: "MetaGear",
-            msg_title_sub: "Find all the Integratable Gears your MetaBrain will ever need ;)",
-            msg_description: ""
         }
     }
 }

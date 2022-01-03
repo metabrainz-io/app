@@ -1,9 +1,7 @@
 <template>
     <section>
-        <div class="text-h5 text-accent">MG-Vaxx, MG-Caps, MG-Tabs</div>
         <!-- ITEMS CARD -->
-        <div class="text-h5 text-accent">All MetaGears</div>
-        <div class="q-pa-md row items-start q-gutter-md">
+        <div class="q-pa-xl row items-start q-gutter-md">
             <ItemCard
                 v-for="token in items"
                 :key="token.tid"

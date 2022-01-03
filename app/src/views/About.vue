@@ -1,68 +1,130 @@
 <!-- <img src="../assets/Doser_transparent_128.gif"/> -->
 <template>
-  <q-page class="main-bg-png q-py-xl">
+  <q-page class="q-pa-lg">
 
-    <div class="q-pa-xl">
-      <div class="my-title text-h4 text-white">About MetaBrainz io</div>
+    <!-- About metabrainz io -->
+    <div id="meta-brainz-io"></div>
+    <div class="my-title text-h4 text-white">About</div>
+    <div class="q-py-md"/>
+    <q-card class="q-pa-none bg-transparent row text-white">
+      <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <q-img 
+          style="width:25rem"
+          :src="require('../assets/metabrainzio.jpg')"/>
+      </q-card-section>
 
-      <div class="q-pa-xl">
-
-        <div class="row items-start q-gutter-md">
-            <!-- DEFAULT RES 
-            -->
-            <div class="q-py-xl gt-xs col text-subtitle2 text-red">
-              <div v-for="line in content_left" :key="line.id">
-                {{line.cnt}}
-              </div>
-            </div>
-
-            <div class="q-py-xl gt-xs col text-subtitle2 text-blue">
-              <div v-for="line in content_right" :key="line.id">
-                {{line.cnt}}
-              </div>
-            </div>
-
-            <!-- MOBILE RES -->
-            <div class="q-py-xl lt-sm text-subtitle2 text-white">
-              <div v-for="line in content_left" :key="line.id">
-                {{line.cnt}}
-              </div>
-            </div>
-
-            <div class="q-py-xl lt-sm text-subtitle2 text-white">
-              <div v-for="line in content_right" :key="line.id">
-                {{line.cnt}}
-              </div>
-            </div>
-
+      <q-card-section class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
+        <div class="text-h6">TITLE ABC DEF GHI JKL MNO PQR STU VWX YZ </div>
+        <div class="q-mt-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo nec nisi sagittis rhoncus vitae eu magna. Aliquam viverra lobortis sem, vel vestibulum leo iaculis ut.
         </div>
-      </div>
-    </div>
+        <div class="q-mt-md">
+        <div class="text-h6">TITLE ABC DEF GHI JKL MNO PQR STU VWX YZ </div>
+        <div class="text-caption">
+          Nulla eget euismod ex, a venenatis sapien. Maecenas vel mi id risus varius volutpat et vel purus. Proin tincidunt purus bibendum nunc dapibus, ac feugiat tellus porta. Fusce metus metus, varius quis elit et, facilisis venenatis velit. Nullam eu ligula felis. Nullam pharetra nibh id metus accumsan imperdiet.
+        </div>
+        </div>
+      </q-card-section>
+    </q-card>
+
+    <div class="q-py-xl"/>
+
+    <!-- MetaBrain -->
+    <div id="meta-brains"></div>
+    <div class="my-title text-h4 text-white">MetaBrains</div>
+    <div class="q-py-md"/>
+    <q-card class="q-pa-none bg-transparent row text-white">
+      <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <q-img 
+          style="width:25rem"
+          :src="require('../assets/metabrains.jpg')"/>
+      </q-card-section> 
+
+      <q-card-section class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
+        <div class="text-h6">TITLE ABC DEF GHI JKL MNO PQR STU VWX YZ </div>
+        <div class="q-mt-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo nec nisi sagittis rhoncus vitae eu magna. Aliquam viverra lobortis sem, vel vestibulum leo iaculis ut.
+        </div>
+        <div class="q-mt-md">
+        <div class="text-h6">TITLE ABC DEF GHI JKL MNO PQR STU VWX YZ </div>
+        <div class="text-caption">
+          Nulla eget euismod ex, a venenatis sapien. Maecenas vel mi id risus varius volutpat et vel purus. Proin tincidunt purus bibendum nunc dapibus, ac feugiat tellus porta. Fusce metus metus, varius quis elit et, facilisis venenatis velit. Nullam eu ligula felis. Nullam pharetra nibh id metus accumsan imperdiet.
+        </div>
+        </div>
+      </q-card-section>
+    </q-card>
+    <div class="q-py-xl"/>
+
+    <!-- About MetaGear -->
+    <div id="meta-gears"></div>
+    <div class="my-title text-h4 text-white">MetaGears</div>
+    <div class="q-py-md"/>
+    <q-card class="q-pa-none bg-transparent row text-white">
+      <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <q-img 
+          style="width:25rem"
+          :src="require('../assets/metagears.gif')"/>
+      </q-card-section>
+
+      <q-card-section class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
+        <div class="text-h6">TITLE ABC DEF GHI JKL MNO PQR STU VWX YZ </div>
+        <div class="q-mt-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo nec nisi sagittis rhoncus vitae eu magna. Aliquam viverra lobortis sem, vel vestibulum leo iaculis ut.
+        </div>
+        <div class="q-mt-md">
+        <div class="text-h6">TITLE ABC DEF GHI JKL MNO PQR STU VWX YZ </div>
+        <div class="text-caption">
+          Nulla eget euismod ex, a venenatis sapien. Maecenas vel mi id risus varius volutpat et vel purus. Proin tincidunt purus bibendum nunc dapibus, ac feugiat tellus porta. Fusce metus metus, varius quis elit et, facilisis venenatis velit. Nullam eu ligula felis. Nullam pharetra nibh id metus accumsan imperdiet.
+        </div>
+        </div>
+      </q-card-section>
+    </q-card>
+
+    <div class="q-py-xl"/>
+
+    <!-- About metagames -->
+    <div id="meta-games"></div>
+    <div class="my-title text-h4 text-white">MetaGames</div>
+    <div class="q-py-md"/>
+    <q-card class="q-pa-none bg-transparent row text-white">
+      <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <q-img 
+          style="width:25rem"
+          :src="require('../assets/metagames.jpg')"/>
+      </q-card-section>
+
+      <q-card-section class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
+        <div class="text-h6">TITLE ABC DEF GHI JKL MNO PQR STU VWX YZ </div>
+        <div class="q-mt-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo nec nisi sagittis rhoncus vitae eu magna. Aliquam viverra lobortis sem, vel vestibulum leo iaculis ut.
+        </div>
+        <div class="q-mt-md">
+        <div class="text-h6">TITLE ABC DEF GHI JKL MNO PQR STU VWX YZ </div>
+        <div class="text-caption">
+          Nulla eget euismod ex, a venenatis sapien. Maecenas vel mi id risus varius volutpat et vel purus. Proin tincidunt purus bibendum nunc dapibus, ac feugiat tellus porta. Fusce metus metus, varius quis elit et, facilisis venenatis velit. Nullam eu ligula felis. Nullam pharetra nibh id metus accumsan imperdiet.
+        </div>
+        </div>
+      </q-card-section>
+    </q-card>
+    
+    <div class="q-py-xl"/>
+
   </q-page>
 </template>
 
 <script>
-
-
 export default{
   name:"About",
   setup(){
-
-    const content_left = [
-      { cnt: "It's 2030.."},
-      { cnt: "Currently 95% of us are connected to the Metaverse, mentally that is.."},
-      { cnt: "Physically most of us still reside on earth, though I've heard a new economy is being build on Mars as we speak"},
-      { cnt: "How did we get here?"},
-      { cnt: "Simply put, technology progressed a bit faster than time itself :)"}
-    ]
-    const content_right = [
-      { cnt: "Btw, I am Doser from CyberMedix!"},
-      { cnt: "We at CyberMedix believe that any problem can be solved with the right technology"}
-    ]
-
     return{
-      content_left,
-      content_right
+      goto(refName) {
+          var element = document.getElementById(refName);
+          var top = element.offsetTop;
+          window.scrollTo({
+            top: top,
+            behavior: 'smooth'
+          });
+      }
     }
   }
 

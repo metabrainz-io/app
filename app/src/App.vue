@@ -14,15 +14,13 @@
                 @click="$router.push('/')" 
                 style="cursor: pointer; font-size: 1.5rem"
               >
-                <img src="./assets/CyberBrain_sync_transparent_lg.gif" style="width: 3.5rem;">
+                <img src="./assets/CyberBrain_sync_transparent_96x96.gif" style="width: 3.5rem;">
               </div>
             </q-toolbar>
 
             <q-drawer
               class="my-drawer"
-              transparent
               v-model="drawerOpen" 
-              behavior=“desktop”
               :show-if-above="false"
               side="left"
             >
@@ -44,7 +42,7 @@
 
                   <!-- menu items -->
                   <template v-for="(menuItem, index) in menuList" :key="index">
-                    <q-item clickable :active="menuItem.label === '*'" v-ripple>
+                    <q-item clickable>
                       <!-- avatars
                       <q-item-section avatar>
                         <q-icon :name="menuItem.icon" />
@@ -76,17 +74,17 @@
                   style="cursor: pointer; font-size: 1.5rem"
                 >
                 </div>
-                <div 
+                <div
                   @click="$router.push('/')" 
                   style="cursor: pointer; font-size: 1.5rem"
                 >
-                  <img src="./assets/CyberBrain_sync_transparent_lg.gif" style="width: 3.5rem;">
+                  <img src="./assets/CyberBrain_sync_transparent_96x96.gif" style="width: 3.5rem;">
                 </div>
               </q-tabs>
               <q-space />
               <q-tabs>
-                <q-route-tab to="/metabrain" label="MetaBrain" />
-                <q-route-tab to="/metagear" label="MetaGear" />
+                <q-route-tab to="/metagear" label="MetaGears" />
+                <q-route-tab to="/metabrain" label="MetaBrains" />
                 <q-route-tab to="/about" label="About" />
                 <q-route-tab to="/contact" label="Contact" />
                 <q-route-tab to="/connect" label="Connect" />
@@ -96,16 +94,34 @@
       </q-header>
 
       <!-- header spacing -->
-      <div class="q-pa-lg"/>
-
+      <div class="q-py-xl"/>
       <q-page-container>
         <router-view />
       </q-page-container>
 
-      <q-footer reveal class="my-footer bg-transparent text-white">
+      <q-footer reveal class="my-footer bg-dark text-white text-subtitle2">
         <q-toolbar>
           <q-toolbar-title>
-            <div>© 2022 metabrainz</div>
+            <q-tabs>
+            <div>
+              © 2022 metabrainz.io
+            </div>
+            <q-space/>
+            <div>
+              <q-item clickable tag="a" target="_blank" href="https://twitter.com/metabrainz_io">
+              <q-item-section>
+              <q-icon name="fab fa-twitter" />
+              </q-item-section>
+              </q-item>
+            </div>
+            <div>
+              <q-item clickable tag="a" target="_blank" href="https://github.com/metabrainz-io">
+              <q-item-section>
+              <q-icon name="fab fa-github" />
+              </q-item-section>
+              </q-item>
+            </div>
+            </q-tabs>
           </q-toolbar-title>
         </q-toolbar>
       </q-footer>
@@ -194,7 +210,7 @@ export default {
 .main-bg-animated{
   
   background-color: #010011;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/carrion_fighting-sleep.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   -webkit-background-size: cover; 
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -218,6 +234,9 @@ export default {
   background-size: cover;
 }
 .my-title{
+  font-family: 'Orbitron';
+}
+.my-text{
   font-family: 'Orbitron';
 }
 .my-footer{
