@@ -12,11 +12,11 @@
                 <div class="my-title text-h2 text-white">
                     {{msg_intro_t}}
                 </div>
-                <div class="q-py-lg"/>
+                <div class="q-py-xl"/>
                 <div class="text-h4 text-cyan-12">
                     {{msg_intro_0}}
                 </div>
-                <div class="q-py-md"></div>
+                <div class="q-py-xl"></div>
                 <div class="text-subtitle1 text-white">
                     {{msg_intro_1}}
                     <div class="q-py-md"/>
@@ -224,8 +224,8 @@ name: 'Home',
         return{
             msg_intro_t:"Welcome to MetaBrainz.io",
             msg_intro_0:"Where Brainz are merged into the Metaverse",
-            msg_intro_1:"Here at MetaBrainz.io you can mint your own MetaBrain NFT for free to access MetaGames and compete for prices. MetaGames can be played when a MetaBrain has been activated.",
-            msg_intro_2:"To initiate the activation process of your MetaBrain, integrate one of the available MetaGears. MetaGears will enhance your MetaBrain's intelligence, speed, power and much more. These stats are reflected by real computing resources that will be available based on your unique MetaBrain stats."
+            msg_intro_1:"MetaBrainz is a collection of NFT's (MetaBrains) that provides access to off-chain computing resources that are utilized in MetaGames. The unique stats of each MetaBrain determines how and which algorithms are used to solve a game.",
+            msg_intro_2:"You can activate your own MetaBrain NFT to access MetaGames and compete for prices. MetaGames can be played when a MetaBrain has been activated. To activation your MetaBrain, integrate one of the available MetaGear NFT's. MetaGears are integratables that acts as a bootloader to provide your MetaBrain with initial stats as well as enhance your MetaBrain's intelligence, speed, power and much more. To learn more click on one of the subjects below.."
             
         }
     }
