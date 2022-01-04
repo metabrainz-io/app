@@ -225,7 +225,7 @@ name: 'Home',
             msg_intro_t:"Welcome to MetaBrainz.io",
             msg_intro_0:"Where Brainz are merged into the Metaverse",
             msg_intro_1:"MetaBrainz is a collection of NFT's (MetaBrains) that provides access to off-chain computing resources that are utilized in MetaGames. The unique stats of each MetaBrain determines how and which algorithms are used to solve a game.",
-            msg_intro_2:"You can activate your own MetaBrain NFT to access MetaGames and compete for prices. MetaGames can be played when a MetaBrain has been activated. To activation your MetaBrain, integrate one of the available MetaGear NFT's. MetaGears are integratables that acts as a bootloader to provide your MetaBrain with initial stats as well as enhance your MetaBrain's intelligence, speed, power and much more. To learn more click on one of the subjects below.."
+            msg_intro_2:"You can activate your own MetaBrain NFT to access MetaGames and compete for prices. MetaGames can be played when a MetaBrain has been activated. To activate your MetaBrain integrate one of the available MetaGear NFT's. MetaGears are integratables that acts as a bootloader to provide your MetaBrain with initial stats as well as enhance your MetaBrain's intelligence, speed, power and much more. To learn more click on one of the subjects below.."
             
         }
     }
