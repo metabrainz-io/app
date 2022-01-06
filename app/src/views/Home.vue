@@ -174,10 +174,11 @@
 
             <!-- 
             About MetaGames DEFAULT
+            Scroll Clamp
             -->
             <div 
                 class="gt-xs col flex justify-center"
-                @click="$router.push({ name: 'About', hash: '#meta-games' })"
+                @click="$router.push({ name: 'About', hash: '#scroll-clamp' })" 
             >
                 <div class="q-pa-md">
                     <q-card 
@@ -211,7 +212,119 @@
                 </div>
             </div>
         </div>
+        <div class="q-pa-xl"/>
+
     </q-page>
+    
+        <!-- CONTENT: ROADMAP  -->
+        
+        <!-- CONTENT: DEFAULT  -->
+        <div 
+            class="gt-xs row items-start my-text text-white"
+            style="background-color: #01031a"
+        >
+            <div 
+                class="col flex justify-center"
+            >
+                <div class="q-pa-md">
+                    <div class="q-pa-md" style="">
+                        <div 
+                            align="center"
+                            class="text-h4 text-weight-bold"
+                        >
+                            ROADMAP
+                        </div>
+                        <div class="q-py-md"/>
+
+                        <q-list>
+                        
+                            <q-item 
+                                v-for="item in roadmap" 
+                                :key="item"
+                            >
+                                <div class="q-py-sm"/>
+                                <q-item-section>
+                                    <q-item-label>
+                                        <q-avatar 
+                                            v-if="item.todo"
+                                            size="2.65rem" color="teal-10" text-color="white" icon="" 
+                                        />
+                                        <q-spinner-hourglass 
+                                            v-if="item.next"
+                                            color="teal-10" size="3em"
+                                        />
+                                        <q-spinner-gears 
+                                            v-if="item.progress"
+                                            color="teal-14" size="3em"
+                                        />
+                                        <q-avatar 
+                                            v-if="item.done"
+                                            size="2.65rem" color="teal-14" text-color="white" icon="check" 
+                                        />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;{{item.task}}
+                                    </q-item-label>
+                                </q-item-section>
+                                <q-item-section avatar>
+                                </q-item-section>
+                            </q-item>
+                        </q-list>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT: MOBILE  -->
+        <div 
+            class="lt-sm row items-start"
+            style="background-color: #01031a"
+        >
+            <div 
+                class="col flex justify-center"
+            >
+                    <div class="q-pa-md q-gutter-md">
+                        <div 
+                            align="center"
+                            class="my-text text-h5 text-weight-bolder text-white"
+                        >
+                            ROADMAP
+                        </div>
+
+                        <q-list padding class="my-text text-white" style="max-width: 350px">
+                            <q-item 
+                                v-for="item in roadmap" 
+                                :key="item"
+                            >
+                                <q-item-section avatar top>
+                                    <q-avatar 
+                                        v-if="item.todo"
+                                        size="1.5rem" color="teal-10" text-color="white" icon="" 
+                                    />
+                                    <q-spinner-hourglass 
+                                        v-if="item.next"
+                                        color="teal-10" 
+                                        size="1.85em"
+                                    />
+                                    <q-spinner-gears 
+                                        v-if="item.progress"
+                                        color="teal-14" 
+                                        size="1.85em"
+                                    />
+                                    <q-avatar 
+                                        v-if="item.done"
+                                        size="1.5rem" color="teal-14" text-color="white" icon="check" 
+                                    />
+                                </q-item-section>
+                                <q-item-section top>
+                                    <q-item-label lines="1">
+                                        <span class="text-weight-medium">{{item.task}}</span>
+                                    </q-item-label>
+                                </q-item-section>
+                            </q-item>
+                        </q-list>
+                    </div>
+            </div>
+        </div>
+        <div class="q-py-xl"/>
+        
 </template>
 
 <script>
@@ -221,7 +334,19 @@ name: 'Home',
     // Content,
     },
     setup(){
+
+        let roadmap = [
+            {"task": "Site Launch (ALPHA)", "todo":false, "progress":false, "done":true,"next": false},
+            {"task": "Site Launch (BETA) + Anouncements", "todo":false, "progress":true, "done":false, "next": false},
+            {"task": "MetaBrains (BETA)", "todo":false, "progress":false, "done":false, "next": true},
+            {"task": "Big Marketing Campaign (Q1)", "todo":true, "progress":false, "done":false, "next": false},
+            {"task": "MetaGames Expansion (Q1-Q2)", "todo":true, "progress":false, "done":false, "next": false},
+            {"task": "MetaGames for Developers (Q2)", "todo":true, "progress":false, "done":false, "next": false},
+            {"task": "MetaGames Stadium (Q2-Q4)", "todo":true, "progress":false, "done":false, "next": false}
+        ]
+
         return{
+            roadmap,
             msg_intro_t:"Welcome to MetaBrainz.io",
             msg_intro_0:"Where Brainz are merged into the Metaverse",
             msg_intro_1:"MetaBrainz is a collection of NFT's (MetaBrains) that provides access to off-chain computing resources that are utilized in MetaGames. The unique stats of each MetaBrain determines how and which algorithms are used to solve a game.",

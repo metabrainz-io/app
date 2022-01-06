@@ -8,3 +8,4 @@ apt-get install -y nodejs && \
 npm install -g n && n 14.17.6 && PATH="$PATH" && n node/14.17.6
 npm install -g npm@8.1.1 && npm install -g @vue/cli && \
 npm install --global yarn
+npm install -g serve

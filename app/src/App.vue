@@ -3,6 +3,7 @@
     <q-layout view="hHh lpR lff">
       <q-header class="my-header bg-transparent text-white">
 
+          <div id="status-label" class="text-body2 text-weight-light">Alpha</div>
 
           <!-- MOBILE RES -->
           <div class="lt-sm">
@@ -99,12 +100,14 @@
         <router-view />
       </q-page-container>
 
-      <q-footer reveal class="my-footer bg-dark text-white text-subtitle2">
+      <q-footer reveal id="my-footer">
         <q-toolbar>
           <q-toolbar-title>
             <q-tabs>
-            <div>
-              © 2022 metabrainz.io
+            <div 
+              class="text-white text-body2">
+              © 2022 &nbsp;&nbsp;Metabrainz.io, 
+              &nbsp;&nbsp;All rights reserved
             </div>
             <q-space/>
             <div>
@@ -223,6 +226,15 @@ export default {
     font-family: 'Orbitron';
 }
 
+#status-label{
+  position: fixed;
+  margin-top: 75px;
+  right: 0;
+  padding: 10px;
+  background-color: #0a5b50;
+  border-radius: 5px 0px 0px 5px;
+}
+
 .my-drawer{
   background-color: #010011;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("assets/main.png");
@@ -239,7 +251,8 @@ export default {
 .my-text{
   font-family: 'Orbitron';
 }
-.my-footer{
+#my-footer{
   font-family: 'Orbitron';
+  background-color: #01031a;
 }
 </style>

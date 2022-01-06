@@ -37,7 +37,7 @@
       <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <q-img 
           style="width:25rem"
-          :src="require('../assets/metabrains.jpg')"/>
+          :src="require('../assets/brainspixelated.gif')"/>
       </q-card-section> 
 
       <q-card-section class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
@@ -106,8 +106,8 @@
         </div>
       </q-card-section>
     </q-card>
-    
     <div class="q-py-xl"/>
+    <div id="scroll-clamp" style="height:300px"></div>
 
   </q-page>
 </template>
