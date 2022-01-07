@@ -186,7 +186,7 @@
                 <div class="col q-pa-xl" align="left">
                     <div>
                         <img 
-                            src="../assets/aveanimated.gif"
+                            src="../assets/ave.gif"
                             style="width:10rem;"
                         />
                     </div>
@@ -210,7 +210,7 @@
                 <div class="col q-pa-xl" align="left">
                     <div>
                         <img 
-                            src="../assets/aveanimated.gif"
+                            src="../assets/ave.gif"
                             style="width:8rem;"
                         />
                     </div>
