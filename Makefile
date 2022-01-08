@@ -10,6 +10,9 @@ down:
 	docker container kill mb_app && docker container rm mb_app
 dev:
 	docker run -it --rm --mount type=bind,source=$(DIR)/app,target=/app -p 8080:8080 --name mb_app metabrainz/mb_app_dev bash
+prod:
+	docker run -it --rm --mount type=bind,source=$(DIR)/app,target=/app -p 3000:3000 --name mb_app metabrainz/mb_app_dev bash
+
 kill:
 	docker container kill mb_app
 remove:
