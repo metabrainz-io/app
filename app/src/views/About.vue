@@ -11,7 +11,7 @@
     
       <q-card-section class="gt-sm flex justify-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <q-img 
-          :src="require('@/assets/style/wires_left.png')"
+          :src="require('@/assets/style/wires_left_animated.gif')"
           height="20em" width="20em" style="width: 200px;"  
         />
       </q-card-section>
@@ -93,7 +93,7 @@
 
       <q-card-section class="gt-sm flex justify-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <q-img 
-          :src="require('@/assets/style/wires_right.png')"
+          :src="require('@/assets/style/wires_right_animated.gif')"
           height="20em" width="20em" style="width: 200px;"  
         />
       </q-card-section>
