@@ -554,7 +554,7 @@ export default {
 .main-bg-png{
   
   background-color: #010011;
-  background-image: url("assets/bg/0.png");
+  background-image: url("assets/bg/1.png");
   -webkit-background-size: cover; 
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -635,7 +635,7 @@ export default {
 
 .my-drawer{
   background-color: #010011;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("assets/bg/0.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("assets/bg/1.png");
   -webkit-background-size: cover; 
   -o-background-size: cover;
   -moz-background-size: cover;
