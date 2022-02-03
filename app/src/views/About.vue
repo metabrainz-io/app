@@ -6,47 +6,106 @@
     <!-- About metabrainz io -->
     <div id="meta-brainz-io"></div>
     <div class="my-title text-h4 text-white">MetaBrainz IO</div>
-    <div class="q-py-md"/>
-    <q-card class="q-pa-none bg-transparent row text-white">
-      <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="q-py-lg"/>
+    <q-card flat class="q-pa-none bg-transparent row text-white">
+    
+      <q-card-section class="gt-sm flex justify-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <q-img 
-          style="width:25rem"
-          :src="require('@/assets/images/metabrainzio.jpg')"/>
+          :src="require('@/assets/style/wires_left.png')"
+          height="20em" width="20em" style="width: 200px;"  
+        />
       </q-card-section>
 
-      <q-card-section class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
-        <div class="text-h6">Where am I?</div>
-        <div class="q-mt-sm">
-          Hello, are you allright? It looks like you forgot what happend, let me help you refresh your memory. First of all, I am Ave.. I'm a first generation Artificial Intelligent Agent.<br/><br/>
-          As a outcast, you've been tempted to join Cyberspace under false pretenses and now your neurologically synced to the mainframe. There seems no way back, at least, not that I know of. I am here because MetaBrainz IO labeled me as 'outdated' and now I'm stuck here, just like you..<br/><br/>
-          All I know is that the only way forward is to participate in MetaStadia. In MetaStadia you're forced to beat your competitors and proof yourself worthy. If you challenge the system or refuse to coorporate you will follow the consequences. Either your brains memories will be erased or you will be in depth and have to pay for each second spend in Cyberspace, which is almost impossible. If you don't play the game you'll might lose everything. My advice is to play along and maybe in the distant future there will be a way to unplug from Cyberspace.<br/><br/>
-          For the time being, maybe we can help eachother out? Eventually we might find a way out of this 'Cybermaze'..
-        </div>
-        <div class="q-mt-md">
-        <div class="text-h6">What now?</div>
-        <div class="text-caption">
-          <p>Ave: From this point on, there are 3 possible steps to take:</p>
-          <p class="text-white"><strong>
-            Step 1: Get your Bluepill MetaGear (Bootloader), or another bootloader to activate your MetaBrain.
-          </strong></p>
-          <p class="text-grey-7">
-            Step 2: Play games in MetaStadia, win prizes, earn credits and proofself your worthy. &nbsp;&nbsp;&nbsp;<strong>(Comming soon)</strong><br/>
-            Step 3: Report anyone you know, who isn't integrated to MetaBrainz IO yet, to earn extra credits. &nbsp;&nbsp;&nbsp;<strong>(Comming soon)</strong>
-          </p>
-          <p class="text-red"><strong>
-            Note:&nbsp;&nbsp;Steps 2 and 3 are currently in progress and comming soon. Checkout the roadmap to follow our progress. Because MetaStadia has yet to be launched and tested, we're limiting the amount of allowed participants in games when the launch happens. Therefore the first batch of Bootloaders will be limited to N amount. Bootloaders will activate your MetaBrain and allow you to play games.<br/>
-          </strong></p>
-        </div>
-        </div>
+      <q-card-section class="q-px-lg col-lg-4 col-md-4 col-sm-12 col-xs-12 text-justify">
+          <!--
+          v-model="slide"
+          animated
+          infinite
+          arrows
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          -->
+        <q-btn
+            push flat dense text-color="white" icon="keyboard_arrow_right"
+              class="absolute"
+              size="2em"
+              style="bottom: 100px; right: -15px;"
+              @click="carousel_next()"
+          />
+        <q-carousel
+          navigation
+          navigation-icon="check_box_outline_blank"
+          navigation-color="cyan"
+          :autoplay="autoplay"
+          animated
+          v-model="slide"
+          infinite
+          swipeable
+          @mouseenter="autoplay = false"
+          @mouseleave="autoplay = true"
+          class="bg-transparent"
+        >
+
+          <q-carousel-slide :name="1" class="bg-transparent">
+            <div class="text-h6">Where am I?</div>
+            <div class="q-mt-sm">
+              Hello, are you allright? It looks like you forgot what happend, let me help you refresh your memory. First of all, I am Ave.. I'm a first generation Artificial Intelligent Agent.<br/><br/>
+              As a outcast, you've been tempted to join Cyberspace under false pretenses and now your neurologically synced to the mainframe. There seems no way back, at least, not that I know of.
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="2" class="bg-transparent">
+            <div class="q-mt-sm">
+              I am here because MetaBrainz IO labeled me as 'outdated' and now I'm stuck here, just like you..<br/><br/>
+              All I know is that the only way forward is to participate in MetaStadia. In MetaStadia you're forced to beat your competitors and proof yourself worthy. 
+            </div>
+          </q-carousel-slide>
+
+          <q-carousel-slide :name="3" class="bg-transparent">
+            <div class="text-h6"></div>
+            <div class="q-mt-sm">
+              If you challenge the system or refuse to coorporate you will follow the consequences. <br/><br/>
+              Either your real memories will be erased or you will have to pay for each second spend in Cyberspace. If you don't play the game you'll might lose everything. My advice is to play along and maybe in the distant future there will be a way to unplug from Cyberspace.<br/><br/>
+              For the time being, maybe we can help eachother out? Eventually we might find a way out of this 'Cybermaze'..
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="4" class="bg-transparent">
+            <div class="text-h6">What's next?</div>
+            <div class="text-caption">
+              <p>From this point on, there are 3 possible steps to take:</p>
+              <p class="text-white"><strong>
+                Step 1: Get your Bluepill MetaGear (Bootloader), or another bootloader to activate your MetaBrain.
+              </strong></p>
+              <p class="text-grey-7">
+                Step 2: Play games in MetaStadia, win prizes, earn credits and proofself your worthy. <strong>(Comming soon)</strong><br/><br/>
+                Step 3: Report anyone you know, who isn't integrated to MetaBrainz IO yet, to earn extra credits. <strong>(Comming soon)</strong>
+              </p>
+            </div>
+          </q-carousel-slide>
+          <q-carousel-slide :name="5" class="bg-transparent">
+            <div class="text-caption">
+              <p class="text-red"><strong>
+                Note:&nbsp;&nbsp;Steps 2 and 3 are currently in progress and comming soon. Checkout the roadmap to follow our progress. Because MetaStadia has yet to be launched and tested, we're limiting the amount of allowed participants in games when the launch happens. Therefore the first batch of Bootloaders will be limited to N amount. Bootloaders will activate your MetaBrain and allow you to play games.<br/>
+              </strong></p>
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
+      </q-card-section>
+
+      <q-card-section class="gt-sm flex justify-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <q-img 
+          :src="require('@/assets/style/wires_right.png')"
+          height="20em" width="20em" style="width: 200px;"  
+        />
       </q-card-section>
     </q-card>
+
 
     <div class="q-py-xl"/>
 
     <!-- MetaBrain -->
     <div id="meta-brains"></div>
     <div class="my-title text-h4 text-white">MetaBrains</div>
-    <div class="q-py-md"/>
+    <div class="q-py-lg"/>
     <q-card class="q-pa-none bg-transparent row text-white">
       <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <q-img 
@@ -172,7 +231,7 @@
         <div class="q-mt-md">
         <div class="text-h6">How does it work?</div>
         <div class="text-caption">
-          Ave: You can activate your own MetaBrain NFT to access MetaStadia and compete for prices. MetaStadia can be played when a MetaBrain has been activated. To activate your MetaBrain integrate one of the available MetaGear NFT's.<br/>
+          You can activate your own MetaBrain NFT to access MetaStadia and compete for prices. MetaStadia can be played when a MetaBrain has been activated. To activate your MetaBrain integrate one of the available MetaGear NFT's.<br/>
           MetaGears are integratables that acts as a bootloader to provide your MetaBrain with initial stats as well as enhance your MetaBrain's intelligence, speed, power and much more. Read more about 
 
           <a 
@@ -191,7 +250,7 @@
     <!-- About MetaGear -->
     <div id="meta-gears"></div>
     <div class="my-title text-h4 text-white">MetaGears</div>
-    <div class="q-py-md"/>
+    <div class="q-py-lg"/>
     <q-card class="q-pa-none bg-transparent row text-white">
       <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <q-img 
@@ -202,14 +261,14 @@
       <q-card-section class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
         <div class="text-h6">What are MetaGears? </div>
         <div class="q-mt-sm">
-          Ave: We have developed a collection of integratable items called 'MetaGears'. A MetaGear is a unique piece of software that can be integrated into your MetaBrain to help you with literally anything. From fixing errors (bugs) to enhancing your performance. The reason we started developing MetaBrains and Gears is because up untill now we soly relied on our own in-efficient biological systems.
+          We have developed a collection of integratable items called 'MetaGears'. A MetaGear is a unique piece of software that can be integrated into your MetaBrain to help you with literally anything. From fixing errors (bugs) to enhancing your performance. The reason we started developing MetaBrains and Gears is because up untill now we soly relied on our own in-efficient biological systems.
           By creating MetaBrains and equip them with MetaGears one can go beyond their innative capabilties and unleash their full potential in Cyberspace.
           MetaGears come in different flavours, checkout the available <a class="text-weight-bold" style="color: cyan; cursor:pointer;" @click="$router.push('/metagear')">MetaGears</a> to view all Bootloaders and their corresponding stats.<br/><br/>        
         </div>
         <div class="q-mt-md">
         <div class="text-h6">How does it work?</div>
         <div class="text-caption">
-          Ave: How does it work you ask?<br/> It's a complicated process, but I'll try to keep it simple..<br/>
+          How does it work you ask?<br/> It's a complicated process, but I'll try to keep it simple..<br/>
           At first, integratables only effect your MetaBrain. Once you have grown accustumed to your MetaBrain you can choose to solidify it, meaning you can allow your digital MetaBrain to interfere with the core processes of your physical brain. This process overwrites your real brains neural connections which forces it to rewire itself. 
           From that point on, every update or upgrade to your MetaBrain can easily be translated to your real brain. Pretty cool don't you think?
         </div>
@@ -222,7 +281,7 @@
     <!-- About MetaStadia -->
     <div id="meta-games"></div>
     <div class="my-title text-h4 text-white">MetaStadia</div>
-    <div class="q-py-md"/>
+    <div class="q-py-lg"/>
     <q-card class="q-pa-none bg-transparent row text-white">
       <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <q-img 
@@ -574,26 +633,26 @@ const stats = [
   {
     "id":0, "name":"Character", "descr":"MetaBrains profile information","stat": 
     ["Token ID", "Username", "Crypto address", "Avatar image", "Level", "Credits"], 
-    "img_src_png":"avtr_stats.png","img_src_gif":"avtr_stats.gif" 
+    "img_src_png":"stats/avtr_stats.png","img_src_gif":"stats/avtr_stats.gif" 
   },
   {
     "id":1, "name":"Base", "descr":"During games a MetaBrains Base stats are translated to real hardware resources","stat": 
     ["Speed Base", "Speed Turbo", "Memory", "Energy"], 
-    "img_src_png":"base_stats.png","img_src_gif":"base_stats.gif" 
+    "img_src_png":"stats/base_stats.png","img_src_gif":"stats/base_stats.gif" 
   },
   {
     "id":2, "name":"Ability", "descr":"A MetaBrains Ability stats are linked to algorithms that runs on allocated hardware resources","stat": 
     ["Intelligence", "Stability", "Recovery"], 
-    "img_src_png":"ably_stats.png","img_src_gif":"ably_stats.gif" 
+    "img_src_png":"stats/ably_stats.png","img_src_gif":"stats/ably_stats.gif" 
   },
   {
     "id":3, "name":"Meta", "descr":"A MetaBrains Meta stats are linked to ingame specific skills, for example:","stat": 
     ["Move speed", "Burst Fire", "Strength", "Aim Precision"], 
-    "img_src_png":"meta_stats.png","img_src_gif":"meta_stats.gif" 
+    "img_src_png":"stats/meta_stats.png","img_src_gif":"stats/meta_stats.gif" 
   },      
 ]
 
-import { reactive, toRefs } from 'vue'
+import { reactive, toRefs, ref } from 'vue'
 export default{
   name:"About",
   setup(){
@@ -610,10 +669,12 @@ export default{
         "img_src_png":"",
         "img_src_gif":"",
         "event_hover":false
-      }
+      },
+      slide: 1,
     });
 
     return{
+      autoplay: ref(true),
       ... toRefs(state),
       roadmap,
       goto(refName) {
@@ -640,6 +701,12 @@ export default{
             return;
           }
         })
+      },
+      carousel_next: ()=>{
+        state.slide += 1;
+        if(state.slide > 5){
+          state.slide=1;
+        }
       }
     }
   }
