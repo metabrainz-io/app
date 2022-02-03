@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/Home.vue')
   },
   {
     path: '/metagear',
@@ -32,20 +34,12 @@ const routes = [
     component: () => import('../views/About.vue')
   },
   {
-    path: '/contact',
-    name: 'Contact',
+    path: '/test',
+    name: 'Test',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
-  },
-  {
-    path: '/connect',
-    name: 'Connect',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Connect.vue')
+    component: () => import('../views/Test.vue')
   }
 ]
 
@@ -64,14 +58,14 @@ const router = createRouter({
 
 export default router
 
-router.beforeEach((to, from)=>{
+// router.beforeEach((to, from)=>{
 
-  if(from.name != undefined && from.name != to.name){
-    var referrer = "?referrer=%2F"+from.name
-    var route = "/"+to.name+referrer
-    console.log(route)
-  }
-})
+//   if(from.name != undefined && from.name != to.name){
+//     var referrer = "?referrer=%2F"+from.name
+//     var route = "/"+to.name+referrer
+//     console.log(route)
+//   }
+// })
 // localhost:8080/connect?referrer=%2Fasset%2Fhome
 
 

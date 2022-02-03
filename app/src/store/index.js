@@ -6,45 +6,47 @@ import * as actions from './actions'
 import * as mutations from './mutations'
 
 
-// The user
-const UserState = {
-    account: null,
-    profile: null,
-}
-
-// User sign in data
-const loginState = {
-    isAuthenticated: false,
-    metaInstalled: false,
-    metaConnected: false,
-    metaAccount: "",
-    signature: null,
-    previousRoute: {
-      "route": "",
-      "page": "",
-    },
-    session: {
-      "access": "",
-      "refresh": "",
-    }
-}
-
-// Metamask plugin related
+/*
+ * Metamask
+ */
 const browserState = {
     metaInstalled: false,
     metaConnected: false,
-    metaAccount: "",
 }
-  
-// Default state
+
+/*
+* Connection data
+*/
+const connectionState = {
+    isAuthenticated: false,
+    lastAccount: "",
+    currAccount: "",
+    signature_connect: null,
+    signature_claim: null,
+    claim_proof: [],
+    previousRoute: {
+        "route": "",
+        "page": "",
+    },
+    session: {
+        "access": "",
+        "refresh": "",
+    },
+    userdata:[]
+}
+
+/*
+ * App state
+ */
 const state = {
-    user: UserState,
-    login: loginState,
     browser: browserState,
+    connections: connectionState,
     auth: false
 }
 
-// Store settings
+/*
+ * Create store
+ */
 const store = createStore({
     state,
     getters,
@@ -53,7 +55,9 @@ const store = createStore({
     plugins: [createPersistedState()],
 })
 
-// Store settings
+/*
+ * Store settings
+ */
 if(module.hot){
     module.hot.accept([
         './getters',

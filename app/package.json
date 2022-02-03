@@ -11,9 +11,13 @@
     "@metamask/onboarding": "^1.0.1",
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
+    "dat.gui": "^0.7.7",
+    "oimo": "^1.0.9",
     "quasar": "^2.0.0",
+    "three": "^0.136.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
+    "vue-threejs": "^0.2.0-alpha.1",
     "vuex": "^4.0.0-0",
     "vuex-persistedstate": "^4.1.0",
     "web3": "^1.6.1"

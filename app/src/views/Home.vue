@@ -73,7 +73,7 @@
                     <div class="col">
                         <q-btn 
                             class="q-pa-md text-dark"
-                            label="Get Your MetaGears"
+                            label="PXL: Get Your MetaGears"
                             to='/metagear'
                             style="width:100%; max-width:275px;background-image: linear-gradient(to right, #89f7fe 0%, #66a6ff 100%) !important;">
                         </q-btn>
@@ -82,7 +82,7 @@
                     <div class="col">
                     <q-btn
                         class="q-pa-md text-dark"
-                        label="Activate Your MetaBrain"
+                        label="PXL: Activate Your MetaBrain"
                         to='/metabrain'
                         style="width:100%; max-width:275px;background-image: linear-gradient(to right, #89f7fe 0%, #66a6ff 100%) !important;">
                     </q-btn>
@@ -144,7 +144,7 @@
                 <div class="col">
                 <q-btn
                     class="q-pa-md text-dark"
-                    label="Activate you MetaBrain"
+                    label="Activate Your MetaBrain"
                     to='/metabrain'
                     style="background-image: linear-gradient(to right, #89f7fe 0%, #66a6ff 100%) !important;">
                 </q-btn>
@@ -159,7 +159,10 @@
             >
                 <!-- AVE -->
                 <div class="col q-pa-xl" align="right">
-                    <div>
+                    <div
+                        style="cursor:pointer;"
+                        @click="$router.push({ name: 'About', hash: '#meta-brainz-io' })"
+                    >
                         <img 
                             src="../assets/ave.gif"
                             style="width:15rem;"
@@ -168,7 +171,8 @@
                 </div>
                 <!-- AVE SPEAKS -->
                 <div class="col q-py-xl" align="left"
-                    style="width:100%; max-width:275px;"
+                    style="width:100%; max-width:275px;cursor:pointer;"
+                    @click="$router.push({ name: 'About', hash: '#meta-brainz-io' })"
                 >
                     <div v-for="msg in ave_msg" :key="msg" class="my-text text-subtitle1 text-cyan-13">
                         {{msg}}
@@ -177,14 +181,17 @@
             </div>
 
             <!-- CONTENT RIGHT - MOBILE MD
+                style="border: 1px solid yellow;"
             -->
             <div 
-                style="border: 1px solid yellow;"
                 class="gt-xs lt-lg col flex"
             >
                 <!-- AVE -->
                 <div class="col q-pa-xl" align="left">
-                    <div>
+                    <div
+                        style="cursor:pointer;"
+                        @click="$router.push({ name: 'About', hash: '#meta-brainz-io' })"
+                    >
                         <img 
                             src="../assets/ave.gif"
                             style="width:10rem;"
@@ -193,7 +200,8 @@
                 </div>
                 <!-- AVE SPEAKS -->
                 <div class="col q-py-xl" align="left"
-                    style="width:100%; max-width:175px;"
+                    style="width:100%; max-width:175px;cursor:pointer;"
+                    @click="$router.push({ name: 'About', hash: '#meta-brainz-io' })"
                 >
                     <div v-for="msg in ave_msg" :key="msg" class="my-text text-body2 text-cyan-13">
                         {{msg}}
@@ -208,7 +216,10 @@
             >
                 <!-- AVE -->
                 <div class="col q-pa-xl" align="left">
-                    <div>
+                    <div
+                        style="cursor:pointer;"
+                        @click="$router.push({ name: 'About', hash: '#meta-brainz-io' })"
+                    >
                         <img 
                             src="../assets/ave.gif"
                             style="width:8rem;"
@@ -216,8 +227,10 @@
                     </div>
                 </div>
                 <!-- AVE SPEAKS -->
-                <div class="col q-py-xl" align="left"
-                    style="width:100%; max-width:175px;"
+                <div 
+                    class="col q-py-xl" align="left"
+                    style="width:100%; max-width:175px; cursor:pointer;"
+                    @click="$router.push({ name: 'About', hash: '#meta-brainz-io' })"
                 >
                     <div v-for="msg in ave_msg" :key="msg" class="my-text text-body2 text-cyan-13">
                         {{msg}}
@@ -240,8 +253,8 @@
                 @click="$router.push({ name: 'About', hash: '#meta-brains' })"
             >
                 <div class="q-pa-md">
-                    <q-card 
-                        class="transparent"
+                    <q-card
+                        class="transparent no-border-radius"
                     >
                         <q-card-section class="learn-more-card q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="q-py-lg"></div>
@@ -260,7 +273,7 @@
             >
                 <div class="q-pa-md">
                     <q-card 
-                        class="transparent"
+                        class="transparent no-border-radius"
                     >
                         <q-card-section class="learn-more-card q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="q-py-lg"></div>
@@ -280,7 +293,7 @@
             >
                 <div class="q-pa-md">
                     <q-card 
-                        class="transparent"
+                        class="transparent no-border-radius"
                     >
                         <q-card-section class="learn-more-card q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="q-py-lg"></div>
@@ -299,7 +312,7 @@
             >
                 <div class="q-pa-md">
                     <q-card 
-                        class="transparent"
+                        class="transparent no-border-radius"
                     >
                         <q-card-section class="learn-more-card q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="q-py-lg"></div>
@@ -311,27 +324,27 @@
             </div>
 
             <!-- 
-            About MetaGames DEFAULT
+            About MetaStadia DEFAULT
             Scroll Clamp
             -->
             <div 
                 class="gt-xs col flex justify-center"
-                @click="$router.push({ name: 'About', hash: '#scroll-clamp' })" 
+                @click="$router.push({ name: 'About', hash: '#meta-games' })" 
             >
                 <div class="q-pa-md">
                     <q-card 
-                        class="transparent"
+                        class="transparent no-border-radius"
                     >
                         <q-card-section class="learn-more-card q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="q-py-lg"></div>
-                            <div class="my-title text-h4">Learn about MetaGames!</div>
+                            <div class="my-title text-h4">Learn about MetaStadia!</div>
                             <div class="q-py-lg"></div>
                         </q-card-section>
                     </q-card>
                 </div>
             </div>
             <!-- 
-            About MetaGames MOBILE
+            About MetaStadia MOBILE
             -->
             <div 
                 class="lt-sm flex justify-center"
@@ -339,11 +352,11 @@
             >
                 <div class="q-pa-md">
                     <q-card 
-                        class="transparent"
+                        class="transparent no-border-radius"
                     >
                         <q-card-section class="learn-more-card q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="q-py-lg"></div>
-                            <div class="my-title text-h4">Learn about MetaGames!</div>
+                            <div class="my-title text-h4">Learn about MetaStadia!</div>
                             <div class="q-py-lg"></div>
                         </q-card-section>
                     </q-card>
@@ -360,56 +373,47 @@ const intro = [
 	{
 		"section": 
 		[
-			"Hi there, I'm Ave..",
-			"I'm glad you found us!",
+			"Hi there, I'm Ave..","",
+			"I will guide you in your journey through Cyberspace!","",""
 		]
 	},
     {
 		"section": 
 		[
-			"Good question. Today's date is exactly 1 januari 2031!",
+			"What year are we in?",
+            "Good question.. currently its the year 2031!"
 		]
 	},
     {
 		"section": 
 		[
-			"95% of us are currently merged with Cyberspace, also reffered to as the Metaverse..",
-            ""
+			"95% of the population are neurollogically synced with a hardware interface,",""
 		]
 	},
     {
 		"section": 
 		[
-			"Physically most of us reside on earth, though I've heard a new economy on Mars is being build as we speak",
-            ""
+            "this interface connects us to the main system in Cyberspace,",
+            "also reffered to as the Metaverse..","",""
+		]
+	},
+    {
+		"section": 
+		[
+			"Physically most of us reside on earth,","", "though I've heard a new economy on Mars is being build as we speak",""
 		]
 	},
 	{
 		"section": 
 		[
-			"How did we get here you ask?",
-			"Simply put, technology progressed a bit faster than time itself..",
-            ""
+			"How did we end up here you ask?","",
+			"Simply put, technology progressed a bit faster than time itself..","",""
 		]
 	},
 	{
 		"section": 
 		[
-			"It looks like your mind isn't connected to a MetaBrain interface yet..",
-		]
-	},
-	{
-		"section": 
-		[
-			"Please read the about sections to learn more about how to activate to your personal MetaBrain.",
-            ""
-		]
-	},
-    {
-		"section": 
-		[
-			"Don't wait.. you don't want to be left behind now do you?",
-            "..."
+			"Please read the about sections to learn more about MetaBrainz IO.", "Click here to proceed..","","","",""
 		]
 	}
 ]
@@ -469,9 +473,9 @@ name: 'Home',
 
         return{
             ... toRefs(content),
-            msg_intro_t:"MetaBrainz",
-            msg_intro_0:"Where Brain Meets Meta",
-            msg_intro_1:"MetaBrainz presents a collection of NFT's (MetaBrains) that provides access to off-chain computing resources that are utilized in MetaGames. The unique stats of each MetaBrain determines how and which algorithms are used to solve a game.",
+            msg_intro_t:"MetaBrainz IO",
+            msg_intro_0:"Brain Meets Meta",
+            msg_intro_1:"We present a collection of NFT's (MetaBrains) that provides access to off-chain computing resources that will be utilized in MetaStadia Games. Boost and fine-tune your MetaBrain by applying Gears to outperform your competitors and win games!",
         }
     }
 }
