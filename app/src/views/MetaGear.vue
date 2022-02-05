@@ -2,9 +2,9 @@
   <q-page class="q-pa-lg">
 
     <div class="my-title text-h3 text-white">MetaGears</div>
-        <div class="q-py-sm"/>
-        <div class="my-title text-subtitle1 text-white">Find all the Integratable Gears your MetaBrain will ever need!</div>
-        <div class="q-py-xl"/>
+    <div class="q-py-sm"/>
+    <div class="my-title text-subtitle1 text-white">Find all the Integratable Gears your MetaBrain will ever need!</div>
+    <div class="q-py-xl"/>
 
     <!-- START ITEMS -->
 

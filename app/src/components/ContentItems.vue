@@ -110,7 +110,7 @@
                     <q-item-section>
                         <q-item-label>
                             <q-icon name="diamond" size="1.75em"/>&nbsp;&nbsp;
-                            Mint&nbsp;&nbsp;&nbsp;&nbsp;( In progress.. )
+                            Mint&nbsp;&nbsp;&nbsp;&nbsp; [Comming very soon]
                         </q-item-label>
                     </q-item-section>
                   </q-item>

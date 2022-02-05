@@ -113,10 +113,10 @@
                         <!--<q-item clickable @click="validate_claim_toggle(token)">-->
                         <q-item>
                             <q-item-section>
-                            <q-item-label>
-                            <q-icon name="diamond" size="1.75em"/>&nbsp;&nbsp;
-                            Claim&nbsp;&nbsp;&nbsp;&nbsp;( In progress.. )
-                            </q-item-label>
+                                <q-item-label>
+                                    <q-icon name="diamond" size="1.75em"/>&nbsp;&nbsp;
+                                    Claim&nbsp;&nbsp;&nbsp;&nbsp; [Comming very soon]
+                                </q-item-label>
                             </q-item-section>
                         </q-item>
                     </div>
