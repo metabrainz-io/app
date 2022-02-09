@@ -16,6 +16,5 @@ export const session =              connectionState => connectionState.session
 // User data
 export const userdata =             connectionState => connectionState.userdata
 
-// Notifications
-export const hasNotification =      connectionState => connectionState.hasNotification
-export const msgNotification =      connectionState => connectionState.msgNotification
+// Device
+export const deviceMobile =             connectionState => connectionState.deviceMobile

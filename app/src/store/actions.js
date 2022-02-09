@@ -16,8 +16,6 @@ export const connect_action = ({commit}, state) => {
             });
     }catch(e){
         console.log(e)
-        // state.hasNotification = true;
-        // state.msgNotification = "Could not sign in user!";
     }
 }
 
@@ -88,6 +86,10 @@ export const claim_action = ({commit}, state) => {
     }catch(e){
         console.log(e)
     }
+}
+
+export const set_device_action = ({commit}, isMobile) => {
+    commit('setDevice', isMobile);
 }
 
 export const someaction = ({commit}) =>{

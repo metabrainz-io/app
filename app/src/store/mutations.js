@@ -60,10 +60,6 @@ export const logPreviousRoute = (connectionState, route) =>{
     connectionState.previousRoute = route
 }
 
-export const hasNotification = (connectionState, value) =>{
-    connectionState.hasNotification = value
-}
-
-export const msgNotification = (connectionState, message) =>{
-    connectionState.msgNotification = message
+export const setDevice = (connectionState, isMobile) =>{
+    connectionState.deviceMobile = isMobile
 }

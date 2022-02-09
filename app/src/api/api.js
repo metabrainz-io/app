@@ -122,7 +122,7 @@ export async function fetchTokenData(){
             item.img_src = metadata.image
             item.attributes = metadata.attributes
             item.quantity_mintable = item.mint_limit-item.mint_cur
-            item.claimable = false
+            // item.claimable = true
             
             // Only claimable items here
             if(item.claimable)

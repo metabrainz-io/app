@@ -16,22 +16,19 @@
     >
         <div class="col">
           <div 
-            class="my-text q-py-md row justify-center bg-grey-10 text-h4 text-weight-bold text-white"
-            style="border: 2px solid black;"
+            class="my-text q-py-md row justify-center text-h4 text-weight-bold text-secondary"
+            style="border: 2px solid #100e2f;background-color:#01000b"
           >
               All Gears
           </div>
             <div
-              class="my-text q-py-md row justify-center bg-grey-9 text-h6 text-weight-bold text-cyan"
-              style="margin-left: 0.5%;width:99%;"
+              class="my-text q-py-md row justify-center text-h6 text-weight-bold text-white"
+              style="margin-left: 0.5%;width:99%;background-color:#100e2f"
             >
               Get your Gear on!
               <div class="q-py-sm"/>
           </div>
-          <div 
-            class="bg-cyan-10"
-            style="border: 2px solid black;"
-          >
+          <div style="border: 2px solid #100e2f;background-color:#01000b">
               <ContentItems/>
           </div>
         </div>
@@ -40,15 +37,15 @@
 
         <div class="col">
             <div 
-              class="my-text q-py-md row justify-center bg-grey-10 text-h4 text-weight-bold text-white"
-              style="border: 2px solid black;"
+              class="my-text q-py-md row justify-center text-h4 text-weight-bold text-secondary"
+              style="border: 2px solid #100e2f;background-color:#01000b"
             >
                 Claim
             </div>
 
             <div
-              class="my-text q-py-md row justify-center bg-grey-9 text-h6 text-weight-bold text-cyan"
-              style="margin-left: 0.5%;width:99%;"
+              class="my-text q-py-md row justify-center text-h6 text-weight-bold text-white"
+              style="margin-left: 0.5%;width:99%;background-color:#100e2f"
             >
                 Claim your MetaGear now!
                 <div class="q-py-sm"/>
@@ -56,16 +53,10 @@
           <!--
             style="border: 1px solid green;">
           -->
-          <div 
-            class="bg-cyan-10"
-            style="border: 2px solid black;"
-          >
+          <div style="border: 2px solid #100e2f;background-color:#01000b">
               <ClaimableItems/>
           </div>
         </div>
-
-        
-
     </div>
 
   </q-page>

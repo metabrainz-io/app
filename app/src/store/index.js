@@ -12,6 +12,7 @@ import * as mutations from './mutations'
 const browserState = {
     metaInstalled: false,
     metaConnected: false,
+    deviceMobile: false,
 }
 
 /*

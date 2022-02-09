@@ -61,22 +61,21 @@
                             <q-img :src="token.img_src" width="256px" height="256px"/>
                         </div>
                         <q-btn
-                            color="cyan"
                             icon="bolt"
-                            class="absolute"
-                            style="bottom: 0; left: 16px; transform: translateY(25%);"
+                            class="absolute text-secondary"
+                            style="bottom: 0; left: 16px; transform: translateY(25%);background-color:#424242;"
                             @click="stats_view = true"
                         />
                     </q-card-section>
 
                     <q-card-section >
                         <div class="row">
-                            <div class="col-auto text-white text-subtitle1 text-weight-medium q-pt-md">
-                                Description:
+                            <div class="col-auto text-white text-subtitle1 text-weight-bolder q-pt-md">
+                                Description
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-auto text-cyan-4 text-caption q-pt-md row wrap items-center">
+                            <div class="col-auto text-secondary text-caption text-weight-bold q-pt-md row wrap items-center">
                                 <div v-if="token.descr.length>mint_descr_maxlen">
                                     {{token.descr.substring(0,mint_descr_maxlen)}}..
                                 </div>
@@ -214,7 +213,7 @@
                                         {{atr.trait_type.replace("_", " ")}} &nbsp;&nbsp;
                                     </q-item-label>
                                     <div class="q-py-xs"/>
-                                    <q-linear-progress class="bg-grey-10" size="15px" :value="atr.value * 0.01" color="cyan">
+                                    <q-linear-progress class="bg-grey-10" size="15px" :value="atr.value * 0.01" color="secondary">
                                     </q-linear-progress>
                                 </q-item-section>
                             </q-item>

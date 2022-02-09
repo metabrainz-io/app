@@ -1,12 +1,11 @@
-<!-- <img src="../assets/Doser_transparent_128.gif"/> -->
 <template>
-  <q-page class="">
+  <q-page id="about">
   <div class="q-pa-lg">
 
     <!-- About metabrainz io -->
-    <div id="meta-brainz-io"></div>
-    
-    <div class="q-py-xl"/>
+    <div id="intro"></div>
+   
+    <div class="q-py-md"/>
     <q-card flat class="q-pa-none bg-transparent row text-white">
     
       <q-card-section 
@@ -169,31 +168,96 @@
     <div class="q-py-xl"/>
 
     <!-- MetaBrain -->
+    <div id="meta-brainz-io" 
+      class="my-text text-white bg-transparent"
+    >
+      <div class="gt-sm q-py-xl"/>
+      <div align="center" class="gt-sm my-title q-px-lg text-h3 text-weight-bold">METABRAINZ IO</div>
+      <div class="lt-md q-py-lg"/>
+      <div align="center" class="lt-md my-title q-px-lg text-h4 text-weight-bold">METABRAINZ IO</div>
+
+      <div class="q-py-md"/>
+      <q-card flat
+        class="q-pa-none row justify-center bg-transparent"
+      > 
+        <q-card-section 
+          class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify"
+          style=""  
+        >
+          
+          <div align="center" class="gt-sm q-mt-sm justify-center">
+            <p class="q-py-md text-h5 justify-center text-secondary">
+             Welcome to MetaBrainz IO
+            </p>
+            <q-separator color="secondary"/>
+            <p class="q-py-md text-h5 justify-center text-secondary">
+              We at MetaBrainz IO are utilizing the Blockchain to develop Digital Brains and Gears, unlocking the true power of META
+            </p>
+            <q-separator color="secondary"/>
+            <p class="q-py-md text-h5 justify-center text-secondary">
+              We present <strong> METABRAINS!!</strong><br/> A MetaBrain gives you access to real Hardware resources and Algorithms you can manipulate and control to outperform your
+              competitors in games, win prices, earn credits and much more..
+            </p>
+          </div>
+          <div align="center" class="lt-md q-mt-sm justify-center">
+            <p class="q-py-md text-subtitle1 text-weight-bolder justify-center text-secondary">
+             Welcome to MetaBrainz IO
+            </p>
+            <q-separator color="secondary"/>
+            <p class="q-py-md text-subtitle1 text-weight-bolder justify-center text-secondary">
+              We at MetaBrainz IO are utilizing the Blockchain to develop Digital Brains and Gears, unlocking the true power of META
+            </p>
+            <q-separator color="secondary"/>
+            <p class="q-py-md text-subtitle1 text-weight-bolder justify-center text-secondary">
+              We present <strong> METABRAINS!!</strong><br/> A MetaBrain gives you access to real Hardware resources and Algorithms you can manipulate and control to outperform your
+              competitors in games, win prices, earn credits and much more..
+            </p>
+          </div>
+        </q-card-section>
+      </q-card>
+    </div>
+    <div class="q-py-xl"/>
+
+    <!-- MetaBrain -->
     <div id="meta-brains" 
       class="my-text text-white"
-      style="background-color:#00060e;"
+      style="background-color:#01000b;"
     >
-      <div class="q-py-lg"/>
-      <div class="my-title q-px-lg text-h4 text-weight-bold">METABRAIN</div>
-      <div class="q-py-md"/>
+      <div class="gt-sm q-py-xl"/>
+      <div align="center" class="gt-sm my-title q-px-lg text-h3 text-weight-bold">METABRAINS</div>
+      <div class="lt-md q-py-lg"/>
+      <div align="center" class="lt-md my-title q-px-lg text-h4 text-weight-bold">METABRAINS</div>
       <q-card 
         class="q-pa-none row justify-center"
-        style="background-color:#00060e;"
+        style="background-color:#01000b;"
       > 
       <q-card-section 
         class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify"
         style=""  
       >
-        
+        <div class="q-py-sm"/>
         <div align="start" class="q-mt-sm justify-center">
-          <div class="q-py-md text-h6">What are MetaBrains?</div>
-          <p class="text-subtitle1">
-            In contrast to a simpel Avatar, a MetaBrain is a Avatar on steroids. A MetaBrain represents your digital self and provides special skills and additional computing power used during MetaStadia games. 
-            MetaBrains can be activated by using a Bootloader (MetaGears). Once a MetaBrain has been created, initial stats will be assigned to it, how much will depend on the Bootloader you choose.<br/>
-            Learn more about <a class="text-weight-bold" style="color: cyan; cursor:pointer;" @click="$router.push({hash: '#meta-gears'})">MetaGears</a>
+          <div class="q-py-md text-h5">What are MetaBrains?</div>
+          <p class="text-caption">
+            In contrast to a basic Avatar, a MetaBrain can be perceived as a Avatar on steroids. A MetaBrain is a Persistent Gaming Profile,
+            meaning that all player data, stats in particular, will persist regardless of what game is being played.<br/><br/>
+            ((IMG SRC)) >>> Brain with stats
           </p>
-          <p class="text-subtitle1 text-weight-bold">
-            A MetaBrain's stats can be divided into the following parts:<br/><br/>
+          <div class="q-py-md text-h5">How does it work?</div>
+          <p class="text-caption">
+            Every game, within MetaStadia (and outside), will have a MetaLayer which enables the attachment of a players MetaBrain to ingame Characters or Objects, for example Bots, Drones and/or Turrets.<br/><br/>
+
+            ((IMG SRC))<br/><br/>
+
+            The attachment (integration) of a MetaBrain takes place when a user enters a game. During this integration process the MetaLayer will read and load in specific stats. These stats are linked to what we call 'Meta Controlled Actions'. Besides basic stats like 'speed', 'boost' and 'strength', MetaBrains provides additional stats which will be directly translated to hardware resources and a whole range of algorithms made available for each individual player.<br/><br/>
+
+            ((IMG SRC))<br/><br/>
+
+            Hardware resources and algorithms are additional offchain resources that will be allocated and accessed during games. The more fine-tuned your MetaBrain, 
+            the better and more efficient it will utilize those resources to perform better during games.
+          </p>
+          <p class="text-caption">
+            Every Metabrain has four main stat catagories: <strong>Character, Base, Ability, Meta</strong><br/><br/>
           </p>
           <div 
             class="q-pa-md row"
@@ -322,104 +386,228 @@
               </q-card>                                                    
             </div>          
           </div>          
-          <p class="text-subtitle1">
-            When you enter a game in MetaStadia, your MetaBrain's stats will be translated to all 'Meta controlled actions' and real hardware resources which. These resources will be allocated to your MetaBrain.
-            Learn more about Meta controlled actions and how games in <a class="text-weight-bold" style="color: cyan; cursor:pointer;" @click="$router.push({hash: '#meta-games'})">MetaStadia</a> will work.
-          </p>
-        </div>
-        <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <q-img 
-            width="200px"
-            :src="require('@/assets/images/brainspixelated.gif')"/>
-        </q-card-section> 
-        <div class="q-mt-md">
-        <div class="text-h6">How does it work?</div>
-        <div class="text-subtitle1">
-          You can activate your own MetaBrain NFT to access MetaStadia and compete for prices. MetaStadia can be played when a MetaBrain has been activated. To activate your MetaBrain integrate one of the available MetaGear NFT's.<br/>
-          MetaGears are integratables that acts as a bootloader to provide your MetaBrain with initial stats as well as enhance your MetaBrain's intelligence, speed, power and much more. Read more about 
+          <p class="text-caption">
+            All the stats mentioned above, besides Character stats, can be manipulated with the help of MetaGears. MetaGears are integratables that acts as a bootloader to provide your MetaBrain with initial stats as well as enhance your MetaBrain's power, speed, intelligence and much more. Learn more about 
           <a 
             class="text-weight-bold" 
             style="color: cyan; cursor:pointer;"
             @click="goto('meta-gears')">
             MetaGears
           </a>..
+
+          </p>
+          <div class="q-py-md text-h5">How do I activate my MetaBrain?</div>
+          <p class="text-caption">
+            MetaBrains can be activated by using a Bootloader (MetaGears). Once activated, you own your MetaBrain NFT and can access MetaLayer enabled games to compete for prices.<br/><br/>
+            During the activation of your MetaBrain, initial stats will be assigned to it, how much will depend on the MetaGear Bootloader you choose. Checkout all available <a class="text-weight-bold" style="color: cyan; cursor:pointer;" @click="$router.push('/metagear')">MetaGears</a> ..
+          </p>
+          <!--
+            <p class="text-subtitle1">
+            When you enter a game in MetaStadia, your MetaBrain's stats will be translated to all 'Meta controlled actions' and real hardware resources which. These resources will be allocated to your MetaBrain.
+            Learn more about Meta controlled actions and how games in <a class="text-weight-bold" style="color: cyan; cursor:pointer;" @click="$router.push({hash: '#meta-games'})">MetaStadia</a> will work.
+          </p>
+          -->
         </div>
-        </div>
-        <div class="q-py-lg"/>
+        <q-card-section horizontal class="flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <q-img 
+            width="200px"
+            :src="require('@/assets/images/brainspixelated.gif')"/>
+        </q-card-section> 
+        <div class="q-py-md"/>
+        <p class="text-caption">
+          To learn more about what's possible and how your MetaBrain will affect gameplay, go to the section <a class="text-weight-bold" style="color: cyan; cursor:pointer;" @click="$router.push({hash: '#meta-games'})">MetaStadia</a> 
+        </p>
+        <div class="q-py-xl"/>
       </q-card-section>
     </q-card>
     </div>
     <!-- About MetaGear -->
     <div id="meta-gears" 
-      class="my-text text-white"
-      style="background-color:#02243e;"
+      class="my-text bg-transparent text-white"
     >
-      <div class="q-py-lg"/>
-      <div class="my-title q-px-lg text-h4 text-weight-bold">METAGEAR</div>
+      <div class="gt-sm q-py-xl"/>
+      <div align="center" class="gt-sm my-title q-px-lg text-h3 text-weight-bold">METAGEAR</div>
+      <div class="lt-md q-py-lg"/>
+      <div align="center" class="lt-md my-title q-px-lg text-h4 text-weight-bold">METAGEAR</div>
       <div class="q-py-sm"/>
-      <q-card flat class="q-pa-none row justify-center"
-       style="background-color:#02243e;"> 
-      <q-card-section
-        class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify"
-        style=""  
-      >        
-        <div align="start" class="q-mt-sm justify-center">
-          <div class="q-py-md text-h6">What are MetaGears?</div>
-        <p class="text-subtitle1">
-          We have developed a collection of integratable items called 'MetaGears'. A MetaGear is a unique piece of software that can be integrated into your MetaBrain to help you with literally anything. From fixing errors (bugs) to enhancing your performance. 
-        </p>
-        <q-card-section horizontal class="q-pa-lg flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <q-img 
-            style="width:20rem"
-            width="200px"
-            :src="require('@/assets/metagears/metagears.png')"/>
-        </q-card-section> 
-        <p class="text-subtitle1">
-          The reason we started developing MetaBrains and Gears is because up untill now we soly relied on our own in-efficient biological systems.
-          By creating MetaBrains and equip them with MetaGears one can go beyond their innative capabilties and unleash their full potential in Cyberspace.
-          MetaGears come in different flavours, checkout the available <a class="text-weight-bold" style="color: cyan; cursor:pointer;" @click="$router.push('/metagear')">MetaGears</a> to view all Bootloaders and their corresponding stats.<br/><br/>        
-        </p>
-        </div>
-        <div class="q-py-lg"/>
-      </q-card-section>
-    </q-card>
+      <q-card flat class="q-pa-none row bg-transparent justify-center">
+        <q-card-section
+          class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify"
+          style=""  
+        >        
+          <div align="start" class="q-mt-sm justify-center">
+            <div class="q-py-md text-h5">What are MetaGears?</div>
+            <p class="text-caption">
+              We’re developing a collection 'MetaGears'. MetaGears are integratable items/assets that enhances the stats of MetaBrains.<br/><br/>
+            </p>
+            <p class="text-caption text-weight-bold">
+              Currently the following types of MetaGears are either being development or already exist and available to be minted:
+            </p>
+            <div class="row justify-center">
+              <div class="" style="min-width:275px;max-width:375px;">
+                <ul style="list-style:none;">
+                  <li class="text-caption text-white">
+                    <strong>B’s</strong>&nbsp;&nbsp;&nbsp;&nbsp;(bootloaders)
+                  </li>
+                  <li class="text-caption text-white">
+                    <strong>C’s</strong>&nbsp;&nbsp;&nbsp;&nbsp;(cognitive enhancers)
+                  </li>
+                  <li class="text-caption text-white">
+                    <strong>E’s</strong>&nbsp;&nbsp;&nbsp;&nbsp;(energy enhancers)
+                  </li>
+                  <li class="text-caption text-white">
+                    <strong>G’s</strong>&nbsp;&nbsp;&nbsp;&nbsp;(general enhancers)
+                  </li>
+                  <li class="text-caption text-white">
+                    <strong>M’s</strong>&nbsp;&nbsp;&nbsp;&nbsp;(mood balancers)
+                  </li>
+                  <li class="text-caption text-white">
+                    <strong>X’s</strong>&nbsp;&nbsp;&nbsp;&nbsp;(experience enhancers)
+                  </li>                        
+                </ul>
+              </div>
+              <div class="">
+                <q-img 
+                  style="width:20rem"
+                  width="200px"
+                  :src="require('@/assets/metagears/metagears.png')"/>
+              </div>
+            </div>
+            <div class="q-py-sm"/>
+            <div class="q-py-md text-h5">Brains and Gears</div>
+            <p class="text-caption text-weight-bold">
+              The reason MetaBrainz IO started developing Digital Brains and Gears is because up untill now people soly relied on their own unstable and in-efficient biological systems.<br/><br/>
+              By creating MetaBrains and equipping them with MetaGears one can go beyond their innate capabilties and unleash their full potential in Cyberspace.
+              MetaGears come in different flavours, discover all currently available <a class="text-weight-bold" style="color: cyan; cursor:pointer;" @click="$router.push('/metagear')">MetaGears</a> and their corresponding stats.<br/><br/>        
+            </p>
+          </div>
+          <div class="q-py-lg"/>
+        </q-card-section>
+      </q-card>
     </div>
 
     <!-- About MetaStadia -->
     <div id="meta-games" 
       class="my-text text-white"
-      style="background-color:#00060e;"
+      style="background-color:#100e2f;"
     >
-      <div class="q-py-lg"/>
-      <div class="my-title q-px-lg text-h4 text-weight-bold">METASTADIA</div>
+      <div class="gt-sm q-py-xl"/>
+      <div align="center" class="gt-sm my-title q-px-lg text-h3 text-weight-bold">METASTADIA</div>
+      <div class="lt-md q-py-lg"/>
+      <div align="center" class="lt-md my-title q-px-lg text-h4 text-weight-bold">METASTADIA</div>
       <div class="q-py-sm"/>
       <q-card flat class="q-pa-none row justify-center"
-       style="background-color:#00060e;"> 
-      <q-card-section
-        class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify"
-        style=""  
-      >        
-        <div align="start" class="q-mt-sm justify-center">
-          <div class="q-py-md text-h6">What is MetaStadia?</div>
-        <p class="text-subtitle1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo nec nisi sagittis rhoncus vitae eu magna. Aliquam viverra lobortis sem, vel vestibulum leo iaculis ut. 
-        </p>
-        <q-card-section horizontal class="q-pa-lg flex justify-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <q-img 
-            style="width:20rem"
-            width="200px"
-            :src="require('@/assets/images/metastadia.jpg')"/>
-        </q-card-section> 
-        <p class="text-subtitle1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in leo nec nisi sagittis rhoncus vitae eu magna. Aliquam viverra lobortis sem, vel vestibulum leo iaculis ut.
-        </p>
-        </div>
+       style="background-color:#100e2f;"> 
+        <q-card-section
+          class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify"
+          style=""  
+        >        
+          <div align="start" class="q-mt-sm justify-center">
+            <div class="q-py-md text-h5">What is MetaStadia?</div>
+            <p class="text-caption">
+              MetaStadia will be a Decentralized Hub (DHub) that connects game developers, creators, gamers and knowlegde seekers/creators of all kinds. MetaStadia's DBhub also functions as the main portal access all games that will be developed by MetaBrainz IO, its collaborators, contributors and (indie) developers.
+            </p>
+            
+            <div class="q-py-md text-h5">Cyberspaces</div>
+            <p class="text-caption">
+              To allow everyone to connect with eachother, MetaStadia's DHub will develop Open Virtual Worlds (Cyberspaces).
+            </p>
+            <p class="text-caption">
+              There will be Cyberspaces where Asset Creators can sell/showcase their creations, Developers can anounce and deploy their games and communities can test and play games in every stage of the development process.
+            </p>
+            <div class=""/>
+            <div v-if="!$store.getters.deviceMobile">
+              <div align="center" class="gt-sm text-h4 text-weight-bold">VR</div>
+              <div align="center" class="lt-md text-h6 text-weight-bold">VR</div>
+              <div class="gt-sm q-py-lg row justify-center">
+                <div style="border: 11px solid #00f2a1;border-radius: 25px;border-top-left-radius: 50px;border-top-right-radius: 50px;background-color:#00f2a1;">
+
+                  <div class="row col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width:450px;height:151px;">
+                    <div class="">
+                      <video autoplay loop width="225" style="border-radius:15px;border-top-left-radius: 40px">
+                        <source src="@/assets/media/vrcyberspaces.webm"
+                          type="video/webm">
+                          Media unsupported
+                      </video>
+                    </div>
+                    <div class="">
+                      <video autoplay loop width="225" style="border-radius:15px;border-top-right-radius: 40px">
+                        <source src="@/assets/media/vrcyberspaces.webm"
+                          type="video/webm">
+                          Media unsupported
+                      </video>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="lt-md q-py-md row justify-center">
+                <div style="border: 7px solid #00f2a1;border-radius: 25px;border-top-left-radius: 35px;border-top-right-radius: 35px;background-color:#00f2a1;">
+                  <div class="row col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width:250px;height:83px;">
+                    <div class="">
+                      <video autoplay loop width="125" style="border-radius:15px;border-top-left-radius: 30px">
+                        <source src="@/assets/media/vrcyberspaces.webm"
+                        type="video/webm">
+                        Media unsupported
+                      </video>
+                    </div>
+                    <div class="">
+                      <video autoplay loop width="125" style="border-radius:15px;border-top-right-radius: 30px">
+                        <source src="@/assets/media/vrcyberspaces.webm"
+                        type="video/webm">
+                        Media unsupported
+                      </video>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div v-else>
+              <div align="center" class="gt-sm text-h4 text-weight-bold">VR</div>
+              <div align="center" class="lt-md text-h6 text-weight-bold">VR</div>
+              <div class="gt-sm q-py-lg row justify-center">
+                <div style="border: 11px solid #00f2a1;border-radius: 25px;border-top-left-radius: 50px;border-top-right-radius: 50px;background-color:#00f2a1;">
+                  <div class="row col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width:450px;height:151px;">
+                    <div class="">
+                        <q-img style="width:225px;border-radius:15px;border-top-left-radius: 40px;" src="@/assets/media/vrcyberspaces.png"/>
+                    </div>
+                    <div class="">
+                        <q-img style="width:225px;border-radius:15px;border-top-right-radius: 40px;" src="@/assets/media/vrcyberspaces.png"/>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="lt-md q-py-md row justify-center">
+                <div style="border: 7px solid #00f2a1;border-radius: 25px;border-top-left-radius: 35px;border-top-right-radius: 35px;background-color:#00f2a1;">
+                  <div class="row col-lg-6 col-md-6 col-sm-12 col-xs-12" style="width:250px;height:83px;">
+                    <div class="">
+                        <q-img style="width:125px;border-radius:15px;border-top-left-radius: 30px;" src="@/assets/media/vrcyberspaces.png"/>
+                    </div>
+                    <div class="">
+                        <q-img style="width:125px;border-radius:15px;border-top-right-radius: 30px;" src="@/assets/media/vrcyberspaces.png"/>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-caption">
+              MetaStadia's DHub will be the main portal to access all games that will be developed by MetaBrainz IO, its collaborators, contributors and (indie) developers.<br/>
+            </p>
+            <div class="q-py-md text-h5">Games & Gameplay</div>
+              <p class="text-caption">
+              One of the key aspect of our project is the gameplay. Games in MetaStadia can be divided in two main parts. 'User Controlled Actions' and 'Meta Controlled Actions'. <br/><br/>
+              User Controlled Actions refers to any input provided by the user. This includes the use of a mouse, keyboard, controllers and/or haptics. The input is directly linked to the main-character or object in a game.<br/>
+              In contrast, Meta Controlled Actions are influenced by a players MetaBrain. These actions applies to every (non-main) character or object and will be
+              automatically handled by MetaBrains. A example of a non-main object is a Drone, Turret, Bot.<br/><br/>
+              Through the use of MetaBrains we are able provide a extra layer of depth to the way we play games. This depth shifts a players focus to a more strategic approach before a game starts where the attention lies in analyzing previous games, applying the right MetaGears and fine-tune your MetaBrain. After each strategic phase it will be a full-blown war with extreme action during the game itself.
+            </p>
+          </div>
         <div class="q-py-lg"/>
       </q-card-section>
     </q-card>
     </div>
 
-    <div id="docs"></div>
+    <div id=""></div>
     <div class="row q-py-lg bg-transparent items-start my-text text-white">
       <div class="col flex justify-center">
         <div class="q-pa-xl">
@@ -428,7 +616,7 @@
                 align="center"
                 class="text-h4 text-weight-bold"
             >
-             FAQ
+             <!--FAQ-->
             </div>
             <div class="q-py-md"/>
               <div class="row">
@@ -446,7 +634,7 @@
     <div id="roadmap"></div>
     <div 
       class="row my-text text-white"
-      style="background-color:#00060e;" 
+      style="background-color:#01000b;" 
     >
       <div align="center" class="col">
         <div class="q-py-xl"/>
@@ -460,18 +648,14 @@
 
     <div id="roadmap"></div>
     <div 
-      class="gt-xs row my-text text-white"
-      style="background-color:#00060e;" 
+      class="gt-sm row my-text text-white"
+      style="background-color:#100e2f;" 
     >
       <div class="col">
       <div class="q-py-xl"/>
-        <div 
-            align="center"
-            class="text-h4 text-weight-bold"
-        >
-          ROADMAP
-        </div>
-        <div class="q-py-xl"/>
+
+        <div align="center" class="text-h3 text-weight-bold">ROADMAP</div>
+        <div class="q-py-lg"/>
         <div class="row">
           <div class="col flex justify-center">
             <q-list>
@@ -482,23 +666,29 @@
                   <div class="q-py-sm"/>
                   <q-item-section>
                       <q-item-label>
+                           <q-avatar 
+                              v-if="item.phase"
+                              size="2.5rem" color="transparent" text-color="transparent" icon="remove" 
+                          />
                           <q-avatar 
                               v-if="item.todo"
-                              size="2.65rem" color="teal-10" text-color="white" icon="" 
+                              size="2.5rem" color="transparent" text-color="white" icon="" 
                           />
                           <q-spinner-hourglass 
                               v-if="item.next"
-                              color="teal-10" size="3em"
+                              color="teal-10" size="2.75em"
                           />
                           <q-spinner-gears 
                               v-if="item.progress"
-                              color="teal-14" size="3em"
+                              color="secondary" size="2.75em"
                           />
                           <q-avatar 
                               v-if="item.done"
-                              size="2.65rem" color="teal-14" text-color="white" icon="check" 
+                              size="2.5rem" color="secondary" text-color="dark" icon="check" 
                           />
-                          &nbsp;&nbsp;&nbsp;&nbsp;{{item.task}}
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <span v-if="item.phase" class="text-h6 text-weight-bolder">Phase {{item.task.substring(6,7)}}</span>
+                          <span v-else class="text-white">{{item.task.substring(8,item.task.length)}}</span>
                       </q-item-label>
                   </q-item-section>
                   <q-item-section avatar>
@@ -515,11 +705,11 @@
       -->
     <div id="roadmap"></div>
     <div 
-        class="lt-sm row items-start"
-        style="background-color:#00060e;" 
+        class="lt-md row items-start"
+        style="background-color:#100e2f;" 
     >
         <div 
-            class="col q-py-xl flex justify-center"
+            class="col q-py-md flex justify-center"
         >
           <div class="q-py-xl q-pa-lg q-gutter-md">
               <div 
@@ -528,16 +718,20 @@
               >
                   ROADMAP
               </div>
-
-              <q-list padding class="my-text q-py-xl text-white" style="max-width: 350px">
+              <q-list padding 
+                class="my-text q-py-lg text-white" style="max-width: 350px;">
                   <q-item 
                       v-for="item in roadmap" 
                       :key="item"
                   >
                       <q-item-section avatar top>
                           <q-avatar 
+                              v-if="item.phase"
+                              size="2rem" color="transparent" text-color="transparent" icon="remove" 
+                          />
+                          <q-avatar 
                               v-if="item.todo"
-                              size="1.5rem" color="teal-10" text-color="white" icon="" 
+                              size="1.5rem" color="blue-grey-10" text-color="white" icon="" 
                           />
                           <q-spinner-hourglass 
                               v-if="item.next"
@@ -556,35 +750,35 @@
                       </q-item-section>
                       <q-item-section top>
                           <q-item-label lines="1">
-                              <span class="text-weight-medium">{{item.task}}</span>
+                            <span v-if="item.phase" class="text-h6 text-weight-bolder">Phase {{item.task.substring(6,7)}}</span>
+                            <span v-else class="text-weight-medium">{{item.task.substring(8,item.task.length)}}</span>
                           </q-item-label>
                       </q-item-section>
-                  </q-item>
+                    </q-item>
               </q-list>
           </div>
         </div>
     </div>
 
    <div id="team"></div>
-    <div class="row bg-black my-text text-white">
-      <div align="center" class="col">
-        <div class="q-py-xl"/>
-        <div 
-            class="text-h4 text-weight-bolder"
-        >
-          TEAM
-        </div>
-        <div class="q-py-xl"/>
+    <div class="row my-text bg-transparent text-white">
+      <div class="col">
+
+      <div class="gt-sm q-py-xl"/>
+      <div align="center" class="gt-sm my-title q-px-lg text-h3 text-weight-bold">TEAM</div>
+      <div class="lt-md q-py-lg"/>
+      <div align="center" class="lt-md my-title q-px-lg text-h4 text-weight-bold">TEAM</div>
+      <div class="q-py-xl"/>
         <div class="row justify-center">
           
           <!-- MEMBER -->
           <div 
-            class="q-pa-md my-title text-h6 text-white bg-grey-10"
-            style="background-color:#00060e;border: 2px solid black;width:225px;text-align:center;margin:20px;"
+            class="q-pa-md my-title text-h6 text-white"
+            style="background-color:#01000b;border: 2px solid #00f2a1;width:225px;text-align:center;margin:20px;"
           >
             <q-img 
               src="@/assets/team/LnrCdr.gif"
-              style="border: 2px solid black;"
+              style="border: 2px solid #01000b;"
             />
 
             <div class="q-py-xs"/>
@@ -605,10 +799,11 @@
             </div>
           </div>
         
-          <!-- MEMBER -->
+          <!-- 
+            MEMBER 
           <div 
-            class="q-pa-md my-title text-h6 text-white bg-grey-10"
-            style="background-color:#00060e;border: 2px solid black;width:225px;text-align:center;margin:20px;"
+            class="q-pa-md my-title text-h6 text-white"
+            style="background-color:#01000b;border: 2px solid black;width:225px;text-align:center;margin:20px;"
           >
             <q-img 
               src="@/assets/team/MrRndr.gif"
@@ -631,20 +826,23 @@
                 <div class="q-py-sm"/>
               </div>
             </div>
-
+          -->
 
             <!-- MEMBER -->
           <div 
-            class="q-pa-md my-title text-h6 text-white bg-grey-10 "
-            style="border: 2px solid black;width:225px;text-align:center;margin:20px;"
+            class="q-pa-md my-title text-h6 text-white"
+            style="background-color:#01000b;border: 2px solid #00f2a1;width:225px;text-align:center;margin:20px;"
           >
-              <q-img src="@/assets/team/Member.gif"/>
+              <q-img 
+                src="@/assets/team/Member.gif"
+                style="border: 2px solid #01000b;"
+              />
               <div class="q-py-xs"/>
-              <q-item style="font-size: 1.1rem;color: #00ff00;">
+              <q-item style="font-size: 1.1rem;color: #00f2a1;">
                 <q-item-section align="center">
                   <q-item-label>
                     <div class="">
-                      You?
+                      ? ? ?
                     </div>
                   </q-item-label>
                 </q-item-section>
@@ -657,154 +855,289 @@
               </div>
             </div>
         </div>
+        <div class="q-py-lg"/>
+
+    <div id="note" 
+      class="my-text text-white"
+      style="background-color:#100e2f;"
+    >
+      <div class="gt-sm q-py-xl"/>
+      <div align="center" class="gt-sm my-title q-px-lg text-h3 text-weight-bold">NOTE</div>
+      <div class="lt-md q-py-lg"/>
+      <div align="center" class="lt-md my-title q-px-lg text-h4 text-weight-bold">NOTE</div>
+      <div class="q-py-sm"/>
+
+      <q-card flat class="q-pa-none row bg-transparent justify-center">
+        <q-card-section
+          class="q-px-lg col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify"
+        >        
+          <div align="start" class="q-mt-sm justify-center">
+            <q-separator color="secondary"/>
+            <div align="center" class="q-py-md text-h5"><strong>MetaBrainz.io</strong><br/>&nbsp;&nbsp;just&nbsp;&nbsp;Launched&nbsp;!!!&nbsp;🚀🌕</div>
+            <q-separator color="secondary"/>
+            <p align="center" class="q-py-md text-subtitle1">
+              This is a solo project. If you like this project follow MetaBrainz IO on Twitter or share our website!
+            </p>
+            <q-separator color="secondary"/>
+            <p align="center" class="q-py-md text-subtitle1 text-weight-bold">
+                Want to be a Patron and Accelerate the development of MetaBrainz IO?<br/>Use one of the crypto adresses below and drop anything you'd like<br/><br/>
+            </p>
+            <div class="row justify-center">
+              <q-img 
+                width="6em"
+                :src="require('@/assets/images/rocket.png')"/>
+              <div class="gt-xs text-white" style="font-size:12px;">
+                <ul style="left:125px;padding-right:15px;list-style:none;font-weight: bold;">
+                  <li>
+                    <strong>BTC:</strong>&nbsp;&nbsp;&nbsp;&nbsp;0x00000000000000000
+                  </li>
+                  <li>
+                    <strong>ETH:</strong>&nbsp;&nbsp;&nbsp;&nbsp;0xc498cBd96e37f48138115FBA73bC55fd0e21bc82
+                  </li>
+                  <li>
+                    <strong>XRP:</strong>&nbsp;&nbsp;&nbsp;&nbsp;0x00000000000000000
+                  </li>
+                  
+                  <li class="q-py-sm text-yellow">
+                    ps: Leave your email / social media url so I can give a personal thanks!! ❤️
+                  </li>
+                </ul>
+              </div>
+              <div class="lt-sm text-white" style="padding-right: 40px;font-size:10px;font-weight: bold;">
+                <ul style="list-style:none;">
+                  <li>
+                    <strong>BTC:</strong><br/>0x00000000000000000
+                  </li>
+                  <li>
+                    <strong>ETH:</strong><br/>0xc498cBd96e37f48138115FBA73bC55fd0e21bc82
+                  </li>
+                  <li>
+                    <strong>XRP:</strong><br/>0x00000000000000000
+                  </li>
+                  <li class="q-py-lg text-yellow">
+                    ps: Leave your email / social media url so I can give a personal thanks!! ❤️
+                  </li>
+                </ul>
+              </div>
+              <div>
+            </div>
+          </div>
+
+          <div align="center" class="">
+            <q-btn label="Leave a reference" color="secondary" class="text-black" @click="prompt = true" />
+          </div>
+          <q-dialog v-model="prompt" persistent style="border: 1px solid #00f2a1;">
+            <q-card flat class="q-pa-lg my-text" style="border: 1px solid #00f2a1;background-color:#01000b;">
+              <q-card-section>
+                <form action="/action_page.php">
+                  <div class="row">
+                    <div class="col" style="padding-left:-60px;max-width:200px;">
+                      <div class="row">
+                        <q-card-section class="q-pt-none">
+                          <q-input v-model="patron_url"
+                            ref="patronUrlRef"
+                            color="secondary" 
+                            label="Your email / url"
+                            lazy-rules :rules="urlRules"
+                            dark flat no-border-radius dense autofocus
+                          />
+                        </q-card-section>
+                        <q-card-section class="q-pt-none">
+                          <q-input v-model="patron_address" 
+                            ref="patronAddrRef"
+                            color="secondary" 
+                            label="Used crypto address" 
+                            lazy-rules :rules="addrRules"
+                            dark flat no-border-radius dense autofocus
+                          />
+                        </q-card-section>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </q-card-section>
+            <q-card-actions align="center" class="q-px-lg text-secondary justify-between">
+              <q-btn flat color="secondary" label="Cancel" @click="shareLink(false)" v-close-popup />
+              <q-btn flat color="secondary" label="Share" @click="shareLink(true)"/>
+            </q-card-actions>
+            </q-card>
+          </q-dialog>
+
+          <div class="q-py-sm"/>
+          <q-separator color="secondary"/>
+          <div class="q-py-sm"/>
+            <p align="center" class="text-subtitle1 text-weight-bold">
+              Are you a Developer / Designer? Wanna jump aboard or have a great Idea?<br/>Contact me at Discord:
+              <span align="center" class="text-subtitle1 text-weight-bolder text-yellow">
+                  <strong>LnrCdr#0205</strong>
+              </span>
+            </p>
+          </div>
+        </q-card-section>
+      </q-card>
         <div class="q-py-xl"/>
       </div>
     </div>
+  </div>
 
    <div id="contact"></div>
     <div 
       class="row my-text text-white"
-      style="background-color:#00060e;" 
+      style="background-color:#01000b;" 
     >
       <div align="center" class="col">
         <div class="q-py-xl"/>
         <div 
             class="text-h4 text-weight-bolder"
+            style="cursor:pointer;"
+            @click="$router.push({hash: '#about'})"
         >
           METABRAINZ IO
         </div>
+        <div class="row q-py-md flex justify-center my-title col text-h5 text-white">
+          <q-item style="width:60px;" clickable tag="a" target="_blank" href="https://twitter.com/metabrainz_io">
+            <q-item-section>
+              <q-item-label>
+                <q-icon name="fab fa-twitter"/>
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+          <q-item style="width:60px;" clickable tag="a" target="_blank" href="https://github.com/metabrainz-io">
+            <q-item-section>
+              <q-item-label>
+              <q-icon name="fab fa-github"/>
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+          <q-item style="width:60px;" clickable tag="a" target="_blank" href="https://opensea.io/metabrainz">
+            <q-item-section>
+              <q-item-label>
+                <q-img src="@/assets/style/logo_opensea_trans_white.png" color="white" width="24px"/>
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+          <q-item style="width:60px;" clickable tag="a" target="_blank" href="https://linktr.ee/metabrainz">
+            <q-item-section>
+              <q-item-label>
+                <q-img src="@/assets/style/logo_linktree_trans_white.png" color="white" width="24px"/>
+              </q-item-label>
+            </q-item-section>
+          </q-item>
+
+        </div>
+
         <div class="q-py-xl"/>
         <div class="row justify-center">
-                <div 
-                  class="q-pa-md my-title text-h6 text-white"
-                  style="border: 2px solid white;width:225px;text-align:center;margin:20px;"
-                >
-                  <q-item clickable tag="a" target="_blank" href="https://www.linkedin.com/in/bernardohart/">
-                    <q-item-section>
-                      <q-item-label>
-                        Build with us
-                      </q-item-label>
-                    </q-item-section>
-                  </q-item>
-                </div>
-                <div 
-                  class="q-pa-md my-title text-h6 text-white"
-                  style="border: 2px solid white;width:225px;text-align:center;margin:20px;"
-                >
-                  <q-item clickable tag="a" target="_blank" href="https://www.linkedin.com/in/bernardohart/">
-                    <q-item-section>
-                      <q-item-label>
-                      Investors
-                      </q-item-label>
-                    </q-item-section>
-                  </q-item>
-                </div>
-
-                <div 
-                  class="q-pa-md my-title text-h6 text-white"
-                  style="border: 2px solid white;width:225px;text-align:center;margin:20px;"
-                >
-                  <q-item clickable tag="a" target="_blank" href="https://drive.google.com/file/d/1FxBrMqNwAmWGMNvl9YfHaA-dkYXkEID1/view?usp=sharing">
-                    <q-item-section>
-                      <q-item-label>
-                        LitePaper
-                      </q-item-label>
-                    </q-item-section>
-                  </q-item>
-                </div>
-
-                <div 
-                  class="q-pa-md flex my-title text-h6 text-white"
-                  style="border: 2px solid white;width:225px;text-align:center;margin:20px;"
-                >
-                  <div class="my-title col text-h5 text-white">
-                    <q-item clickable tag="a" target="_blank" href="https://twitter.com/metabrainz_io">
-                      <q-item-section>
-                        <q-item-label>
-                          <q-icon name="fab fa-twitter"/>
-                        </q-item-label>
-                      </q-item-section>
-                    </q-item>
-                  </div>
-                  <div class="my-title col text-h5 text-white">
-                    <q-item clickable tag="a" target="_blank" href="https://github.com/metabrainz-io">
-                      <q-item-section>
-                        <q-item-label>
-                        <q-icon name="fab fa-github"/>
-                        </q-item-label>
-                      </q-item-section>
-                    </q-item>
-                  </div>
-                  <div class="my-title col text-h5 text-grey-10">
-                    <q-item>
-                      <q-item-section>
-                        <q-item-label>
-                        <q-icon name="fab fa-discord"/>
-                        </q-item-label>
-                      </q-item-section>
-                    </q-item>
-                  </div>
-                </div>
-            </div>
-            <div class="q-py-xl"/>
+          <div 
+            class="q-pa-md my-title text-h6 text-white"
+            style="border: 2px solid white;width:225px;text-align:center;margin:20px;"
+          >
+            <q-item clickable tag="a" target="_blank" href="https://www.linkedin.com/in/bernardohart/">
+              <q-item-section>
+                <q-item-label>
+                  Investors&nbsp;&nbsp;
+                  <q-icon name="fab fa-linkedin"/>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
           </div>
+
+          <div 
+            class="q-pa-md my-title text-h6 text-white"
+            style="border: 2px solid white;width:225px;text-align:center;margin:20px;"
+          >
+            <q-item clickable @click="$router.push({hash: '#roadmap'})">
+              <q-item-section>
+                <q-item-label>
+                  LitePaper
+                  &nbsp;&nbsp;
+                  <q-icon name="article"/>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+          </div>            
+          <div 
+            class="q-pa-md my-title text-h6 text-grey-9"
+            style="border: 2px solid #212121;width:270px;text-align:center;margin:20px;"
+          >
+            <q-item>
+              <q-item-section>
+                <q-item-label>
+                  Build with us &nbsp;&nbsp;
+                  <q-icon name="fab fa-discord"/>
+                </q-item-label>
+              </q-item-section>
+            </q-item>                
+          </div>
+          
+        </div>
+        <div class="q-py-xl"/>
       </div>
+    </div>
 
-     <!-- POPUP -->
-        <q-dialog v-model="stats_view">
-            <q-card flat class="bg-grey-10 text-white" style="border:2px solid black;">
-                <q-card-section>
-                    <template v-slot:avatar>
-                        <q-icon name="open_in_new" color="primary" />
-                    </template>
-                    <div class="text-h6">{{cur_stat.name}}</div>
-                </q-card-section>
+    <!-- POPUP -->
+    <q-dialog v-model="stats_view">
+        <q-card flat class="bg-grey-10 text-white" style="border:2px solid #00f2a1;">
+            <q-card-section>
+                <template v-slot:avatar>
+                    <q-icon name="open_in_new" color="primary" />
+                </template>
+                <div class="text-h5 text-weight-bold">{{cur_stat.name}}</div>
+            </q-card-section>
 
-                <q-card-section horizontal>
-                  <q-card-section>
-                    <div style="height:200px;">
-                      <div class="text-subtitle1 text-white" style="">
-                        {{cur_stat.descr}}
-                      </div>
-                      <div class="text-subtitle0 text-cyan">
-                        <ul>
-                          <li
-                            style="list-style-type: none;" 
-                            v-for="stat in cur_stat.stat" :key="stat">
-                            {{stat}}
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </q-card-section>
-                  <q-card-section 
-                    class=""
-                    @mouseover="cur_stat.event_hover = true" @mouseleave="cur_stat.event_hover = false"
+            <q-card-section horizontal>
+              <q-card-section>
+                <div style="height:200px;">
+                  <div class="text-subtitle1 text-white" style="">
+                    {{cur_stat.descr}}
+                  </div>
+                  <div class="text-subtitle0 text-secondary">
+                    <ul>
+                      <li
+                        style="list-style-type: none;" 
+                        v-for="stat in cur_stat.stat" :key="stat">
+                        {{stat}}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </q-card-section>
+              <q-card-section 
+                class=""
+                @mouseover="cur_stat.event_hover = true" @mouseleave="cur_stat.event_hover = false"
+              >
+                <div style="border:2px solid #00f2a1;background-color:#01000b;">
+                  <img 
+                    v-bind:src="require('@/assets/'+ cur_stat.img_src_gif)"
+                    style="max-height:192px;max-width:192px;aspect-ratio:1/1;"
                   >
-                    <div style="border:2px solid black;background-color:#00060e;">
-                      <img 
-                        v-bind:src="require('@/assets/'+ cur_stat.img_src_gif)"
-                        style="max-height:192px;max-width:192px;aspect-ratio:1/1;"
-                      >
-                    </div>
-                  </q-card-section>
+                </div>
+              </q-card-section>
 
-                </q-card-section>
-            </q-card>
-        </q-dialog>
+            </q-card-section>
+        </q-card>
+      </q-dialog>
   </q-page>
-
 </template>
 
 <script>
 const roadmap = [
-    {"task": "Site Launch (ALPHA)", "todo":false, "progress":false, "done":true,"next": false},
-    {"task": "Site Launch (BETA) + Anouncements", "todo":false, "progress":true, "done":false, "next": false},
-    {"task": "MetaBrains (BETA)", "todo":false, "progress":false, "done":false, "next": true},
-    {"task": "Big Marketing Campaign (Q1)", "todo":true, "progress":false, "done":false, "next": false},
-    {"task": "MetaStadia Expansion (Q1-Q2)", "todo":true, "progress":false, "done":false, "next": false},
-    {"task": "MetaStadia for Developers (Q2)", "todo":true, "progress":false, "done":false, "next": false},
-    {"task": "MetaStadia Stadium (Q2-Q4)", "todo":true, "progress":false, "done":false, "next": false}
+    // Phase 1
+    {"task": "PHASE 1", "todo":false, "progress":false, "done":false,"next": false, "phase": true}, // <<<< phase 1
+    {"task": "PHASE 1: Site Launch (BETA)", "todo":false, "progress":false, "done":true,"next": false, "phase": false},
+    {"task": "PHASE 1: LitePaper", "todo":false, "progress":true, "done":false,"next": false, "phase": false},
+    {"task": "PHASE 1: Important Anouncements", "todo":false, "progress":false, "done":false, "next": true, "phase": false},
+    {"task": "PHASE 1: 1st Generation MetaGears", "todo":false, "progress":true, "done":false, "next": false, "phase": false},
+    {"task": "PHASE 1: Mint NFT Site Functionallity", "todo":false, "progress":false, "done":false, "next": true, "phase": false},
+    // Phase 2
+    {"task": "PHASE 2", "todo":false, "progress":false, "done":false,"next": false, "phase": true}, // <<<< phase 2
+    {"task": "PHASE 2: MetaBrain Activation", "todo":true, "progress":false, "done":false, "next": false, "phase": false},
+    {"task": "PHASE 2: MetaStadia DHub", "todo":true, "progress":false, "done":false, "next": false, "phase": false},
+    {"task": "PHASE 2: MetaStadia Spaces", "todo":true, "progress":false, "done":false, "next": false, "phase": false},
+    {"task": "PHASE 2: MetaStadia First Game", "todo":true, "progress":false, "done":false, "next": false, "phase": false},
+    // Phase 3
+    {"task": "PHASE 3", "todo":false, "progress":false, "done":false,"next": false, "phase": true}, // <<<< phase 3
+    {"task": "PHASE 3: To Be Anounced ....", "todo":true, "progress":false, "done":false, "next": false, "phase": false},
 ]
 
 const stats = [
@@ -846,13 +1179,24 @@ export default{
         "stat":[],
         "img_src_png":"",
         "img_src_gif":"",
-        "event_hover":false
+        "event_hover":false,
+        
       },
       slide: 1,
+      patron_url: "",
+      patron_address: "",
     });
 
+    const patronUrlRef = ref(null);
+    const patronAddrRef = ref(null);
+    const pause = ref(false);
+    const prompt = ref(false);
+
     return{
-      pause: ref(false),
+      pause,
+      prompt,
+      patronUrlRef,
+      patronAddrRef,
       ... toRefs(state),
       roadmap,
       goto(refName) {
@@ -885,10 +1229,33 @@ export default{
         if(state.slide > 8){
           state.slide=1;
         }
-      }
+      },
+      shareLink: (send)=>{
+        if(send){
+          patronUrlRef.value.validate()
+          patronAddrRef.value.validate()
+
+          if (patronUrlRef.value.hasError || patronAddrRef.value.hasError) {
+            alert("The form seems incomplete, please try again! 🤖")
+            return;
+          }
+          alert("Thanks for your support and trust in MetaBrainz IO 🦾 We're one step closer to our goals!! 🚀🪐")
+        }
+        
+        state.patron_url = "";
+        state.patron_address = "";
+        prompt.value = false;
+      },
+      urlRules: [
+        val => (val !== null && val !== '') || 'Forgot to fill this field?',
+        val => (val.length > 4 && val.length < 129) || 'Requires 5-128 chars'
+      ],
+      addrRules: [
+        val => (val !== null && val !== '') || 'Forgot to fill this field?',
+        val => (val.length > 24 && val.length < 43) || 'Invalid crypto address'
+      ],
     }
   }
-
 }
 </script>
 
@@ -897,7 +1264,7 @@ export default{
 .member-item{
     font-size: 1.1rem;
 
-    color: #00ff00;
+    color: #00f2a1;
     &:hover{
         color: white;
         font-size: 1.3rem;
