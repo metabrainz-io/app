@@ -1,6 +1,7 @@
 import { connect, disconnect } from '@/api/connect'
 import { claim_request, claim } from '@/api/claim'
-import { validate } from '../api/session';
+import { validate } from '@/api/session';
+
 
 export const connect_action = ({commit}, state) => {
     try {
@@ -95,3 +96,5 @@ export const set_device_action = ({commit}, isMobile) => {
 export const someaction = ({commit}) =>{
     commit('zeroMutation', null);
 }
+
+

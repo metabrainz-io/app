@@ -794,7 +794,7 @@
             <div class="q-py-xs"/>
             <div align="center">
               <div class="text-caption text-bold">Founder / Programmer & Designer</div>
-              <div class="text-caption text-cyan-11">Non-stop creating. Loves technical art and nature.</div>
+              <div class="text-caption text-cyan-11">Non-stop creating. Loves Games, Technical Art and Nature <strong>☯︎</strong></div>
               <div class="q-py-sm"/>
             </div>
           </div>
@@ -828,43 +828,69 @@
             </div>
           -->
 
-            <!-- MEMBER -->
+          <!-- MEMBER -->
           <div 
             class="q-pa-md my-title text-h6 text-white"
             style="background-color:#01000b;border: 2px solid #00f2a1;width:225px;text-align:center;margin:20px;"
           >
-              <q-img 
-                src="@/assets/team/Member.gif"
-                style="border: 2px solid #01000b;"
-              />
-              <div class="q-py-xs"/>
-              <q-item style="font-size: 1.1rem;color: #00f2a1;">
-                <q-item-section align="center">
-                  <q-item-label>
-                    <div class="">
-                      ? ? ?
-                    </div>
-                  </q-item-label>
-                </q-item-section>
-              </q-item>
-              <div class="q-py-xs"/>
-              <div align="center">
-                <div class="text-caption text-bold">...</div>
-                <div class="text-caption text-cyan-11">...</div>
-                <div class="q-py-sm"/>
-              </div>
+            <q-img 
+              src="@/assets/team/Member.gif"
+              style="border: 2px solid #01000b;"
+            />
+            <div class="q-py-xs"/>
+            <q-item style="font-size: 1.1rem;color: #00f2a1;">
+              <q-item-section align="center">
+                <q-item-label>
+                  <div class="">
+                    ? ? ?
+                  </div>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+            <div class="q-py-xs"/>
+            <div align="center">
+              <div class="text-caption text-bold">...</div>
+              <div class="text-caption text-cyan-11">...</div>
+              <div class="q-py-sm"/>
             </div>
+          </div>
+          <!-- MEMBER -->
+          <div 
+            class="q-pa-md my-title text-h6 text-white"
+            style="background-color:#01000b;border: 2px solid #00f2a1;width:225px;text-align:center;margin:20px;"
+          >
+            <q-img 
+              src="@/assets/team/Member.gif"
+              style="border: 2px solid #01000b;"
+            />
+            <div class="q-py-xs"/>
+            <q-item style="font-size: 1.1rem;color: #00f2a1;">
+              <q-item-section align="center">
+                <q-item-label>
+                  <div class="">
+                    ? ? ?
+                  </div>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+            <div class="q-py-xs"/>
+            <div align="center">
+              <div class="text-caption text-bold">...</div>
+              <div class="text-caption text-cyan-11">...</div>
+              <div class="q-py-sm"/>
+            </div>
+          </div>          
         </div>
         <div class="q-py-lg"/>
 
-    <div id="note" 
+    <div id="notes" 
       class="my-text text-white"
       style="background-color:#100e2f;"
     >
       <div class="gt-sm q-py-xl"/>
-      <div align="center" class="gt-sm my-title q-px-lg text-h3 text-weight-bold">NOTE</div>
+      <div align="center" class="gt-sm my-title q-px-lg text-h3 text-weight-bold">NOTES</div>
       <div class="lt-md q-py-lg"/>
-      <div align="center" class="lt-md my-title q-px-lg text-h4 text-weight-bold">NOTE</div>
+      <div align="center" class="lt-md my-title q-px-lg text-h4 text-weight-bold">NOTES</div>
       <div class="q-py-sm"/>
 
       <q-card flat class="q-pa-none row bg-transparent justify-center">
@@ -873,14 +899,19 @@
         >        
           <div align="start" class="q-mt-sm justify-center">
             <q-separator color="secondary"/>
-            <div align="center" class="q-py-md text-h5"><strong>MetaBrainz.io</strong><br/>&nbsp;&nbsp;just&nbsp;&nbsp;Launched&nbsp;!!!&nbsp;🚀🌕</div>
+            <div align="center" class="q-py-md text-h5"><strong>MetaBrainz.io (Beta)</strong><br/>&nbsp;&nbsp;just&nbsp;&nbsp;Launched&nbsp;!!!&nbsp;🚀🌕</div>
             <q-separator color="secondary"/>
-            <p align="center" class="q-py-md text-subtitle1">
-              This is a solo project. If you like this project follow MetaBrainz IO on Twitter or share our website!
-            </p>
-            <q-separator color="secondary"/>
+            <div class="q-py-sm"/>
+          <p align="center" class="text-subtitle1 text-weight-bold">
+            Are you a Developer / Designer? Wanna jump Aboard?<br/>Contact me at Discord:
+            <span align="center" class="text-subtitle1 text-weight-bolder text-yellow">
+                <strong>LnrCdr#0205</strong>
+            </span>
+          </p>
+          <q-separator color="secondary"/>
+
             <p align="center" class="q-py-md text-subtitle1 text-weight-bold">
-                Want to be a Patron and Accelerate the development of MetaBrainz IO?<br/>Use one of the crypto adresses below and drop anything you'd like<br/><br/>
+                Want to see MetaBrainz IO succeed and help accelerate the development process? Use one of the crypto adresses below and drop any amount you'd like..<br/><br/>
             </p>
             <div class="row justify-center">
               <q-img 
@@ -899,7 +930,7 @@
                   </li>
                   
                   <li class="q-py-sm text-yellow">
-                    ps: Leave your email / social media url so I can give a personal thanks!! ❤️
+                    ps: Leave a reference so I can give a personal thanks!! ❤️
                   </li>
                 </ul>
               </div>
@@ -915,7 +946,7 @@
                     <strong>XRP:</strong><br/>0x00000000000000000
                   </li>
                   <li class="q-py-lg text-yellow">
-                    ps: Leave your email / social media url so I can give a personal thanks!! ❤️
+                    ps: Leave a reference so I can give a personal thanks!! ❤️
                   </li>
                 </ul>
               </div>
@@ -924,29 +955,34 @@
           </div>
 
           <div align="center" class="">
-            <q-btn label="Leave a reference" color="secondary" class="text-black" @click="prompt = true" />
+            <q-btn label="Leave a reference" color="secondary" class="text-black no-border no-border-radius" @click="prompt = true" />
           </div>
-          <q-dialog v-model="prompt" persistent style="border: 1px solid #00f2a1;">
+          <q-dialog v-model="prompt" persistent>
             <q-card flat class="q-pa-lg my-text" style="border: 1px solid #00f2a1;background-color:#01000b;">
               <q-card-section>
+                <p class="text-white text-body0 text-weight-bolder">
+                  Leave your email or social media url and crypto address as a reference 
+                  so that it's clear that you are the one who contributed.
+                </p>
+                <div class="q-py-md"/>
                 <form action="/action_page.php">
                   <div class="row">
-                    <div class="col" style="padding-left:-60px;max-width:200px;">
+                    <div class="col" style="padding-left:-60px;max-width:300px;">
                       <div class="row">
                         <q-card-section class="q-pt-none">
                           <q-input v-model="patron_url"
                             ref="patronUrlRef"
                             color="secondary" 
-                            label="Your email / url"
+                            label="Email / Social media url"
                             lazy-rules :rules="urlRules"
                             dark flat no-border-radius dense autofocus
                           />
                         </q-card-section>
                         <q-card-section class="q-pt-none">
-                          <q-input v-model="patron_address" 
+                          <q-input v-model="patron_addr" 
                             ref="patronAddrRef"
                             color="secondary" 
-                            label="Used crypto address" 
+                            label="Your crypto address" 
                             lazy-rules :rules="addrRules"
                             dark flat no-border-radius dense autofocus
                           />
@@ -956,22 +992,13 @@
                   </div>
                 </form>
               </q-card-section>
-            <q-card-actions align="center" class="q-px-lg text-secondary justify-between">
-              <q-btn flat color="secondary" label="Cancel" @click="shareLink(false)" v-close-popup />
-              <q-btn flat color="secondary" label="Share" @click="shareLink(true)"/>
+            <q-card-actions align="center" class="q-px-lg justify-between text-secondary text-weight-bold">
+              <q-btn flat color="secondary" label="Cancel" @click="sendReference(false)" v-close-popup />
+              <q-btn flat color="secondary" label="Send" @click="sendReference(true)"/>
             </q-card-actions>
             </q-card>
           </q-dialog>
-
-          <div class="q-py-sm"/>
-          <q-separator color="secondary"/>
-          <div class="q-py-sm"/>
-            <p align="center" class="text-subtitle1 text-weight-bold">
-              Are you a Developer / Designer? Wanna jump aboard or have a great Idea?<br/>Contact me at Discord:
-              <span align="center" class="text-subtitle1 text-weight-bolder text-yellow">
-                  <strong>LnrCdr#0205</strong>
-              </span>
-            </p>
+          
           </div>
         </q-card-section>
       </q-card>
@@ -1028,19 +1055,6 @@
 
         <div class="q-py-xl"/>
         <div class="row justify-center">
-          <div 
-            class="q-pa-md my-title text-h6 text-white"
-            style="border: 2px solid white;width:225px;text-align:center;margin:20px;"
-          >
-            <q-item clickable tag="a" target="_blank" href="https://www.linkedin.com/in/bernardohart/">
-              <q-item-section>
-                <q-item-label>
-                  Investors&nbsp;&nbsp;
-                  <q-icon name="fab fa-linkedin"/>
-                </q-item-label>
-              </q-item-section>
-            </q-item>
-          </div>
 
           <div 
             class="q-pa-md my-title text-h6 text-white"
@@ -1056,6 +1070,21 @@
               </q-item-section>
             </q-item>
           </div>            
+          
+          <div 
+            class="q-pa-md my-title text-h6 text-white"
+            style="border: 2px solid white;width:225px;text-align:center;margin:20px;"
+          >
+            <q-item clickable tag="a" target="_blank" href="https://www.linkedin.com/in/bernardohart/">
+              <q-item-section>
+                <q-item-label>
+                  Investors&nbsp;&nbsp;
+                  <q-icon name="fab fa-linkedin"/>
+                </q-item-label>
+              </q-item-section>
+            </q-item>
+          </div>
+
           <div 
             class="q-pa-md my-title text-h6 text-grey-9"
             style="border: 2px solid #212121;width:270px;text-align:center;margin:20px;"
@@ -1164,9 +1193,13 @@ const stats = [
 ]
 
 import { reactive, toRefs, ref } from 'vue'
+// import { useStore } from 'vuex'
+import { sendReference } from "@/api/api";
 export default{
   name:"About",
   setup(){
+    // const store = useStore();
+    
     const state = reactive({
       hover_stat_avtr: false,
       hover_stat_base: false,
@@ -1182,19 +1215,32 @@ export default{
         "event_hover":false,
         
       },
-      slide: 1,
-      patron_url: "",
-      patron_address: "",
+      slide: 1
+      // patron_url: "",
+      // patron_addr: "",
     });
 
+    const patron_url = ref(null);
+    const patron_addr = ref(null);
     const patronUrlRef = ref(null);
     const patronAddrRef = ref(null);
+    
     const pause = ref(false);
     const prompt = ref(false);
+
+    function resetForm(){
+        prompt.value = false;
+        patron_url.value = "";
+        patron_addr.value = "";
+        patronUrlRef.value.resetValidation();
+        patronAddrRef.value.resetValidation();
+    }
 
     return{
       pause,
       prompt,
+      patron_url,
+      patron_addr,
       patronUrlRef,
       patronAddrRef,
       ... toRefs(state),
@@ -1209,10 +1255,8 @@ export default{
       },
       view_stat(value){
         stats.forEach((stat)=>{
-          // console.log(stat)
           if(value == stat.id){
             state.stats_view = true;
-            // let img_dir = "@/assets/"
             state.cur_stat = {
               "name":stat.name,
               "descr":stat.descr,
@@ -1230,7 +1274,8 @@ export default{
           state.slide=1;
         }
       },
-      shareLink: (send)=>{
+      sendReference: (send)=>{
+
         if(send){
           patronUrlRef.value.validate()
           patronAddrRef.value.validate()
@@ -1239,12 +1284,28 @@ export default{
             alert("The form seems incomplete, please try again! 🤖")
             return;
           }
-          alert("Thanks for your support and trust in MetaBrainz IO 🦾 We're one step closer to our goals!! 🚀🪐")
+
+          if(patron_url.value != null && patron_addr.value != null){
+            const user_ref = {
+              "msg_type": "contribution",
+              "url": patron_url.value,
+              "c_addr": patron_addr.value
+            }
+
+            return sendReference(user_ref)
+            .then((result) => {
+                if(result){
+                  alert("Thanks for your support and trust in MetaBrainz IO 🦾 We're one step closer to our goals!! 🚀🪐");
+                  resetForm();
+                }
+                else{
+                  alert("Something went wrong, most likely a serverside error. Please try again later..");
+                }
+            });
+          }
+        }else{
+          resetForm();
         }
-        
-        state.patron_url = "";
-        state.patron_address = "";
-        prompt.value = false;
       },
       urlRules: [
         val => (val !== null && val !== '') || 'Forgot to fill this field?',

@@ -308,8 +308,8 @@
                     >
                         <img v-if="!fp_btn_big_1_hover" src="../assets/style/fp_card_1.png" width="384">
                         <img v-else src="../assets/style/fp_card_1_press.png" width="384">
-                        <div v-if="!fp_btn_big_1_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 75px;">Learn About MetaBrains</div>
-                        <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:62px;left:-6px;">Learn About MetaBrains</div>
+                        <div v-if="!fp_btn_big_1_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top:78px;">Learn About MetaBrains</div>
+                        <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:68px;left:-3px;">Learn About MetaBrains</div>
                     </q-btn>
                 </div>
                 </div>
@@ -328,8 +328,8 @@
                     >
                         <img v-if="!fp_btn_big_2_hover" src="../assets/style/fp_card_1.png" width="384">
                         <img v-else src="../assets/style/fp_card_1_press.png" width="384">
-                        <div v-if="!fp_btn_big_2_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 75px;">Learn About MetaGears</div>
-                        <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:62px;left:-6px;">Learn About MetaGears</div>
+                        <div v-if="!fp_btn_big_2_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 78px;">Learn About MetaGears</div>
+                        <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:68px;left:-3px;">Learn About MetaGears</div>
                     </q-btn>
                 </div>
                 </div>
@@ -347,8 +347,8 @@
                     >
                         <img v-if="!fp_btn_big_3_hover" src="../assets/style/fp_card_1.png" width="384">
                         <img v-else src="../assets/style/fp_card_1_press.png" width="384">
-                        <div v-if="!fp_btn_big_3_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 75px;">Learn About MetaStadia</div>
-                        <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:62px;left:-6px;">Learn About MetaStadia</div>
+                        <div v-if="!fp_btn_big_3_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 78px;">Learn About MetaStadia</div>
+                        <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:68px;left:-3px;">Learn About MetaStadia</div>
                     </q-btn>
                 </div>
                 </div>
@@ -367,8 +367,8 @@
                 >
                     <img v-if="!fp_btn_big_1_hover" src="../assets/style/fp_card_1.png" width="320">
                     <img v-else src="../assets/style/fp_card_1_press.png" width="320">
-                    <div v-if="!fp_btn_big_1_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 65px;">Learn About MetaBrains</div>
-                    <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-6px;">Learn About MetaBrains</div>
+                    <div v-if="!fp_btn_big_1_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About MetaBrains</div>
+                    <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-4px;">Learn About MetaBrains</div>
                 </q-btn>
             </div>
             </div>
@@ -387,8 +387,8 @@
                 >
                     <img v-if="!fp_btn_big_2_hover" src="../assets/style/fp_card_1.png" width="320">
                     <img v-else src="../assets/style/fp_card_1_press.png" width="320">
-                    <div v-if="!fp_btn_big_2_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 65px;">Learn About MetaGears</div>
-                    <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-6px;">Learn About MetaGears</div>
+                    <div v-if="!fp_btn_big_2_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About MetaGears</div>
+                    <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-4px;">Learn About MetaGears</div>
                 </q-btn>
             </div>
             </div>
@@ -408,8 +408,8 @@
                 >
                     <img v-if="!fp_btn_big_3_hover" src="../assets/style/fp_card_1.png" width="320">
                     <img v-else src="../assets/style/fp_card_1_press.png" width="320">
-                    <div v-if="!fp_btn_big_3_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 65px;">Learn About MetaStadia</div>
-                    <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-6px;">Learn About MetaStadia</div>
+                    <div v-if="!fp_btn_big_3_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About MetaStadia</div>
+                    <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-4px;">Learn About MetaStadia</div>
                 </q-btn>
             </div>
             </div>
@@ -538,7 +538,7 @@ name: 'Home',
             ... toRefs(content),
             msg_intro_t:"MetaBrainz IO",
             msg_intro_0:"Brain Meets Meta",
-            msg_intro_1:"We are developing Digital Brains and Gears ' NFT's ' which provides access to RAW on/off-chain COMPUTING POWER and ALGORITHMS during Games.",
+            msg_intro_1:"We are developing Digital Brains and Gears ' NFT's ' which gives Players access to RAW on/off-chain COMPUTING POWER and ALGORITHMS during Games... and much MORE...",
             msg_intro_2:"Release your META powers and amp up your game!",
         }
     }

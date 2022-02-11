@@ -141,42 +141,43 @@ export function fetchItems(){
 }
 
 /*
- * Update items by polling the API
+ * Send reference
  */
-// export function updateItems(state){
-//     console.log("Check for updates..")
-//     fetch(process.env.VUE_APP_API_ENDPOINT+'/api/assets/all_assets')
-//     .then((res)=>res.json())
-//     .then((data)=>{
 
-//         // Add / update
-//         data.forEach((item)=>{
 
-//             // Add new items
-//             const check_new_item = state.items.find(el => el.tid == item.tid)
-//             if(check_new_item == undefined){
-//                 // console.log("fetch item id: "+item.tid);
-//                 // Only claimable items here
-//                 if(item.claimable)
-//                 state.items_claimable.push(item)
-//                 // All items here
-//                 state.items.push(item)
-//             }
-//             state.items.forEach((item_local)=>{
-//                 if(item.tid == item_local.tid){
-//                     if(item.quantity != item_local.quantity){
-//                         state.items[state.items.indexOf(item_local)] = item;
-//                     }
-//                 }
-//             })
+// from server
+async function sendRef(requestOptions){
+    try{
+        const response = await fetch(process.env.VUE_APP_API_ENDPOINT+'/api/message/notes', requestOptions)
+        if(response)
+            if(response.status == 200)
+                return response.json();
+            else
+                return null;
+    }catch(e){
+        console.warn(e);
+        return null;
+    }
+}
 
-//             state.items_claimable.forEach((item_claimable_local)=>{
-//                 if(item.tid == item_claimable_local.tid){
-//                     if(item.quantity != item_claimable_local.quantity){
-//                         state.items_claimable[state.items_claimable.indexOf(item_claimable_local)] = item;
-//                     }
-//                 }
-//             })
-//         })
-//     })
-// }
+export function sendReference(user_ref){
+    const data = JSON.stringify(user_ref);
+    const requestOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
+        body: data
+    };
+
+    try{
+        return sendRef(requestOptions).then((res)=>{
+            if(res != null)
+                return true;
+        });
+    }catch(e){
+        console.log(e);
+    }
+    return false;
+}

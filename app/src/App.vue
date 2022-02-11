@@ -118,8 +118,8 @@
               </q-tabs>
               <q-space />
               <q-tabs>
-                <q-route-tab to="/metagear" label="Get M-Gears" />
-                <q-route-tab to="/metabrain" label="Activate M-Brain" />
+                <q-route-tab to="/metagear" label="M-Gears" />
+                <q-route-tab to="/metabrain" label="M-Brains" />
                 <q-btn-dropdown auto-close stretch flat label="About">
                   <q-list class="my-text no-border-radius" style="border: 2px solid #00f2a1;background-color:#01000b;color:white;text-align:left;">
                     <q-item clickable to="/about#meta-brainz-io">
@@ -131,8 +131,8 @@
                     <q-item clickable to="/about#team">
                       <q-item-section style="color:white;">team</q-item-section>
                     </q-item>
-                    <q-item clickable to="/about#note">
-                      <q-item-section style="color:white;">note</q-item-section>
+                    <q-item clickable to="/about#notes">
+                      <q-item-section style="color:white;">notes</q-item-section>
                     </q-item>
                     <q-item clickable to="/about#contact">
                       <q-item-section style="color:white;">contact</q-item-section>
@@ -423,8 +423,8 @@ const menuList = [
     mainitem: false,
   },
   {
-    route: '/about#note',
-    label: 'note',
+    route: '/about#notes',
+    label: 'notes',
     separator: false,
     mainitem: false,
   },

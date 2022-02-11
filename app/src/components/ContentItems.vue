@@ -23,7 +23,7 @@
             <div v-else>
                 <q-card-section>
                     <div align="center" class="my-text text-white text-subtitle2">
-                        No active tokens found!<br/>
+                        Oops, No data retrieved from the server!<br/>
                         <div class="q-py-xs"/>
                         View our collection on opensea!
                         &nbsp;&nbsp;
