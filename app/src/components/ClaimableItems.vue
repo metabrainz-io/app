@@ -24,6 +24,8 @@
             </div>
             <div v-else>
                 <q-card-section>
+
+                    <!--
                     <div align="center" class="my-text text-white text-h5">
                         <q-spinner-gears 
                             color="secondary" size="1.25em"
@@ -31,13 +33,34 @@
                         In progress..
                     </div>
                     <div class="q-py-md"/>
-                <div align="center" class="my-text text-white text-subtitle2">
-                
-                    Follow us on twitter to stay updated!
-                    &nbsp;&nbsp;
-                    <a tag="a" target="_blank" href="https://twitter.com/metabrainz_io">
-                        <q-icon color="white" size="1.5em" name="fab fa-twitter"/>
-                    </a>
+                    -->
+                    
+                    <div align="center" class="my-text text-white text-subtitle2">
+                    <div class="my-title text-subtitle2 text-grey-8">
+                        <!--
+                        &nbsp;&nbsp;
+                        <a tag="a" target="_blank" href="https://discord.com/invite/uXJDA3CC">
+                            <q-icon color="grey-8" size="1.5em" name="fab fa-discord"/>
+                        </a>
+                        <br/>
+                        Find us on Discord or follow us on twitter to stay updated!
+                        &nbsp;&nbsp;
+                        <a tag="a" target="_blank" href="https://twitter.com/metabrainz_io">
+                            <q-icon color="grey-8" size="1.5em" name="fab fa-twitter"/>
+                        </a>
+                        -->
+                        Comming soon
+                        <br/><br/>
+                        <q-spinner-box 
+                            color="secondary" size="1.5em"
+                        />
+                        <q-spinner-box 
+                            color="secondary" size="1.5em"
+                        />
+                        <q-spinner-box 
+                            color="secondary" size="1.5em"
+                        />                                                
+                    </div>
                 </div>
                 </q-card-section>
             </div>

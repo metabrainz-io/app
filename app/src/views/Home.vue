@@ -1,14 +1,14 @@
 <template>
-    <q-page class="q-pa-lg">
+<q-page id="home" class="q-py-lg">
 
         <!-- CONTENT: LANDING 
             style="border: 1px solid red;"
         -->
-        <div class="row justify-evenly">
+    <div class="row justify-evenly">
         <div
             align="center"
             class="row"
-            style="width: 75%;"
+            style="width:75%;"
         >
             <!-- 
             CONTENT LEFT - DEFAULT
@@ -18,45 +18,118 @@
                 <!-- TITLE 
                     style="border: 1px solid green;"
                 -->
-                <div align="center" class="row justify-center">
-                    <div class="gt-md my-title text-h1 text-weight-bold text-white">
-                        {{msg_intro_t}}
-                    </div>
-                    <div class="gt-sm lt-lg my-title text-h2 text-weight-bold text-white">
-                        {{msg_intro_t}}
-                    </div>
-                </div>
 
-                <div class="gt-sm q-py-md"/>
-                
                 <!-- SUBTITLE 
                     style="border: 1px solid green;"
                 -->
                 <div align="center" class="row justify-center">
                     <div class="gt-md my-text text-h3 text-secondary">
-                        {{msg_intro_0}}
+                        <img src="@/assets/logo/metabrainzio_pix_xl.png">
                     </div>
-                    <div class="gt-sm lt-lg my-text text-h4 text-secondary">
-                        {{msg_intro_0}}
+                    <div class="md my-text text-h4 text-secondary">
+                        <img src="@/assets/logo/metabrainzio_pix_lg.png">
                     </div>
+                    <div class="gt-md q-pa-md text-h4 text-weight-bolder my-text text-secondary" style="width:100%;">
+                        {{msg_intro_subtitle}}
+                    </div>
+                    <div class="md q-pa-md text-h5 text-weight-bolder my-text text-secondary" style="width:100%;">
+                        {{msg_intro_subtitle}}
+                    </div>                       
                 </div>
 
-                <div class="gt-sm q-py-md"/>
+                <div class="gt-sm q-py-sm"/>
 
                 <!-- TITLE BODY 
                     style="border: 1px solid green;"
                 -->
                 <div
-                    align="center" class="row"
+                    align="center" class="row justify-center"
                 >
-                    <div class="gt-md my-text text-h5 text-white">
-                        {{msg_intro_1}}<br><br>
-                        {{msg_intro_2}}
+                    <!-- GT-MD -->
+                    <div class="gt-md my-text text-h5 text-white text-weight-bolder" style="width:100%;max-width:720px;">
+                        {{msg_intro_text_1}}
                     </div>
-                    <div class="gt-sm lt-lg my-text text-h6 text-white">
-                        {{msg_intro_1}}<br><br>
-                        {{msg_intro_2}}
+                    <div class="gt-md q-py-lg"/>
+                    <div class="gt-md my-text text-h6 text-white" style="width:100%;max-width:720px;">
+
+                        <q-carousel
+                            infinite
+                            swipeable
+                            animated
+                            :autoplay="3000"
+                            transition-prev="slide-right"
+                            transition-next="slide-left"
+                            :transition-duration="500"
+                            v-model="slide_home"
+                            class="bg-transparent"
+                            style="width:100%;height:125px;"
+                        >
+                            <q-carousel-slide :name="0" class="row items-center">
+                                <div class="col">
+                                    -- Activate your M-Brain and Integrate M-Gears --
+
+                                </div>  
+                            </q-carousel-slide>
+
+                            <q-carousel-slide :name="1" class="row items-center">
+                                <div class="col">
+                                    -- Enhance it's COMPUTING POWER and INTELLIGENCE --
+
+                                </div>  
+                            </q-carousel-slide>
+
+                            <q-carousel-slide :name="2" class="row items-center">
+                                <div class="col">
+                                    -- Utilize your M-Brain in Play 2 Earn Games! --
+
+                                </div>  
+                            </q-carousel-slide>
+                        </q-carousel>
+
                     </div>
+
+                    <!-- MD -->
+                    <div class="md my-text text-h6 text-white text-weight-bolder" style="width:100%;max-width:540px;">
+                        {{msg_intro_text_1}}
+                    </div>
+                    <div class="md q-py-md"/>                 
+                    <div class="md my-text text-subtitle1 text-weight-bold text-white" style="width:100%;max-width:540px;">
+                        
+                        <q-carousel
+                            infinite
+                            swipeable
+                            animated
+                            :autoplay="3000"
+                            transition-prev="slide-right"
+                            transition-next="slide-left"
+                            :transition-duration="500"
+                            v-model="slide_home"
+                            class="bg-transparent"
+                            style="max-width:100%;height:125px;border:1px solid red;"
+                        >
+                            <q-carousel-slide :name="0" class="row items-center">
+                                <div class="col">
+                                    -- Activate your M-Brain and Integrate M-Gears --
+
+                                </div>  
+                            </q-carousel-slide>
+
+                            <q-carousel-slide :name="1" class="row items-center">
+                                <div class="col">
+                                    -- Enhance it's COMPUTING POWER and INTELLIGENCE --
+
+                                </div>  
+                            </q-carousel-slide>
+
+                            <q-carousel-slide :name="2" class="row items-center">
+                                <div class="col">
+                                    -- Utilize your M-Brain in Play 2 Earn Games! --
+
+                                </div>  
+                            </q-carousel-slide>
+                        </q-carousel>
+
+                    </div>                    
 
                 </div>
 
@@ -72,34 +145,56 @@
                     <!-- BTN -->
                     <div class="q-pa-md">
                     <div style="width:256px;">
-                        <q-btn 
-                            class="btn-helper" dense flat unelevated :value="fp_btn_1_hover"
-                            @mouseover="fp_btn_1_hover = true" @mouseleave="fp_btn_1_hover = false"
-                            @click="$router.push({ name: 'Metagear'})"
-                        >
-                            <img v-if="!fp_btn_1_hover" src="../assets/style/btn_lg.svg" width="256">
-                            <img v-else src="../assets/style/btn_lg_press.svg" width="256">
-                            <div v-if="!fp_btn_1_hover" class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">get m-gears</div>
-                            <div v-else class="my-text text-subtitle1 text-weight-bold text-dark" style="width:256px;position:absolute;top:20px;left:-1px;">get m-gears</div>
-                        </q-btn>
-                    </div>
+
+                        <div v-if="!$store.getters.deviceMobile">
+                            <q-btn 
+                                class="btn-helper" dense flat unelevated :value="fp_btn_2_hover"
+                                @mouseover="fp_btn_2_hover = true" @mouseleave="fp_btn_2_hover = false"
+                                @click="$router.push({ name: 'Metabrain', hash: '#main'})"
+                            >
+                                <img v-if="!fp_btn_2_hover" src="../assets/style/btn_lg.png" width="256">
+                                <img v-else src="../assets/style/btn_press_lg.png" width="256">
+                                <div v-if="!fp_btn_2_hover" class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">get m-brains</div>
+                                <div v-else class="my-text text-subtitle1 text-weight-bold text-dark" style="width:256px;position:absolute;top:20px;left:-1px;">get m-brains</div>
+                            </q-btn>
+                        </div>           
+                        <div v-else>
+                            <q-btn 
+                                class="btn-helper" dense flat unelevated :value="fp_btn_2_hover"
+                                @click="$router.push({ name: 'Metabrain', hash: '#main'})"
+                            >
+                                <img src="../assets/style/btn_lg.png" width="256">
+                                <div class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">get m-brains</div>
+                            </q-btn>   
+                        </div>           
+                    </div>           
                     </div>
                     <!-- BTN -->
                     <div class="q-pa-md">
                     <div style="width:256px;">
-                        <q-btn 
-                            class="btn-helper" dense flat unelevated :value="fp_btn_2_hover"
-                            @mouseover="fp_btn_2_hover = true" @mouseleave="fp_btn_2_hover = false"
-                            @click="$router.push({ name: 'Metabrain'})"
-                        >
-                            <img v-if="!fp_btn_2_hover" src="../assets/style/btn_lg.svg" width="256">
-                            <img v-else src="../assets/style/btn_lg_press.svg" width="256">
-                            <div v-if="!fp_btn_2_hover" class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">activate m-brain</div>
-                            <div v-else class="my-text text-subtitle1 text-weight-bold text-dark" style="width:256px;position:absolute;top:20px;left:-1px;">activate m-brain</div>
-                        </q-btn>
-                    </div>                    
+                        <div v-if="!$store.getters.deviceMobile">
+                            <q-btn 
+                                class="btn-helper" dense flat unelevated :value="fp_btn_1_hover"
+                                @mouseover="fp_btn_1_hover = true" @mouseleave="fp_btn_1_hover = false"
+                                @click="$router.push({ name: 'Metagear', hash: '#main'})"
+                            >
+                                <img v-if="!fp_btn_1_hover" src="../assets/style/btn_lg.png" width="256">
+                                <img v-else src="../assets/style/btn_press_lg.png" width="256">
+                                <div v-if="!fp_btn_1_hover" class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">get m-gears</div>
+                                <div v-else class="my-text text-subtitle1 text-weight-bold text-dark" style="width:256px;position:absolute;top:20px;left:-1px;">get m-gears</div>
+                            </q-btn>
+                        </div>
+                        <div v-else>
+                            <q-btn 
+                                class="btn-helper" dense flat unelevated :value="fp_btn_2_hover"
+                                @click="$router.push({ name: 'Metabrain', hash: '#main'})"
+                            >
+                                <img src="../assets/style/btn_lg.png" width="256">
+                                <div class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">get m-gears</div>
+                            </q-btn>
+                        </div>   
                     </div>
-
+                    </div>
                 </div>
 
                 <!-- ACTIONS 
@@ -111,90 +206,172 @@
                     <!-- BTN -->
                     <div class="q-pa-md">
                     <div style="width:256px;">
-                        <q-btn 
-                            class="btn-helper" dense flat unelevated :value="fp_btn_1_hover"
-                            @mouseover="fp_btn_1_hover = true" @mouseleave="fp_btn_1_hover = false"
-                            @click="$router.push({ name: 'Metagear'})"
-                        >
-                            <img v-if="!fp_btn_1_hover" src="../assets/style/btn_lg.svg" width="256">
-                            <img v-else src="../assets/style/btn_lg_press.svg" width="256">
-                            <div v-if="!fp_btn_1_hover" class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">get m-gears</div>
-                            <div v-else class="my-text text-subtitle1 text-weight-bold text-dark" style="width:256px;position:absolute;top:20px;left:-1px;">get m-gears</div>
-                        </q-btn>
-                    </div>
+                        <div v-if="!$store.getters.deviceMobile">
+                            <q-btn 
+                                class="btn-helper" dense flat unelevated :value="fp_btn_2_hover"
+                                @mouseover="fp_btn_2_hover = true" @mouseleave="fp_btn_2_hover = false"
+                                @click="$router.push({ name: 'Metabrain', hash: '#main'})"
+                            >
+                                <img v-if="!fp_btn_2_hover" src="../assets/style/btn_lg.png" width="256">
+                                <img v-else src="../assets/style/btn_press_lg.png" width="256">
+                                <div v-if="!fp_btn_2_hover" class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">get m-brains</div>
+                                <div v-else class="my-text text-subtitle1 text-weight-bold text-dark" style="width:256px;position:absolute;top:20px;left:-1px;">get m-brains</div>
+                            </q-btn>
+                        </div>
+                        <div v-else>
+                            <q-btn 
+                                class="btn-helper" dense flat unelevated :value="fp_btn_2_hover"
+                                @click="$router.push({ name: 'Metabrain', hash: '#main'})"
+                            >
+                                <img src="../assets/style/btn_lg.png" width="256">
+                                <div class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">get m-brains</div>
+                            </q-btn>
+                        </div>
+                    </div>                    
                     </div>
                     <!-- BTN -->
                     <div class="q-pa-md">
                     <div style="width:256px;">
-                        <q-btn 
-                            class="btn-helper" dense flat unelevated :value="fp_btn_2_hover"
-                            @mouseover="fp_btn_2_hover = true" @mouseleave="fp_btn_2_hover = false"
-                            @click="$router.push({ name: 'Metabrain'})"
-                        >
-                            <img v-if="!fp_btn_2_hover" src="../assets/style/btn_lg.svg" width="256">
-                            <img v-else src="../assets/style/btn_lg_press.svg" width="256">
-                            <div v-if="!fp_btn_2_hover" class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">activate m-brain</div>
-                            <div v-else class="my-text text-subtitle1 text-weight-bold text-dark" style="width:256px;position:absolute;top:20px;left:-1px;">activate m-brain</div>
-                        </q-btn>
-                    </div>                    
+                        <div v-if="!$store.getters.deviceMobile">
+                            <q-btn 
+                                class="btn-helper" dense flat unelevated :value="fp_btn_1_hover"
+                                @mouseover="fp_btn_1_hover = true" @mouseleave="fp_btn_1_hover = false"
+                                @click="$router.push({ name: 'Metagear', hash: '#main'})"
+                            >
+                                <img v-if="!fp_btn_1_hover" src="../assets/style/btn_lg.png" width="256">
+                                <img v-else src="../assets/style/btn_press_lg.png" width="256">
+                                <div v-if="!fp_btn_1_hover" class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">get m-gears</div>
+                                <div v-else class="my-text text-subtitle1 text-weight-bold text-dark" style="width:256px;position:absolute;top:20px;left:-1px;">get m-gears</div>
+                            </q-btn>
+                        </div>
+                        <div v-else>
+                            <q-btn 
+                                class="btn-helper" dense flat unelevated :value="fp_btn_1_hover"
+                                @click="$router.push({ name: 'Metagear', hash: '#main'})"
+                            >
+                                <img src="../assets/style/btn_lg.png" width="256">
+                                <div class="my-text text-subtitle1 text-weight-bold text-dark" style="position:absolute;top:25px;">get m-gears</div>
+                            </q-btn>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
             <!-- 
             CONTENT LEFT - MOBILE
             -->
-            <div class="lt-md flex justify-center">
-                <div class="gt-xs lt-md row my-title text-h3 text-weight-bold text-white">
-                    {{msg_intro_t}}
-                </div>
-                <div class="lt-sm row my-title text-h4 text-weight-bold text-white">
-                    {{msg_intro_t}}
-                </div>
-                <div class="q-py-xl"/>
-                <div class="text-h6 my-text text-secondary" style="width:100%;">
-                    {{msg_intro_0}}
-                </div>
-                <div class="q-py-lg"/>
-                <div class="my-text text-subtitle2 text-white">
-                    {{msg_intro_1}}<br><br>
-                    {{msg_intro_2}}
-                    <div class="q-py-md"/>
+            <div class="lt-md flex justify-center" style="width:100%;">
+                <div class="lt-md row items-center justify-center my-title text-h3 text-weight-bold text-white">
+                    <img class="sm" src="@/assets/logo/metabrainzio_pix_md.png">
+                    <img class="xs" src="@/assets/logo/metabrainzio_pix_md.png" width="320" height="33">
+                </div>                     
+            </div>            
+            <div align="center" class="lt-md q-py-lg flex justify-center">
+                <div class="q-py-md"/>
+                <div class="row justify-center" style="width:100%;">
+                    <div class="text-h6 my-text text-secondary" style="width:100%;max-width:400px;">
+                        {{msg_intro_subtitle}}
+                    </div>
+                    <div class="q-py-lg"/>
+                    <div class="my-text text-subtitle1 text-weight-bold text-white" style="width:100%;max-width:400px;">
+                        {{msg_intro_text_1}}
+                        <div class="q-py-sm"/>
+                    </div>
+                   <div class="my-text text-body text-white" style="width:100%;max-width:400px;">
+                         <q-carousel
+                            infinite
+                            swipeable
+                            animated
+                            :autoplay="3500"
+                            transition-prev="fade"
+                            transition-next="fade"
+                            :transition-duration="500"
+                            v-model="slide_home"
+                            class="bg-transparent"
+                            style="max-width:400px;max-height:80px;"
+                        >
+                            <q-carousel-slide :name="0" class="row items-center">
+                                <div class="col">
+                                    Activate your M-Brain and Integrate M-Gears
+
+                                </div>  
+                            </q-carousel-slide>
+
+                            <q-carousel-slide :name="1" class="row items-center">
+                                <div class="col">
+                                    Enhance it's COMPUTING POWER and INTELLIGENCE
+
+                                </div>  
+                            </q-carousel-slide>
+
+                            <q-carousel-slide :name="2" class="row items-center">
+                                <div class="col">
+                                    Utilize your M-Brain in Play 2 Earn Games!
+
+                                </div>
+                            </q-carousel-slide>
+                        </q-carousel>
+
+
+                        
+                        <div class="q-py-sm"/>
+                    </div>                    
                 </div>
                 <div class="q-py-md"/>
 
 
-               <!-- BTN -->
-                <div class="q-pa-md">
-                <div style="width:192px;">
-                    <q-btn 
-                        class="btn-helper" dense flat unelevated :value="fp_btn_1_hover"
-                        @mouseover="fp_btn_1_hover = true" @mouseleave="fp_btn_1_hover = false"
-                        @click="$router.push({ name: 'Metagear'})"
-                    >
-                        <img v-if="!fp_btn_1_hover" src="../assets/style/btn_lg.svg" width="192">
-                        <img v-else src="../assets/style/btn_lg_press.svg" width="192">
-                        <div v-if="!fp_btn_1_hover" class="my-text text-caption text-weight-bold text-dark" style="position:absolute;top: 22px;">get m-gears</div>
-                        <div v-else class="my-text text-caption text-weight-bold text-dark" style="width:192px;position:absolute;top:18px;left:-1px;">get m-gears</div>
-                    </q-btn>
-                </div>
-                </div>
                 <!-- BTN -->
                 <div class="q-pa-md">
                 <div style="width:192px;">
-                    <q-btn 
-                        class="btn-helper" dense flat unelevated :value="fp_btn_2_hover"
-                        @mouseover="fp_btn_2_hover = true" @mouseleave="fp_btn_2_hover = false"
-                        @click="$router.push({ name: 'Metabrain'})"
-                    >
-                        <img v-if="!fp_btn_2_hover" src="../assets/style/btn_lg.svg" width="192">
-                        <img v-else src="../assets/style/btn_lg_press.svg" width="192">
-                        <div v-if="!fp_btn_2_hover" class="my-text text-caption text-weight-bold text-dark" style="position:absolute;top: 22px;">activate m-brain</div>
-                        <div v-else class="my-text text-caption text-weight-bold text-dark" style="width:192px;position:absolute;top:18px;left:-1px;">activate m-brain</div>
-                    </q-btn>
+                    <div v-if="!$store.getters.deviceMobile">                
+                        <q-btn 
+                            class="btn-helper" dense flat unelevated :value="fp_btn_2_hover"
+                            @mouseover="fp_btn_2_hover = true" @mouseleave="fp_btn_2_hover = false"
+                            @click="$router.push({ name: 'Metabrain', hash: '#main'})"
+                        >
+                            <img v-if="!fp_btn_2_hover" src="../assets/style/btn_lg.png" width="192">
+                            <img v-else src="../assets/style/btn_press_lg.png" width="192">
+                            <div v-if="!fp_btn_2_hover" class="my-text text-caption text-weight-bold text-dark" style="position:absolute;top: 22px;">get m-brains</div>
+                            <div v-else class="my-text text-caption text-weight-bold text-dark" style="width:192px;position:absolute;top:18px;left:-1px;">get m-brains</div>
+                        </q-btn>
+                    </div>
+                    <div v-else>
+                        <q-btn 
+                            class="btn-helper" dense flat unelevated :value="fp_btn_2_hover"
+                            @click="$router.push({ name: 'Metabrain', hash: '#main'})"
+                        >
+                            <img src="../assets/style/btn_lg.png" width="192">
+                            <div class="my-text text-caption text-weight-bold text-dark" style="position:absolute;top: 22px;">get m-brains</div>
+                        </q-btn>                    
+                    </div>          
                 </div>                    
                 </div>
-
-                
+               <!-- BTN -->
+                <div class="q-pa-md">
+                <div style="width:192px;">
+                    <div v-if="!$store.getters.deviceMobile">
+                        <q-btn 
+                            class="btn-helper" dense flat unelevated :value="fp_btn_1_hover"
+                            @mouseover="fp_btn_1_hover = true" @mouseleave="fp_btn_1_hover = false"
+                            @click="$router.push({ name: 'Metagear', hash: '#main'})"
+                        >
+                            <img v-if="!fp_btn_1_hover" src="../assets/style/btn_lg.png" width="192">
+                            <img v-else src="../assets/style/btn_press_lg.png" width="192">
+                            <div v-if="!fp_btn_1_hover" class="my-text text-caption text-weight-bold text-dark" style="position:absolute;top: 22px;">get m-gears</div>
+                            <div v-else class="my-text text-caption text-weight-bold text-dark" style="width:192px;position:absolute;top:18px;left:-1px;">get m-gears</div>
+                        </q-btn>
+                    </div>
+                    <div v-else>
+                        <q-btn 
+                            class="btn-helper" dense flat unelevated :value="fp_btn_1_hover"
+                            @click="$router.push({ name: 'Metagear', hash: '#main'})"
+                        >
+                            <img src="../assets/style/btn_lg.png" width="192">
+                            <div class="my-text text-caption text-weight-bold text-dark" style="position:absolute;top: 22px;">get m-gears</div>
+                        </q-btn>                    
+                    </div>
+                </div>
+                </div>
             </div>
 
             <!-- CONTENT RIGHT - DEFAULT 
@@ -202,24 +379,24 @@
             -->
             <div 
                 class="gt-md col flex justify-center"
-                style="min-width:350px;max-width:450px;"
+                style="min-width:350px;max-width:475px;"
             >
                 <!-- AVE -->
                 <div class="col q-pa-xl" align="right">
                     <div>
                         <img 
                             src="../assets/ave.gif"
-                            style="width:12.5rem;border:5px solid #100e2f;"
+                            style="margin-left:40px;width:12rem;border:4px solid #34204f;"
                         />
                     </div>
                 </div>
                 <!-- AVE SPEAKS -->
                 <div 
                     class="col q-py-xl" align="left"
-                    style="width:100%; max-width:250px;cursor:pointer;"
+                    style="margin-left:50px;width:100%; width:300px;max-width:300px;max-height:240px;cursor:pointer;margin-top:48px;padding:10px;border-top:4px solid #00f2a1;border-bottom:4px solid #f9579a;border-radius:0px;background-image: linear-gradient(to top, rgba(249,87,154,0.1), rgba(0,20,20,1)) !important;"
                     @click="$router.push({ name: 'About', hash: '#intro' })"
-                >
-                    <div v-for="msg in ave_msg" :key="msg" class="q-pa-xs my-text text-subtitle1 text-secondary text-weight-bolder">
+                >                    
+                    <div v-for="msg in ave_msg" :key="msg" class="q-pa-xs my-text text-subtitle0 text-secondary text-weight-bolder">
                         <div v-if="msg.length > 1">{{msg}}</div>
                     </div>
                 </div>
@@ -237,18 +414,18 @@
                     <div>
                         <img 
                             src="../assets/ave.gif"
-                            style="width:10rem;border:5px solid #100e2f;"
+                            style="width:10rem;border:3px solid #34204f;"
                         />
                     </div>
                 </div>
                 <!-- AVE SPEAKS -->
                 <div 
                     class="col q-py-xl flex justify-center" align="left"
-                    style="max-width:250px;height:300px;cursor:pointer;"
+                    style="max-width:275px;height:200px;cursor:pointer;margin-top:48px;padding:10px;border-top:3px solid #00f2a1;border-bottom:3px solid #f9579a;border-radius:0px;background-image: linear-gradient(to top, rgba(249,87,154,0.1), rgba(0,20,20,1)) !important;"
                     @click="$router.push({ name: 'About', hash: '#intro' })"
                 >
                     <div v-for="msg in ave_msg" :key="msg" class="my-text text-body2 text-secondary text-weight-bolder">
-                        <div v-if="msg.length > 1">{{msg}}</div>
+                        <div v-if="msg.length > 2">{{msg}}</div>
                     </div>
                 </div>
             </div>
@@ -268,14 +445,14 @@
                     >
                         <img 
                             src="../assets/ave.gif"
-                            style="width:8rem;border:4px solid #100e2f;"
+                            style="width:8rem;border:3px solid #34204f;"
                         />
                     </div>
                 </div>
                 <!-- AVE SPEAKS -->
                 <div 
                     class="row q-py-md flex justify-center"
-                    style="width:300px;height:150px;padding:10px;cursor:pointer;border-top:1px solid #00f2a1;border-radius:5px;background-image: linear-gradient(to top, rgba(0,20,20,0), rgba(0,20,20,1)) !important;"
+                    style="width:300px;height:150px;padding:10px;cursor:pointer;border-top:3px solid #00f2a1;border-bottom:3px solid #f9579a;border-radius:0px;background-image: linear-gradient(to top, rgba(249,87,154,0.1), rgba(0,20,20,1)) !important;"
                     @click="$router.push({ name: 'About', hash: '#intro' })"
                 >
                     <div class="row" align="center" v-for="msg in ave_msg" :key="msg">
@@ -285,32 +462,53 @@
             </div>
             </div>
         </div>
-        </div>
-        <div class="q-py-md"/>
-
+    </div>
+        <!-- separate elements begin (pushing down) -->
+        <!-- separate elements end -->     
+        <div class="gt-md" style="height:260px;width:100%;"/>   
+        <div class="md" style="height:200px;width:100%;"/>   
+        <div class="lt-md" style="height:100px;width:100%;"/>   
 
         <!-- CONTENT: ABOUT   -->
         <div 
-            class="row items-start justify-center" style="width: 100%;"
+            class="row bg-dark items-start justify-center" style="width: 100%;"
         >
            <!-- 
             About MetaBrains DEFAULT
            -->
+            <!-- roof elements begin -->
+            <div class="gt-md" style="height:100px;width:100%;"/>
+            <div class="md" style="height:75px;width:100%;"/>
+            <div class="lt-md" style="height:50px;width:100%;"/>
+            <!-- roof elements end -->
             <div class="gt-xs flex justify-center">
 
-                <!-- BTN -->
+                <!-- BTN
+                        @click="$router.push({ name: 'About', hash: '#meta-brains' })"
+                 -->
                 <div class="gt-xs q-pa-md">
                 <div style="width:384px;">
-                    <q-btn 
-                        class="btn-helper" dense flat unelevated :value="fp_btn_big_1_hover"
-                        @mouseover="fp_btn_big_1_hover = true" @mouseleave="fp_btn_big_1_hover = false"
-                        @click="$router.push({ name: 'About', hash: '#meta-brains' })"
-                    >
-                        <img v-if="!fp_btn_big_1_hover" src="../assets/style/fp_card_1.png" width="384">
-                        <img v-else src="../assets/style/fp_card_1_press.png" width="384">
-                        <div v-if="!fp_btn_big_1_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top:78px;">Learn About MetaBrains</div>
-                        <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:68px;left:-3px;">Learn About MetaBrains</div>
-                    </q-btn>
+                    <div v-if="!$store.getters.deviceMobile">
+                        <q-btn 
+                            class="btn-helper" dense flat unelevated :value="fp_btn_big_1_hover"
+                            @mouseover="fp_btn_big_1_hover = true" @mouseleave="fp_btn_big_1_hover = false"
+                            @click="$router.push({ name: 'About', hash: '#meta-brains' })"
+                        >
+                            <img v-if="!fp_btn_big_1_hover" src="../assets/style/fp_card_1.png" width="384">
+                            <img v-else src="../assets/style/fp_card_1_press.png" width="384">
+                            <div v-if="!fp_btn_big_1_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top:78px;">Learn About<br/>M-Brains</div>
+                            <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:68px;left:-3px;">Learn About<br/>M-Brains</div>
+                        </q-btn>
+                    </div>
+                    <div v-else>
+                        <q-btn 
+                            class="btn-helper" dense flat unelevated :value="fp_btn_big_1_hover"
+                            @click="$router.push({ name: 'About', hash: '#meta-brains' })"
+                        >
+                            <img src="../assets/style/fp_card_1.png" width="384">
+                            <div class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top:78px;">Learn About<br/>M-Brains</div>
+                        </q-btn>                    
+                    </div>
                 </div>
                 </div>
 
@@ -320,17 +518,29 @@
                 <!-- BTN -->
                 <div class="gt-xs q-pa-md">
                 <div style="width:384px;">
-                    <q-btn 
-                        class="btn-helper" dense flat unelevated :value="fp_btn_big_2_hover"
-                        @mouseover="fp_btn_big_2_hover = true" @mouseleave="fp_btn_big_2_hover = false"
-                        @click="$router.push({ name: 'About', hash: '#meta-gears' })"
+                    <div v-if="!$store.getters.deviceMobile">
+                        <q-btn 
+                            class="btn-helper" dense flat unelevated :value="fp_btn_big_2_hover"
+                            @mouseover="fp_btn_big_2_hover = true" @mouseleave="fp_btn_big_2_hover = false"
+                            @click="$router.push({ name: 'About', hash: '#meta-gears' })"
 
-                    >
-                        <img v-if="!fp_btn_big_2_hover" src="../assets/style/fp_card_1.png" width="384">
-                        <img v-else src="../assets/style/fp_card_1_press.png" width="384">
-                        <div v-if="!fp_btn_big_2_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 78px;">Learn About MetaGears</div>
-                        <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:68px;left:-3px;">Learn About MetaGears</div>
-                    </q-btn>
+                        >
+                            <img v-if="!fp_btn_big_2_hover" src="../assets/style/fp_card_1.png" width="384">
+                            <img v-else src="../assets/style/fp_card_1_press.png" width="384">
+                            <div v-if="!fp_btn_big_2_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 78px;">Learn About<br/>M-Gears</div>
+                            <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:68px;left:-3px;">Learn About<br/>M-Gears</div>
+                        </q-btn>
+                    </div>
+                    <div v-else>
+                        <q-btn 
+                            class="btn-helper" dense flat unelevated :value="fp_btn_big_2_hover"
+                            @click="$router.push({ name: 'About', hash: '#meta-gears' })"
+
+                        >
+                            <img src="../assets/style/fp_card_1.png" width="384">
+                            <div class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 78px;">Learn About<br/>M-Gears</div>
+                        </q-btn>                    
+                    </div>
                 </div>
                 </div>
                 <!-- 
@@ -340,16 +550,27 @@
                 <!-- BTN -->
                 <div class="gt-xs q-pa-md">
                 <div style="width:384px;">
-                    <q-btn 
-                        class="btn-helper" dense flat unelevated :value="fp_btn_big_3_hover"
-                        @mouseover="fp_btn_big_3_hover = true" @mouseleave="fp_btn_big_3_hover = false"
-                        @click="$router.push({ name: 'About', hash: '#meta-games' })" 
-                    >
-                        <img v-if="!fp_btn_big_3_hover" src="../assets/style/fp_card_1.png" width="384">
-                        <img v-else src="../assets/style/fp_card_1_press.png" width="384">
-                        <div v-if="!fp_btn_big_3_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 78px;">Learn About MetaStadia</div>
-                        <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:68px;left:-3px;">Learn About MetaStadia</div>
-                    </q-btn>
+                    <div v-if="!$store.getters.deviceMobile">
+                        <q-btn 
+                            class="btn-helper" dense flat unelevated :value="fp_btn_big_3_hover"
+                            @mouseover="fp_btn_big_3_hover = true" @mouseleave="fp_btn_big_3_hover = false"
+                            @click="$router.push({ name: 'About', hash: '#meta-games' })" 
+                        >
+                            <img v-if="!fp_btn_big_3_hover" src="../assets/style/fp_card_1.png" width="384">
+                            <img v-else src="../assets/style/fp_card_1_press.png" width="384">
+                            <div v-if="!fp_btn_big_3_hover" class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 78px;">Learn About<br/>M-Games</div>
+                            <div v-else class="my-title text-h5 text-weight-bold text-white" style="width:384px;position:absolute;top:68px;left:-3px;">Learn About<br/>M-Games</div>
+                        </q-btn>
+                    </div>
+                    <div v-else>
+                        <q-btn 
+                            class="btn-helper" dense flat unelevated :value="fp_btn_big_3_hover"
+                            @click="$router.push({ name: 'About', hash: '#meta-games' })" 
+                        >
+                            <img src="../assets/style/fp_card_1.png" width="384">
+                            <div class="my-title text-h5 text-weight-bold text-secondary" style="width:384px;position:absolute;top: 78px;">Learn About<br/>M-Games</div>
+                        </q-btn>                    
+                    </div>
                 </div>
                 </div>
             </div>
@@ -357,19 +578,32 @@
             <!-- 
             About MetaBrains MOBILE
             -->
-            <!-- BTN -->
+            <!-- BTN 
+                    @click="$router.push({ name: 'About', hash: '#meta-brains' })"
+            -->
             <div class="lt-sm q-pa-md">
             <div style="width:320px;">
-                <q-btn 
-                    class="btn-helper" dense flat unelevated :value="fp_btn_big_1_hover"
-                    @mouseover="fp_btn_big_1_hover = true" @mouseleave="fp_btn_big_1_hover = false"
-                    @click="$router.push({ name: 'About', hash: '#meta-brains' })"
-                >
-                    <img v-if="!fp_btn_big_1_hover" src="../assets/style/fp_card_1.png" width="320">
-                    <img v-else src="../assets/style/fp_card_1_press.png" width="320">
-                    <div v-if="!fp_btn_big_1_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About MetaBrains</div>
-                    <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-4px;">Learn About MetaBrains</div>
-                </q-btn>
+                <div v-if="!$store.getters.deviceMobile">
+                    <q-btn 
+                        class="btn-helper" dense flat unelevated :value="fp_btn_big_1_hover"
+                        @mouseover="fp_btn_big_1_hover = true" @mouseleave="fp_btn_big_1_hover = false"
+                        @click="$router.push({ name: 'About', hash: '#meta-brains' })"
+                    >
+                        <img v-if="!fp_btn_big_1_hover" src="../assets/style/fp_card_1.png" width="320">
+                        <img v-else src="../assets/style/fp_card_1_press.png" width="320">
+                        <div v-if="!fp_btn_big_1_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About<br/>M-Brains</div>
+                        <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-4px;">Learn About<br/>M-Brains</div>
+                    </q-btn>
+                </div>
+                <div v-else>
+                    <q-btn 
+                        class="btn-helper" dense flat unelevated :value="fp_btn_big_1_hover"
+                        @click="$router.push({ name: 'About', hash: '#meta-brains' })"
+                    >
+                        <img src="../assets/style/fp_card_1.png" width="320">
+                        <div class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About<br/>M-Brains</div>
+                    </q-btn>                
+                </div>
             </div>
             </div>
 
@@ -379,17 +613,29 @@
             <!-- BTN -->
             <div class="lt-sm q-pa-md">
             <div style="width:320px;">
-                <q-btn 
-                    class="btn-helper" dense flat unelevated :value="fp_btn_big_2_hover"
-                    @mouseover="fp_btn_big_2_hover = true" @mouseleave="fp_btn_big_2_hover = false"
-                    @click="$router.push({ name: 'About', hash: '#meta-gears' })"
+                <div v-if="!$store.getters.deviceMobile">
+                    <q-btn 
+                        class="btn-helper" dense flat unelevated :value="fp_btn_big_2_hover"
+                        @mouseover="fp_btn_big_2_hover = true" @mouseleave="fp_btn_big_2_hover = false"
+                        @click="$router.push({ name: 'About', hash: '#meta-gears' })"
 
-                >
-                    <img v-if="!fp_btn_big_2_hover" src="../assets/style/fp_card_1.png" width="320">
-                    <img v-else src="../assets/style/fp_card_1_press.png" width="320">
-                    <div v-if="!fp_btn_big_2_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About MetaGears</div>
-                    <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-4px;">Learn About MetaGears</div>
-                </q-btn>
+                    >
+                        <img v-if="!fp_btn_big_2_hover" src="../assets/style/fp_card_1.png" width="320">
+                        <img v-else src="../assets/style/fp_card_1_press.png" width="320">
+                        <div v-if="!fp_btn_big_2_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About<br/>M-Gears</div>
+                        <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-4px;">Learn About<br/>M-Gears</div>
+                    </q-btn>
+                </div>
+                <div v-else>
+                    <q-btn 
+                        class="btn-helper" dense flat unelevated :value="fp_btn_big_2_hover"
+                        @click="$router.push({ name: 'About', hash: '#meta-gears' })"
+
+                    >
+                        <img src="../assets/style/fp_card_1.png" width="320">
+                        <div class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About<br/>M-Gears</div>
+                    </q-btn>                
+                </div>
             </div>
             </div>
 
@@ -401,23 +647,40 @@
             <!-- BTN -->
             <div class="lt-sm q-pa-md">
             <div style="width:320px;">
-                <q-btn 
-                    class="btn-helper" dense flat unelevated :value="fp_btn_big_3_hover"
-                    @mouseover="fp_btn_big_3_hover = true" @mouseleave="fp_btn_big_3_hover = false"
-                    @click="$router.push({ name: 'About', hash: '#meta-games' })" 
-                >
-                    <img v-if="!fp_btn_big_3_hover" src="../assets/style/fp_card_1.png" width="320">
-                    <img v-else src="../assets/style/fp_card_1_press.png" width="320">
-                    <div v-if="!fp_btn_big_3_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About MetaStadia</div>
-                    <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-4px;">Learn About MetaStadia</div>
-                </q-btn>
+                <div v-if="!$store.getters.deviceMobile">            
+                    <q-btn 
+                        class="btn-helper" dense flat unelevated :value="fp_btn_big_3_hover"
+                        @mouseover="fp_btn_big_3_hover = true" @mouseleave="fp_btn_big_3_hover = false"
+                        @click="$router.push({ name: 'About', hash: '#meta-games' })" 
+                    >
+                        <img v-if="!fp_btn_big_3_hover" src="../assets/style/fp_card_1.png" width="320">
+                        <img v-else src="../assets/style/fp_card_1_press.png" width="320">
+                        <div v-if="!fp_btn_big_3_hover" class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About<br/>M-Games</div>
+                        <div v-else class="my-title text-h6 text-weight-bold text-white" style="width:320px;position:absolute;top:53px;left:-4px;">Learn About<br/>M-Games</div>
+                    </q-btn>
+                </div>
+                <div v-else>
+                    <q-btn 
+                        class="btn-helper" dense flat unelevated :value="fp_btn_big_3_hover"
+                        @click="$router.push({ name: 'About', hash: '#meta-games' })" 
+                    >
+                        <img src="../assets/style/fp_card_1.png" width="320">
+                        <div class="my-title text-h6 text-weight-bold text-secondary" style="width:320px;position:absolute;top: 62px;">Learn About<br/>M-Games</div>
+                    </q-btn>                
+                </div>
             </div>
-            </div>
-
         </div>
-        <div class="q-pa-xl"/>
+        <!-- bottom elements begin -->
+        <div class="gt-md" style="height:100px;width:100%;"/>
+        <div class="md" style="height:75px;width:100%;"/>
+        <div class="lt-md" style="height:50px;width:100%;"/>
+        <!-- bottom elements end -->
+    </div>
+    <div class="q-py-xl"/>
+      
+    <Roadmap/>
+</q-page>  
 
-    </q-page>        
 </template>
 
 <script>
@@ -425,10 +688,16 @@ const intro = [
 	{
 		"section": 
 		[
-			"Hi there, I'm Ave..",
-			"I will guide you in your journey through Cyberspace!",
+			"Hi there, I'm Ave!","I'm a First Generation AGI.."
+			// "I will guide you in your journey through Cyberspace!"
 		]
 	},
+	{
+		"section": 
+		[
+			"I will guide you in your journey through Cyberspace!","",""
+		]
+	},    
     // {
 	// 	"section": 
 	// 	[
@@ -465,23 +734,32 @@ const intro = [
 	{
 		"section": 
 		[
-			"Please read the about sections to learn more about MetaBrainz IO.", "Tap here to proceed...","","","","",""
+			"To get started, read the about sections to learn more about MetaBrainz IO",""
+		]
+	},
+    {
+		"section": 
+		[
+			"Tap here to proceed...","","","",""
 		]
 	}
 ]
 
 import { reactive, toRefs, ref } from 'vue'
+import Roadmap from '@/components/Roadmap.vue';
 
 export default {
 name: 'Home',
     components: {
     // Content,
+        Roadmap
     },
 
     setup(){
 
         const content = reactive({
             ave_msg: [],
+            slide_home: 0
         });
 
         // Intro section
@@ -536,10 +814,10 @@ name: 'Home',
             fp_btn_big_2_hover,
             fp_btn_big_3_hover,
             ... toRefs(content),
-            msg_intro_t:"MetaBrainz IO",
-            msg_intro_0:"Brain Meets Meta",
-            msg_intro_1:"We are developing Digital Brains and Gears ' NFT's ' which gives Players access to RAW on/off-chain COMPUTING POWER and ALGORITHMS during Games... and much MORE...",
-            msg_intro_2:"Release your META powers and amp up your game!",
+            msg_intro_subtitle:"Brain Meets Meta",
+            msg_intro_text_1:"We are developing Digital Brains and Gears",
+            msg_intro_text_2:"Activate your M-Brain -- Integrate M-Gears to Enhance it's COMPUTING POWER and INTELLIGENCE -- Utilize your M-Brain in 'Play 2 Earn' Games!",
+            msg_intro_text_3:"",
         }
     }
 }

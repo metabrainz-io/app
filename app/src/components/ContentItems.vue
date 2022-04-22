@@ -22,7 +22,9 @@
             </div>
             <div v-else>
                 <q-card-section>
-                    <div align="center" class="my-text text-white text-subtitle2">
+                    <div align="center" class="my-text text-grey-8 text-subtitle2">
+
+                        <!--
                         Oops, No data retrieved from the server!<br/>
                         <div class="q-py-xs"/>
                         View our collection on opensea!
@@ -30,6 +32,18 @@
                         <a tag="a" target="_blank" href="https://opensea.io/MetaBrainz">
                             <q-img src="@/assets/style/logo_opensea_trans_white.png" color="white" width="24px"/>
                         </a>
+                        -->
+                        Comming soon
+                        <br/><br/>
+                        <q-spinner-box 
+                            color="secondary" size="1.5em"
+                        />
+                        <q-spinner-box 
+                            color="secondary" size="1.5em"
+                        />
+                        <q-spinner-box 
+                            color="secondary" size="1.5em"
+                        />                                          
                     </div>
                 </q-card-section>
             </div>

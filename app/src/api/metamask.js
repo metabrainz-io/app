@@ -14,7 +14,7 @@ export function isConnected(){
                 return true;
             }
     
-            console.warn("No accounts connected!");
+            // console.warn("No accounts connected!");
             return false;
         });
     }catch(e){

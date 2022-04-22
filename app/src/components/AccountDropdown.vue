@@ -164,7 +164,7 @@ export default{
                 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 alert("Mobile signin not yet supported. Please use the desktop version and make sure Metamask is installed.")
                 }else{
-                store.dispatch("connect_action", state);
+                    store.dispatch("connect_action", state);
                 }
             },
             disconnect:() =>{
