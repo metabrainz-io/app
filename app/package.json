@@ -16,6 +16,8 @@
     "particles.vue3": "^1.42.2",
     "quasar": "^2.0.0",
     "three": "^0.136.0",
+    "vite": "^2.9.5",
+    "vite-plugin-compression": "^0.5.1",
     "vue": "^3.0.0",
     "vue-particles": "^1.0.9",
     "vue-router": "^4.0.0-0",

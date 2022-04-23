@@ -320,7 +320,7 @@
                     <div class="" style="">
                         <div class="">
                             <p class="gt-sm text-h3 text-left text-secondary">
-                                M-Brains Structure
+                                Structure
                             </p>                                                
                             <div class="" style="">
 

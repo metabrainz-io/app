@@ -2,7 +2,6 @@
 <q-page id="home" class="q-py-lg">
 
         <!-- CONTENT: LANDING 
-            style="border: 1px solid red;"
         -->
     <div class="row justify-evenly">
         <div
@@ -105,7 +104,7 @@
                             :transition-duration="500"
                             v-model="slide_home"
                             class="bg-transparent"
-                            style="max-width:100%;height:125px;border:1px solid red;"
+                            style="max-width:100%;height:125px;"
                         >
                             <q-carousel-slide :name="0" class="row items-center">
                                 <div class="col">

@@ -2,5 +2,6 @@
 keys/
 
 # Files
-notes.txt
+nginx*
+notes*
 leases.txt

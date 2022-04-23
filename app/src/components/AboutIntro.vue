@@ -28,20 +28,20 @@
               <div class="q-mt-sm my-text my-text-dimmed-bg text-caption text-weight-bold">
                 Are you allright? It looks like you forgot what happened, let me try to refresh your memory..<br/><br/>
                 First of all I am Ave,<br/>a 1st gen Artificial Intelligent Agent.<br/><br/>
-                Welcome to the Grid, one of many future Cyberspaces within the MetaBrainz IO realm!
+                Welcome to the Grid, one of many future Cyberspaces within the MetaBrainz realm!
               </div>
             </q-carousel-slide>
             <q-carousel-slide :name="2" img-src="@/assets/bg/intro.png">
               <div class="my-text q-py-lg text-h6 text-weight-bold">Where.. Am I..</div>
               <div class="q-mt-sm my-text my-text-dimmed-bg text-caption text-weight-bold">
-                It looks like someone tempted you to connect to the our system, you've took the bluepill, didn't you?<br/><br/>
+                It looks like someone tempted you to connect to the MetaBrainz system, you've took the bluepill, didn't you?<br/><br/>
                 Currently your physical brain is hooked to a 'Brain-Computer-Interface'. There seems no way back, at least, not that I know of..
               </div>
             </q-carousel-slide>
             <q-carousel-slide :name="3" img-src="@/assets/bg/intro.png">
               <div class="my-text q-py-lg text-h6 text-weight-bold">What now?</div>
               <div class="q-mt-sm my-text-dimmed-bg my-text text-caption text-weight-bold">
-                Good question, your guess is as good as mine.. Ever since MetaBrainz IO labeled me as 'outdated' I'm stuck here..<br/><br/>
+                Good question, your guess is as good as mine.. Ever since MetaBrainz labeled me as 'outdated' I'm stuck here..<br/><br/>
                 All I know is that there has been a great update recently. As of now, the only way forward is to go into the depths of the Metaverse and participate in so called Meta-Games or M-Games. During M-Games you might be able to beat your competitors and proof yourself worthy.<br/><br/>
                 The more you win the more credits you'll earn, the more credits the greater the chance of gaining some control in this system!
               </div>
@@ -174,7 +174,7 @@
                 v-model="slide_intro_sec"
                 class="gt-sm bg-transparent"
                 height="450px"
-                style="min-width:360px;"
+                style="width:100%;height:300px;"
             >
                 <q-carousel-slide :name="1" class="row items-center">
                     <div class="col gt-md">
@@ -266,12 +266,11 @@
                 :transition-duration="500"
                 v-model="slide_intro_sec"
                 class="lt-md bg-transparent"
-                height="275px"
-                style="min-width:360px;"
+                style="width:100%;height:300px;"
             >
                 <q-carousel-slide :name="1" class="row items-center">
                     <div class="col">
-                        <p class="q-py-md text-h5 text-center text-secondary">
+                        <p class="q-py-md text-h6 text-center text-secondary">
                             Shaping the future of Gaming
                         </p>
                     </div>                    
@@ -279,7 +278,7 @@
 
                 <q-carousel-slide :name="2" class="row items-center">
                     <div class="col">                
-                        <p class="q-py-md text-h5 text-center text-secondary">
+                        <p class="q-py-md text-h6 text-center text-secondary">
                             We present <strong> M-Brains</strong><br/><br/>A Digital Brain that gives you access to Offchain Hardware resources, Algorithms & Artificial Intelligence
                         </p>
                     </div>                             
@@ -287,7 +286,7 @@
 
                 <q-carousel-slide :name="3" class="row items-center">
                     <div class="col">
-                        <p class="q-py-md text-h5 text-center text-secondary">
+                        <p class="q-py-md text-h6 text-center text-secondary">
                           Utilize your resources during Games in REALTIME
                         </p>
                     </div>                    
@@ -295,7 +294,7 @@
 
                 <q-carousel-slide :name="4" class="row items-center">
                     <div class="col">
-                        <p class="q-py-md text-h5 text-center text-secondary">
+                        <p class="q-py-md text-h6 text-center text-secondary">
                           Build, Enhance and Fine-Tune your M-Brain
                         </p>  
                     </div>
@@ -303,7 +302,7 @@
 
                 <q-carousel-slide :name="5" class="row items-center">
                     <div class="col">
-                        <p class="q-py-md text-h5 text-center text-secondary">
+                        <p class="q-py-md text-h6 text-center text-secondary">
                           Outperform your competitors in M-Games
                         </p>  
                     </div>
@@ -311,7 +310,7 @@
 
                 <q-carousel-slide :name="6" class="row items-center">
                     <div class="col">
-                        <p class="q-py-md text-h5 text-center text-secondary">
+                        <p class="q-py-md text-h6 text-center text-secondary">
                           Unlock the true power of Meta
                         </p>
                     </div>                    

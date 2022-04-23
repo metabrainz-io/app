@@ -1,8 +1,8 @@
 <template>
 
     <!-- roof elements begin (pushing down) -->
-    <div class="gt-md" style="height:192px;"/><!--border:1px solid red;"/>-->
-    <div class="lt-lg" style="height:192px;"/><!--border:1px solid red;"/>-->
+    <div class="gt-md" style="height:192px;"/>
+    <div class="lt-lg" style="height:192px;"/>
     <!-- roof elements end -->
 
     <div id="message"></div>
@@ -36,20 +36,26 @@
                 <div class="btn-discord row items-center">
                     <q-btn 
                         class="gt-md no-border-radius"
-                        style="width:225px;height:75px;background-color: #009362;"
+                        style="width:225px;height:75px;background-color: #4c4886;"
                         flat dense
-                        @click="openURL('https://discord.gg/uXJDA3CC')"
                     >
+                    <!-- 
+                        style="width:225px;height:75px;background-color: #009362;"
+                        @click="openURL('https://discord.gg/uXJDA3CC')"
+                    -->
                         <div class="text-h5 text-weight-bold">
                             Discord
                         </div>
                     </q-btn>
                     <q-btn 
                         class="gt-xs lt-lg no-border-radius"
-                        style="width:175px;height:65px;background-color: #009362;"
+                        style="width:175px;height:65px;background-color: #4c4886;"
                         flat dense
-                        @click="openURL('https://discord.gg/uXJDA3CC')"
                     >
+                    <!-- 
+                        @click="openURL('https://discord.gg/uXJDA3CC')"
+                        style="width:175px;height:65px;background-color: #009362;"
+                    -->
                         <div class="text-h6 text-weight-bold">
                             Discord
                         </div>
@@ -67,10 +73,13 @@
                 <div class="btn-discord row items-center">
                     <q-btn 
                         class="no-border-radius"
-                        style="width:150px;height:50px;background-color: #009362;"
+                        style="width:150px;height:50px;background-color: #4c4886;"
                         flat dense
-                        @click="openURL('https://discord.gg/uXJDA3CC')"
                     >
+                    <!-- 
+                        @click="openURL('https://discord.gg/uXJDA3CC')"
+                        style="width:150px;height:50px;background-color: #009362;"
+                    -->                    
                         <div class="text-subtitle1 text-weight-bold">
                             Discord
                         </div>
@@ -253,7 +262,8 @@ export default{
 .btn-discord {
     color:#01000b;
     &:hover{
-        color:white;
+        // color:white;
+        color:#01000b;
     }
 }
 </style>

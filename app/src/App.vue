@@ -278,7 +278,7 @@
                 @click="$router.push({ name: 'Home', hash:'#main'})" 
                 style="cursor: pointer; font-size: 1.5rem"
               >
-                <img src="./assets/style/CyberBrain_sync_transparent_96x96.gif" style="width: 4rem;">
+                <img src="./assets/style/metabrain_sync_trans.gif" style="width: 4rem;">
               </div>
             </q-toolbar>
 

@@ -249,7 +249,7 @@
                     <div class="" style="">
                         <div class="">
                             <p class="md text-h4 text-left text-secondary">
-                                M-Brains Structure
+                                Structure
                             </p>                                                
                             <div class="" style="">
 
